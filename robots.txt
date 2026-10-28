@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://railfansday.github.io/newsmenu/sitemap.xml
+Sitemap: https://railfansday.github.io/newsweb/sitemap.xml
