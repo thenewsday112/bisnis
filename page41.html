@@ -4,103 +4,64 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>News Portal Indonesia - Page 41</title>
-<meta name="description" content="Page 41">
-<link rel="canonical" href="https://railfansday.github.io/newsweb/page41.html">
+<title>Page 41</title>
+<meta name="description" content="Latest news page 41">
+<link rel="canonical" href="https://thenewsday112.github.io/newsmenuday/page41.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-body{font-family:'Segoe UI',system-ui,sans-serif;background:#f4f6f8;margin:0;padding:20px;color:#333;line-height:1.6}
-.container{max-width:1000px;margin:0 auto}
-header{background:#1e293b;color:#fff;padding:20px;border-radius:12px;margin-bottom:20px;text-align:center;box-shadow:0 4px 6px rgba(0,0,0,.1)}
-header h1{margin:0;font-size:26px;letter-spacing:1px}
-nav{background:#fff;padding:10px;border-radius:12px;margin-bottom:24px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center;box-shadow:0 2px 4px rgba(0,0,0,.05)}
-nav a{padding:8px 16px;border-radius:8px;color:#475569;text-decoration:none;font-weight:600;transition:all .2s;font-size:14px}
-nav a:hover,nav a.active{background:#2563eb;color:#fff}
-.article-card{background:#fff;padding:24px;margin-bottom:24px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2563eb}
-.article-card h2{margin:0 0 12px;font-size:22px;color:#1e293b}
-.article-meta{font-size:13px;color:#64748b;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid #e2e8f0}
-.article-meta a{color:#2563eb;text-decoration:none;font-weight:bold}
-.article-body{font-size:16px;line-height:1.8;color:#334155}
-.article-body img{max-width:100%;height:auto;border-radius:8px;margin:16px 0}
-.pagination{text-align:center;margin:40px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
-.pagination a{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;color:#334155;font-weight:bold;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.05);transition:all .2s}
-.pagination a:hover{background:#f1f5f9}
-.pagination a.active{background:#2563eb;color:#fff}
-footer{text-align:center;color:#64748b;font-size:14px;padding:30px 0;border-top:1px solid #e2e8f0;margin-top:20px}
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+}
+* { box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: var(--bg-color); margin: 0; padding: 0; color: var(--text-main); line-height: 1.6; }
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+header.site-header { background: var(--card-bg); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.header-inner { max-width: 1100px; margin: 0 auto; padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; }
+.logo { font-size: 24px; font-weight: 800; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+nav.category-nav { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; scrollbar-width: none; }
+nav.category-nav::-webkit-scrollbar { display: none; }
+nav.category-nav a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 14px; padding: 8px 16px; border-radius: 20px; white-space: nowrap; transition: all 0.2s; background: var(--bg-color); }
+nav.category-nav a:hover, nav.category-nav a.active { background: var(--primary); color: white; }
+.news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; margin-top: 20px; }
+.news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; border: 1px solid var(--border-color); }
+.news-card:hover { transform: translateY(-4px); box-shadow: 0 12px 20px -5px rgba(0,0,0,0.1); }
+.news-img { width: 100%; height: 180px; object-fit: cover; background: #e2e8f0; display: block; }
+.news-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+.news-meta { display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 600; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.badge { background: #eff6ff; color: var(--primary); padding: 4px 10px; border-radius: 20px; }
+.news-title { margin: 0 0 12px 0; font-size: 18px; font-weight: 800; line-height: 1.4; }
+.news-title a { color: var(--text-main); text-decoration: none; }
+.news-title a:hover { color: var(--primary); }
+.news-excerpt { color: var(--text-muted); font-size: 14px; margin-bottom: 16px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.read-more { margin-top: auto; font-size: 14px; font-weight: 600; color: var(--primary); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
+.read-more:hover { color: var(--primary-dark); }
+.pagination { display: flex; justify-content: center; gap: 8px; margin: 40px 0; flex-wrap: wrap; }
+.pagination a { display: inline-flex; align-items: center; justify-content: center; min-width: 40px; height: 40px; padding: 0 10px; border-radius: 8px; background: var(--card-bg); color: var(--text-main); text-decoration: none; font-weight: 600; border: 1px solid var(--border-color); transition: all 0.2s; }
+.pagination a:hover, .pagination a.active { background: var(--primary); color: white; border-color: var(--primary); }
+.ad-container { background: var(--card-bg); padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 20px; border: 1px solid var(--border-color); }
+footer { text-align: center; padding: 40px 20px; color: var(--text-muted); border-top: 1px solid var(--border-color); margin-top: 40px; background: var(--card-bg); }
+@media (max-width: 768px) { .header-inner { flex-direction: column; align-items: flex-start; gap: 15px; } nav.category-nav { width: 100%; } }
 </style>
 </head>
 <body>
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">📰 News Portal</a>
+    </div>
+    <div class="header-inner" style="padding-top:0;">
+        <nav class="category-nav"><a href="index.html" class="active">All News</a><a href="technology.html" class="">Technology</a><a href="business.html" class="">Business</a><a href="sports.html" class="">Sports</a><a href="entertainment.html" class="">Entertainment</a><a href="health.html" class="">Health</a><a href="science.html" class="">Science</a><a href="other.html" class="">Other</a></nav>
+    </div>
+</header>
 <div class="container">
-<header><h1>News Portal Indonesia</h1></header>
-<nav><a href="index.html" class="active">🏠 All News</a><a href="technology.html">📰 Technology</a><a href="business.html">📰 Business</a><a href="sports.html">📰 Sports</a><a href="entertainment.html">📰 Entertainment</a><a href="health.html">📰 Health</a><a href="science.html">📰 Science</a><a href="politics.html">📰 Politics</a><a href="world.html">📰 World</a><a href="travel.html">📰 Travel</a><a href="food.html">📰 Food</a><a href="automotive.html">📰 Automotive</a><a href="education.html">📰 Education</a><a href="lifestyle.html">📰 Lifestyle</a><a href="other.html">📰 Other</a></nav>
-<h1 style="color:#1e293b;border-left:5px solid #2563eb;padding-left:15px;margin-bottom:30px;">News Portal Indonesia - Page 41</h1>
-<article class="article-card">
-    <h2>#749. We Tried 6 National Pizza Chains—And This One Is A Slice Above The Rest</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Food</strong> &nbsp;|&nbsp; 
-        <a href="https://www.delish.com/food/a74082846/best-national-pizza-chain/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/img-7862-2-689a3dc362d78.jpg?crop=0.965xw:0.643xh;0.0353xw,0.299xh&amp;resize=1200:*" alt="We Tried 6 National Pizza Chains—And This One Is A Slice Above The Rest" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://hips.hearstapps.com/hmg-prod/images/img-7862-2-689a3dc362d78.jpg?crop=0.965xw:0.643xh;0.0353xw,0.299xh&resize=1200:*" alt="We Tried 6 National Pizza Chains—And This One Is A Slice Above The Rest" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Pizza is practically impossible to screw up. I was raised on the principle that even a bad pie is still good, and I still swear by it. That said, I do have preferences. While I’ll die on the hill that Emmett’s on Grove, Chrissy’s, and Ceres in New York City round out my personal top three, I’m not above ordering from a chain either. They’re notoriously reliable and their own brand of nostalgic.</p>
-<p>So I decided to run an official taste test to find the best pizza chain, gathering the entire Delish office together in the name of the Father, the Son, and the Holy Spirit (bread, cheese, and sauce).</p>
-<p>We zeroed in on top standbys: Domino’s, Pizza Hut, Papa John’s, Little Caesars, Sbarro, and Jet’s. Everyone rated both pepperoni and cheese slices, and scored accordingly. Then I tallied everything up for the final ranking. As for the results? They weren’t what I expected...</p>
-<p>It’s cheap, it’s fast, it’s “Pizza! Pizza!” There were a few fans of the Hot-N-Ready chain—one person said the crust "has a really nice crunch that none of the others have"—but not quite enough to tap into the top five.</p>
-<p>In case you missed the memo, the mall food court staple also delivers—at least in New York. The pizza arrived hot and filled with a sense of nostalgia. While the slices weren't quite as gigantic as I remember (probably because the last time I had them I was a child with hands half the size), the sauce was pleasantly sweeter, and the crust was pretty crisp. One taster described it as “really good [with] delicious sauce (not too much) and cheese.” They added that it’s “greasy but somehow works.”</p>
-<p>Known for its Detroit-style pizza (which I love), Jet's also does a New York thin-crust option. To keep everything consistent, we ordered that—never mind that it arrived looking completely disheveled from transit. Some participants gushed over this one, while others were somewhat underwhelmed. Overall, the consensus landed in the middle.</p>
-<p>The Pizza Hut fans showed up for this one (or maybe Pizza Hut just really showed out). While the doughy crust wasn't for everyone (one person said they had to “be in the mood” for it), it impressed others. “Tastes like focaccia,” one Delish staffer said of the crust, while others described it as “light and fluffy” with a “good flavor” and “sweet sauce.”</p>
-<p>Birthday parties, classroom celebrations...Pizza Hut was that girl, and apparently still is.</p>
-<p>Domino’s had some vocal fans in the office—and for good reason. The crust is packed with flavor, the cheese tasted fresh, and the balance between doughy and crispy won over the crowd.</p>
-<p>“Domino’s has always been my go-to takeout pizza,” one taster said. Another said the crust “always hits the spot,” with another complimenting its garlicky punch. A separate taster went as far as to describe the thin crust as “god’s gift.” Bold, but seemingly deserved given its ranking.</p>
-<p>And your winner is...Papa John’s! While Domino’s came close, Papa John’s took the crown with its presentation, flavor, and freshness. I mean, the pepperonis and garlic sauce gave them an edge alone. You don’t even have to ask for them!</p>
-<p>“Very cheesy, good flavor,” one fan said of a John’s slice. “I think Papa John’s is the perfect take-out pizza—the peppers, the garlic sauce, the crust.” While Domino’s garlicky, herby crust has its place, Papa John’s simple, bready crust has a loyal following.</p>
-<p>One staffer summed it up perfectly: “The best pizza chain ever.” Agreed!</p>
-<p>I Tried The New Instant Sourdough Starter</p>
-<p>KFC vs. Popeyes Chicken Sandwich: Which Is Better?</p>
-<p>I Tried Playdate THC Rosé—Here’s My Review</p>
-<p>We Tried Starbucks’ Black Cat Frappuccino</p>
-<p>I Tried Chili’s New Chicken Parm Big Crispy</p>
-<p>Our Editors LOVE These Sour Candy-Coated Dates</p>
-<p>The 4 Best Store-Bought Cold Brews You Can Buy</p>
-<p>We may earn commission from links on this page, but we only recommend products we back.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.delish.com/food/a74082846/best-national-pizza-chain/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
-            </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;"><h1 style="font-size:28px; font-weight:800; margin:0;">Page 41</h1></div><div class="ad-container">
 <div style="text-align:center;margin:20px 0;">
     <script type="text/javascript">
         atOptions = {
@@ -113,1642 +74,137 @@ footer{text-align:center;color:#64748b;font-size:14px;padding:30px 0;border-top:
     </script>
     <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
 </div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#17. Elon Musk says Ukraine&amp;#8217;s military violated Starlink&amp;#8217;s terms of service</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://www.theverge.com/science/1019879/elon-musk-starlink-ukraine-terms-of-service" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK022_ELON_MUSK_CVIRGINIA4_I.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="Elon Musk says Ukraine&amp;#8217;s military violated Starlink&amp;#8217;s terms of service" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK022_ELON_MUSK_CVIRGINIA4_I.jpg?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200" alt="Elon Musk says Ukraine&#8217;s military violated Starlink&#8217;s terms of service" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Posts from this topic will be added to your daily email digest and your homepage feed.</p>
-<p>Posts from this topic will be added to your daily email digest and your homepage feed.</p>
-<p>Posts from this topic will be added to your daily email digest and your homepage feed.</p>
-<p>Musk accuses Ukraine’s military of using Starlink to carry out drone strikes, which officials have denied.</p>
-<p>Musk accuses Ukraine’s military of using Starlink to carry out drone strikes, which officials have denied.</p>
-<p>Posts from this author will be added to your daily email digest and your homepage feed.</p>
-<p>Posts from this author will be added to your daily email digest and your homepage feed.</p>
-<p>Elon Musk claims Ukraine violated Starlink’s terms of service before the recent slowdown, as reported earlier by Ars Technica. According to Musk, “Ukraine military violated Starlink terms of service and used it for offensive drone strikes to kill people. That loophole was closed last week,” however Ukrainian officials have denied that happened, or that it is actually possible for them to do.</p>
-<p>The statement comes nearly two weeks after Ukrainian officials accused SpaceX of putting limits on the military’s satellite internet service that disrupted its drone missions and operations. As reported by Axios, Ukraine uses Starlink for communications, logistics, and to defend against incoming drones. For offensive missions, officials say that Ukraine uses Starshield, the US military-controlled variant of Starlink.</p>
-<p>Musk points to a post from Ukrainian President Volodymyr Zelenskyy, which said Ukraine uses “Starlink from mid-range strikes against enemy military targets,” in violation of Starlink’s policies. However, Serhii Beskrestnov, a defense technology advisor for Zelenskyy, pushed back on this in a post on Telegram, saying Starlink’s systems can only connect to devices traveling between 70 and 90 kilometers per hour (around 43 and 55 miles per hour) and don’t work in Russia. “Therefore, we physically cannot use commercial Starlink for deep strikes or medium-range strikes,” Beskrestnov wrote.</p>
-<p>Ars Technica also points out a tweet from another former Ukrainian advisor, Serhii Sternenko, that went into more detail, saying that while stationary terminals could be registered (with Starlink) by military personnel or civilians, “for any satellite terminal to work while on the move, it had to be added to a special list and connected to the military Starshield system… In other words, using civilian Starlink for drone missions was technically impossible. All drone missions that required satellite communication could only be carried out using Starshield.”</p>
-<p>Zelenskyy said on Saturday that Starlink and Starshield services had been fully restored. With the restriction lifted, Ukraine’s military can now connect to devices traveling at speeds of more than 400km/h (248mph), the Kyiv Independent reports.</p>
-<p>Though Musk initially offloaded the blame for the slowdown in Ukraine onto the US government, President Donald Trump responded by saying he “wasn’t involved” and didn’t know who throttled SpaceX’s services. A report from The Wall Street Journal later said Trump asked Musk to lift restrictions on Ukraine.</p>
-<p>Posts from this author will be added to your daily email digest and your homepage feed.</p>
-<p>Posts from this topic will be added to your daily email digest and your homepage feed.</p>
-<p>Posts from this topic will be added to your daily email digest and your homepage feed.</p>
-<p>Posts from this topic will be added to your daily email digest and your homepage feed.</p>
-<p>Posts from this topic will be added to your daily email digest and your homepage feed.</p>
-<p>Posts from this topic will be added to your daily email digest and your homepage feed.</p>
-<p>Posts from this topic will be added to your daily email digest and your homepage feed.</p>
-<p>Posts from this topic will be added to your daily email digest and your homepage feed.</p>
-<p>Posts from this topic will be added to your daily email digest and your homepage feed.</p>
-<p>A free daily digest of the news that matters most.</p>
-<p>The Verge is a part of PMX Global, LLC, a subsidiary of Penske Media Corporation.</p>
-<p>Sign in to see your notifications or create an account to join the conversation.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.theverge.com/science/1019879/elon-musk-starlink-ukraine-terms-of-service" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+</div><div class="news-grid">
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_afaanoromoo/929f/live/839d3000-939d-11ef-8e6d-e3e64e16c628.jpg" class="news-img" alt="Oduufi xiinxalli kallattiin akka isin bira gahuuf Chaanaalii WhatsApp BBC hordofaa" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>06 Dec 2024</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#3462. Two Years After Its Finale, Taylor Sheridan’s Hit Western Is Back in Paramount+’s Top 10</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.mensjournal.com/news/two-years-after-its-finale-taylor-sheridans-hit-western-is-back-in-paramounts-top-10" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Despite its age, the series that launched several spin-offs has proven more popular on Paramount than more recent shows.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.mensjournal.com/news/two-years-after-its-finale-taylor-sheridans-hit-western-is-back-in-paramounts-top-10" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/afaanoromoo/articles/c3rx47ljwjjo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Oduufi xiinxalli kallattiin akka isin bira gahuuf Chaanaalii WhatsApp BBC hordofaa</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/afaanoromoo/articles/c3rx47ljwjjo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_uzbek/9EC4/production/_133244604_4.jpg" class="news-img" alt="Америка ва ўзбеклар: Америкада бизнес қилиш осонми? Ёш тадбиркорнинг ҳикояси" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>29 Apr 2024</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#761. These Homemade Bowls Are For Everyone Tired Of Paying $18 For Slop</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.delish.com/cooking/recipe-ideas/a74261684/homemade-lunch-bowls/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/copycat-chipotle-burrito-bowl-lead-641dd73457a4b.jpg?crop=1xw:0.75xh;0xw,0.144xh&amp;resize=1200:*" alt="These Homemade Bowls Are For Everyone Tired Of Paying $18 For Slop" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://hips.hearstapps.com/hmg-prod/images/copycat-chipotle-burrito-bowl-lead-641dd73457a4b.jpg?crop=1xw:0.75xh;0xw,0.144xh&resize=1200:*" alt="These Homemade Bowls Are For Everyone Tired Of Paying $18 For Slop" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Slop bowls are everywhere. Fast-casual restaurants like Chipotle know they can charge a whopping $18 for a few ingredients thrown together, and plenty of folks will still line up, regardless of the quality, because bowls are just that convenient. I’ll be honest: I crave bowls sometimes, too—just not the price tag. That’s where our homemade “slay” bowls shine. They beat “slop bowls” on every metric and are a perfect alternative for those sick of their usual work lunches.</p>
-<p>Our bowls are incredibly flavorful, easy to make at home, and perfect for meal prepping for the week. The best part? You don’t have to pay an arm and a leg for a mediocre, wet salad. These 15 recipes include copycats of your go-to Chipotle and Sweetgreen bowls, as well as high-protein bowls full of greens for those looking to make their lunches healthier.</p>
-<p>What are you waiting for? Skip the slop and get with the slay.</p>
-<p>We think what you order at Chipotle really says something about a person: Do you spring for extra guac? Go for the spicy salsa, or stick with mild? While we’re all about switching things up, when we want a tried-and-true perfect meal, we always go back to the chicken burrito bowl. It’s classic, reliable, and, best of all, completely customizable.</p>
-<p>If you’re looking for a meal to shake up your basic desk lunch, then this Greek power bowl is the answer. This grain bowl is not only packed with protein, but it’s endlessly versatile. It comes together in 25 minutes, meaning you can have a healthy lunch or easy dinner in less than half an hour.</p>
-<p>In these steak fajita power bowls, brown rice is topped with tender steak, fajita-style peppers and onions, black beans, corn, and sliced avocado for an easy, quick lunch that will be the envy of all your coworkers.</p>
-<p>When we need an easy lunch or nutritious dinner, we always turn to grain bowls. Green goddess anything gets us excited, which led us to create these filling, veggie-packed goddess bowls. An easy chicken dinner or healthy make-ahead lunch, these bowls combine nutritious powerhouses with a creamy, herby dressing that beats out the pre-packaged stuff any day.</p>
-<p>This salmon recipe is not only a simple, quick dinner (ready in 20 minutes!), but it’s a texture lover’s paradise. The salmon is roasted at a slightly lower temperature, resulting in tender, buttery fish. Quinoa is the base for our bowl, setting the stage for fresh arugula, thin slices of cucumber, and a homemade creamy dill and yogurt dressing.</p>
-<p>Attention, Sweetgreen lovers! Your regular weekday lunch is about to get an instant upgrade. Loaded with roast chicken, sweet potato, and that signature balsamic vinaigrette, our copycat version of Sweetgreen’s beloved harvest bowl will make your favorite takeout lunch an everyday reality.</p>
-<p>Poke bowls are a go-to, easy lunch: they’re healthy, require very little cooking, and are so versatile based on whatever is hanging out in the fridge. With marinated ahi tuna, a variety of colorful veggies, and soft steamed rice, these bowls are only limited by your imagination.</p>
-<p>If you're a savory breakfast fanatic, then you're probably familiar with a huevos rancheros-style meal: refried beans on lightly crisp tortillas, fried eggs, salsa, and cotija. It’s originally a simple protein-and carb-based breakfast for farmers, hence the name “huevos rancheros.”</p>
-<p>Crispy chickpeas, cabbage slaw, and brown rice are topped with more veggies and herbs and drizzled with creamy peanut sauce for a satisfying meal that’s both hearty and healthy.</p>
-<p>If you’re searching for a delicious dinner with protein packed in every bite, look no further. We’re starting with seared chicken breast, slicing them into bite-sized pieces, and combining them with black beans for even more protein. Toss it all in BBQ sauce, and you have the perfect main dish to serve over brown rice.</p>
-<p>Love a sweet treat from Playa Bowls, but hate leaving the coziness of your house? This copycat Nutella Acai Bowl was made just for you. It’s identical to Playa Bowls's most popular flavor with sweetened blended frozen acai, fresh bananas, sliced strawberries, shredded coconut, blueberry flax granola, and a hearty drizzle of melted Nutella to top it all off.</p>
-<p>Versatile and simple, stir-frying is a tried-and-true, go-to method for getting dinner on the table FAST. We love stir-frying for countless cheap and easy dinners, but especially in this recipe that combines ground beef with broccoli, carrots, and teriyaki sauce.</p>
-<p>Taco bowls are essentially a dream for meal prepping. This recipe formula works for countless variations, but we especially love this chipotle shrimp version. Not only is it delicious, but it comes together quickly. After an easy adobo and honey marinade, it only takes the shrimp a fast 4-ish minutes to cook.</p>
-<p>Pad krapow is Thailand’s most popular stir-fry dish for a reason. It’s got saucy ground meat tossed with sliced bell peppers, spicy chiles, and a handful of fresh, sweet basil, served over steaming rice. Our take on this super-simple dish is the perfect protein-packed meal prep that’ll keep you excited to eat all week.</p>
-<p>Whether you love the popular grab-and-go sandwich or simply need a hearty but healthy bowl that is perfect for meal-prepping, this turkey gyro bowl hits all the right notes. With tender spiced meat, crunchy fresh veggies, tzatziki, and chewy pita, it's not hard to see why gyros are one of the all-time best sandwiches.</p>
-<p>Packable Lunches That Go WAY Beyond Sandwiches</p>
-<p>We may earn commission from links on this page, but we only recommend products we back.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.delish.com/cooking/recipe-ideas/a74261684/homemade-lunch-bowls/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/uzbek/uzbekistan-68921039?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Америка ва ўзбеклар: Америкада бизнес қилиш осонми? Ёш тадбиркорнинг ҳикояси</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/uzbek/uzbekistan-68921039?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://mmg.whatsapp.net/m1/v/t24/AQPAa2nS-h0Z-_grQmMQeefFH_QKYlKXFz2NpwyjvOk0J-gJ8YVybyQ1AP9bdeu-9fkjFJzp3bbb1oSeC7j-wC0_xVO813_iFskzsOePQWHqqDTvXwztIsa0OYhzaMuiHuiB09UgqljVkFbUV8W-mkJU9bp6tmjw?_nc_gid=DsH4WTas726EI_OICEGKXA&amp;_nc_oc=AdoA-7exdtnsiOuC7g9Xh_8sxFeGyS6r5aczNdbSaKtRRSMz5j1KD8H2QE5UTYrhJ74&amp;ccb=10-5&amp;oh=01_Q5Aa5wHyLVW6e4XcLsmgarnuLc8NViOA6ebE2nqNgEaP-8do-w&amp;oe=6B066C05&amp;_nc_sid=471a72" class="news-img" alt="Darapọ̀ mọ́ wa lórí WhatsApp" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>15 Apr 2024</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#1747. YouTube tests reduced payment threshold for creators</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.socialmediatoday.com/news/youtube-tests-reduced-payment-threshold-for-creators/872965/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://imgproxy.divecdn.com/YkwLtrdt9oAu88AXh-sZNL8F-qq25-o4fNOqTTIuV-U/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS95b3V0dWJlX2xvZ28yLnBuZw==.webp" alt="YouTube tests reduced payment threshold for creators" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://imgproxy.divecdn.com/YkwLtrdt9oAu88AXh-sZNL8F-qq25-o4fNOqTTIuV-U/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS95b3V0dWJlX2xvZ28yLnBuZw==.webp" alt="YouTube tests reduced payment threshold for creators" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>The platform is experimenting with a cash-out option set at $20 rather than the current $100, which could open doors to more video producers.</p>
-<p>YouTube is testing an option that would enable creators to cash out their Partner Program earnings at $20, rather than the longstanding $100 minimum.</p>
-<p>This payout flexibility gives creators easier access to their YouTube content revenue share.</p>
-<p>As explained by YouTube: “To offer creators more flexibility, we’re temporarily running an experiment that lowers the minimum payment threshold to receive payments from $100 USD to $20 USD (or local currency equivalent). This will be applied starting from October 2026 payments for a randomly selected group of creators in the U.S., India and Indonesia.”</p>
-<p>So at the end of this month, a creator in the test pool will be able to access their funds even if they haven't reached the $100 minimum. Whatever funds remain will be rolled over to the next month.</p>
-<p>“Creators in this experiment will receive a notification and can track their updated payment activity in YouTube Studio on mobile,” YouTube said. “If you’re a creator in this experiment and prefer a higher payout threshold, you can change your payment threshold in AdSense for YouTube.”</p>
-<p>The update comes as Instagram challenges YouTube with a renewed push on long-form content. The Meta-owned platform may be hoping to compete with YouTube on both content and for creators.</p>
-<p>But YouTube’s revenue share system is more advanced than what’s on offer on IG, and it will be a tough sell for Meta to convince creators to put more focus on Instagram, even with more content sharing options.</p>
-<p>Decreased payment thresholds could be another element in YouTube’s favor, providing expanded opportunities for a broader range of creators to make money in the app.</p>
-<p>Get the free daily newsletter read by industry experts</p>
-<p>The key to maximizing a social media marketing strategy is to ground the approach in purpose.</p>
-<p>For months, we’ve been tracking Elon Musk’s $44 billion deal with Twitter. Now that the deal is done, we watch as the Musk-Twitter era begins.</p>
-<p>Interested? Explore more of what  has to offer.</p>
-<p>Thanks for signing up!
-            Please keep an eye out for a confirmation email from
-            [email protected]
-            To ensure we make it into your inbox regularly,
-            add us to your allow list, mark us as a safe sender, or add us to your address book.
-            Check out more from</p>
-<p>Get the free daily newsletter read by industry experts</p>
-<p>Want to share a company announcement with your peers?</p>
-<p>Share your announcement
-                                
-                                ➔</p>
-<p>The key to maximizing a social media marketing strategy is to ground the approach in purpose.</p>
-<p>For months, we’ve been tracking Elon Musk’s $44 billion deal with Twitter. Now that the deal is done, we watch as the Musk-Twitter era begins.</p>
-<p>The free newsletter covering the top industry headlines</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.socialmediatoday.com/news/youtube-tests-reduced-payment-threshold-for-creators/872965/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://whatsapp.com/channel/0029Vb18ZTM9Gv7NliClgu0M?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Darapọ̀ mọ́ wa lórí WhatsApp</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://whatsapp.com/channel/0029Vb18ZTM9Gv7NliClgu0M?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://mmg.whatsapp.net/m1/v/t24/AQO_ZwC8tlm4FAkx1VfYMHKpdoLhdbW98oTqNK5X_7yLU9DENR7V_hAq0oGxgBAmR8EG4KfI-2Tfv1TchnPMwuj5U7034HRlrVg_MsOw_JJYcRDoTzFucdO8SG0WDzPnF6z1-D8fA1jT6ixbcAIcHKcUWWTLgkc6?_nc_gid=oUjzr5jIO-4wrhPF7SEQeQ&amp;_nc_oc=AdodUq1TXYmPcnsOxXFpodK8EfnYUfIFZ2XjhuDHiIjx7WJzn5ZyAC-_SDGfx8Zpq2U&amp;ccb=10-5&amp;oh=01_Q5Aa5wH7LnWE_7gioa_DLPebcj-XNXdOmL1H7Ziryg4gfHIqsQ&amp;oe=6B06742D&amp;_nc_sid=471a72" class="news-img" alt="Abone olmak için tıklayın" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>15 Apr 2024</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#98. Israeli elections have great consequences for Palestinians, but they don’t get to vote.</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>World</strong> &nbsp;|&nbsp; 
-        <a href="https://www.nytimes.com/live/2026/10/27/world/israel-elections/israeli-elections-have-great-consequences-for-palestinians-but-they-dont-get-to-vote" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p></p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.nytimes.com/live/2026/10/27/world/israel-elections/israeli-elections-have-great-consequences-for-palestinians-but-they-dont-get-to-vote" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.whatsapp.com/channel/0029Vb5eTSkHFxP3rcjNq41i?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Abone olmak için tıklayın</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.whatsapp.com/channel/0029Vb5eTSkHFxP3rcjNq41i?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://mmg.whatsapp.net/m1/v/t24/AQMegdpbqJoxG6vv-K5Er0kl88uvkBNyB9mpobp9puIhRD1QxPMAxVm23ATg59M5xX1C8pzU2hUdTr7Rf4_mPvbXQZ1UbgCPjEmieGNb3-jvL-daHFBCzoeThB7rUa5lUNrb8h7wG0DCbWd1Sxv30PcjsZtvaNhQ?_nc_gid=834ZcgIQ4fsBYuQi930Y0g&amp;_nc_oc=AdqFVPqdJigxFUZB1pZFhU2ylqd8RWI_SxIJxIr1Sm6nx5eXo6BEWfg86pnGBqUau1Q&amp;ccb=10-5&amp;oh=01_Q5Aa5wEFucDGFdkdMw4tmjj-_5nTd4kYxQdi3ncRqv4n7zQ7xw&amp;oe=6B065676&amp;_nc_sid=471a72" class="news-img" alt="دلته یې کېکاږئ" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>15 Apr 2024</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#4526. China’s first fully AI movie flops months after ‘worse than AI’ film makes millions</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://www.dexerto.com/tv-movies/chinas-first-fully-ai-movie-flops-months-after-worse-than-ai-film-makes-millions-3422274/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://www.dexerto.com/cdn-image/wp-content/uploads/2026/10/27/china-ai-movie-box-office-bomb.jpg" alt="China’s first fully AI movie flops months after ‘worse than AI’ film makes millions" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.dexerto.com/cdn-image/wp-content/uploads/2026/10/27/china-ai-movie-box-office-bomb.jpg" alt="China’s first fully AI movie flops months after ‘worse than AI’ film makes millions" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>China’s first fully AI-generated feature film has bombed at the box office, just months after a bizarre animated movie mocked for looking “worse than AI” became a surprise hit.</p>
-<p>Artificial intelligence might be taking over Hollywood, but getting actual humans into theater seats is proving to be a much bigger challenge.</p>
-<p>Sanxingdui: Future Past, billed as China’s first fully AI-generated theatrical feature, opened on October 23 with more than 10,000 screenings scheduled for its debut.</p>
-<p>However, according to Cartoon Brew, the sci-fi movie earned just 1.21 million yuan (approximately $181,000) through October 26, despite costing more than $1.5 million to produce.</p>
-<p>Even more awkwardly, production company Bona Film Group says nearly 100 people spent over two years making the film, despite its characters, voices, and backgrounds being AI-generated.</p>
-<p>And the attendance figures are somehow even worse.</p>
-<p>According to China’s National Business Daily, screenings on October 24 and 25 attracted an average of just two viewers each. By October 26, the movie’s reported theater occupancy rate had fallen to a staggering 0.1%.</p>
-<p>One person who attended a free preview told AFP she wouldn’t have paid to watch it.</p>
-<p>“If AI generation can match the theatrical experience of Avatar, I think I would be willing to pay for it,” she said.</p>
-<p>It’s another setback for AI-generated cinema after AMC pulled an AI movie from theaters earlier this year following backlash.</p>
-<p>The flop is particularly amusing considering what happened just two months earlier. Back in August, Dexerto covered Niu Lai, a bizarre Chinese animated movie branded “worse than AI” that initially attracted only around 200 viewers.</p>
-<p>Chinese animated movie branded “worse than AI” goes viral after just 200 people see it</p>
-<p>Chinese movie Niu Lai becomes $4 million box office hit after viewers called it “worse than AI”</p>
-<p>China unveils massive AI martial arts movie project with “first fully AI film”</p>
-<p>Unlike Sanxingdui, the movie wasn’t AI-generated. It was made by director Xin Yumeng and his mother, screenwriter Sun Lifang, on a shoestring budget reportedly around $200.</p>
-<p>Its crude animation, awkward character movements, and strange visuals became an online sensation, with audiences flocking to theaters to see just how bad it really was.</p>
-<p>By August 20, Niu Lai had already made around $4 million, and that figure has since climbed to approximately $10 million, according to Cartoon Brew.</p>
-<p>That means a movie ridiculed for looking worse than AI has earned over 50 times as much as China’s supposedly groundbreaking AI feature so far.</p>
-<p>Of course, Sanxingdui has only just opened, and Niu Lai also suffered a disastrous debut before becoming a viral success.</p>
-<p>Still, for now, the expensive AI experiment is being thoroughly outperformed by a movie made by a man, his mother, and some extremely questionable animation.</p>
-<p>Sign up to Dexerto for the latest news, views & reviews</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.dexerto.com/tv-movies/chinas-first-fully-ai-movie-flops-months-after-worse-than-ai-film-makes-millions-3422274/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://whatsapp.com/channel/0029Vb7QbM3LCoX5XSrthR1i?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">دلته یې کېکاږئ</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://whatsapp.com/channel/0029Vb7QbM3LCoX5XSrthR1i?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://mmg.whatsapp.net/m1/v/t24/AQMFNe8Jb7NuiHWNyhFsKolCERICKeqegfXe-PGlVFTv7j1ERpWeo_65Ovy3k7bJx5v4H9p_oUzn6GjIoXs9gOn249tEHRDvZbUy8Yb6tl3SqksYOHZCrLq4W9P5c088s7xRGeZ_1-9SkIq-vzzLs-z6LSe94qze?_nc_gid=wy9YqWjmxfC63EOWTcE6Rw&amp;_nc_oc=AdpsTBeRM9kk683uQZNzKxTYq0-2qxN42HETyo5FTJ2cxP0LDjbhRsWJNBJuyVBrf2E&amp;ccb=10-5&amp;oh=01_Q5Aa5wEYUp1D-GLtN_WJAQdenLRJin8j72CRzc52tbBh8XODRA&amp;oe=6B064984&amp;_nc_sid=471a72" class="news-img" alt="Каналга катталыңыз" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>15 Apr 2024</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#4021. Walking Speed Sharpens Visual Sensitivity to Backward Motion</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://neurosciencenews.com/walking-speed-visual-sensitivity-backward-motion-32347/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://neurosciencenews.com/files/2026/10/walking-speed-backwards-motion-neuroscience.jpg" alt="Walking Speed Sharpens Visual Sensitivity to Backward Motion" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://neurosciencenews.com/files/2026/10/walking-speed-backwards-motion-neuroscience.jpg" alt="Walking Speed Sharpens Visual Sensitivity to Backward Motion" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>A visual psychophysics study led by researchers at the National Institute for Physiological Sciences (NIPS) in Japan reveals that human motion sensitivity depends directly on movement velocity. Testing adults across both planar and three-dimensional dot-motion simulations, investigators found that at a typical human walking speed of 1.5 meters per second (5.4 km/h), the human visual system is significantly more sensitive to contracting optic flow (backward motion) than expanding flow (forward motion). This specialized perceptual tuning may serve as an evolutionary early-warning reflex to detect backward falls and preserve postural stability.</p>
-<p>Source: National Institutes of Natural Sciences (NIPS)</p>
-<p>As we navigate through the physical world, self-motion generates a dynamic, continuous streaming of visual vectors across our retinas known as optic flow. Stepping forward causes the visual landscape to expand outward from a central focus of expansion. Conversely, moving backward produces contracting optic flow, with the peripheral environment streaming inward toward a central point of contraction.</p>
-<p>The brain continuously calculates these streaming patterns to gauge velocity, estimate heading direction, and regulate bipedal balance.</p>
-<p>For decades, perceptual psychologists and visual neuroscientists have debated how the brain prioritizes these vectors, with conflicting studies arguing whether the visual system is fundamentally more sensitive to forward or backward movement.</p>
-<p>Now, an experimental investigation led by Junxiang Luo at the National Institute for Physiological Sciences (NIPS), part of Japan’s National Institutes of Natural Sciences, resolves this controversy. The findings demonstrate that human sensitivity to optic flow is closely calibrated to locomotion speed.</p>
-<p>To determine whether contradictory findings in earlier literature stemmed from the velocities tested, the NIPS research team designed psychophysical discrimination paradigms spanning multiple speeds.</p>
-<p>The researchers tested 27 adults using two-dimensional planar dot arrays moving either radially outward (simulating forward translation) or inward (simulating backward translation). To verify whether ecological depth cues altered processing, a separate cohort of 30 adults was evaluated using three-dimensional stereoscopic displays simulating physical motion through deep space.</p>
-<p>During the trials, participants observed two sequential optic flow presentations and indicated which display moved faster. The investigators systematically measured the speed discrimination threshold—the smallest difference in velocity a subject could accurately detect between expanding versus contracting patterns.</p>
-<p>The experiments revealed a clear velocity threshold: at an intermediate speed of 1.5 meters per second (approximately 5.4 kilometers per hour), the exact biomechanical velocity of a typical human walking pace, participants were significantly better at detecting subtle speed variations in contracting patterns than in expanding ones.</p>
-<p>This perceptual advantage for contracting flow emerged consistently across both simple two-dimensional dot displays and immersive 3D spatial simulations. At speeds slower or faster than normal walking pace, this perceptual difference disappeared entirely.</p>
-<p>The speed-specific advantage for contracting optic flow explains why previous research arrived at divergent conclusions, as earlier trials often evaluated arbitrary velocity thresholds uncoupled from natural human gait.</p>
-<p>Furthermore, the selective tuning carries clear evolutionary and biomechanical implications for bipedal navigation.</p>
-<p>“This heightened sensitivity to contracting flow might help people immediately respond to backward instability, such as losing balance,” explains Junxiang Luo, lead researcher of the study at NIPS.</p>
-<p>When walking forward, humans possess anticipatory visual fields, vestibular cues, and proactive stepping mechanisms to catch themselves if they trip. However, backward balance loss presents an acute hazard: humans lack rear vision and cannot easily extend a protective backward stride to prevent catastrophic impacts to the spine or head.</p>
-<p>By maintaining heightened sensitivity to the subtle contracting optical streaming associated with backward sway at walking speeds, the visual cortex can rapidly register loss of equilibrium, triggering rapid motor corrections to preserve posture.</p>
-<p>Unraveling the neural circuitry that computes this walking-speed visual advantage opens practical avenues for clinical rehabilitation and preventative medicine.</p>
-<p>In older adults and patients suffering from neurodegenerative conditions like Parkinson’s disease or vestibular ataxia, impaired motion perception directly correlates with an elevated risk of falling.</p>
-<p>The authors suggest that evaluating an individual’s speed discrimination thresholds for contracting optic flow could serve as a non-invasive diagnostic metric for subclinical balance impairment. Additionally, integrating velocity-calibrated contracting optic flow regimens into virtual-reality gait training and physical therapy programs could help patients retrain automatic postural reflexes, reducing falls and enhancing mobility.</p>
-<p>Anisotropic speed-discrimination sensitivity for expanding and contracting optic flow</p>
-<p>Retinal optic flow provides critical visual cues for locomotion and self-navigation. Forward self-motion, such as walking or driving, typically induces an expanding radial flow pattern on the retina. Despite the predominance of expanding optic flow in everyday self-motion, several studies have reported higher sensitivity for contracting flow that arises under relatively rare conditions, such as walking backward or falling onto one’s back.</p>
-<p>The underlying basis of this anisotropy remains elusive. In this study, we compared discrimination sensitivity to speed for expanding versus contracting optic flow, given that speed is a fundamental attribute of motion and that sensitivity to it provides insight into underlying visual mechanisms.</p>
-<p>We found that sensitivity in speed discrimination was comparable between expansion and contraction at low and high speeds but was significantly higher for contraction at an intermediate speed corresponding to ecologically relevant self-motion, such as walking.</p>
-<p>This anisotropic pattern was observed for both two-dimensional planar (Experiment 1) and simulated three-dimensional (Experiment 2) optic flow stimuli.</p>
-<p>Together, these findings suggest that anisotropic speed discrimination sensitivity to expanding and contracting optic flow at ecologically typical egomotion speeds may reflect an adaptive visual mechanism that supports postural stability and balance during relatively rare backward self-motion.</p>
-<p>Your email address will not be published. Required fields are marked *</p>
-<p>Notify me of follow-up comments by email.</p>
-<p>Neuroscience Research Psychology News Brain Cancer Research Alzheimer’s Disease Parkinson’s News Autism / ASD News Neurotechnology News Artificial Intelligence News Robotics News</p>
-<p>Neuroscience News is an online science magazine offering free to read research articles about neuroscience, neurology, psychology, artificial intelligence, neurotechnology, robotics, deep learning, neurosurgery, mental health and more.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://neurosciencenews.com/walking-speed-visual-sensitivity-backward-motion-32347/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://whatsapp.com/channel/0029VbBgIP4D8SE3ZSu7YG0e?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Каналга катталыңыз</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://whatsapp.com/channel/0029VbBgIP4D8SE3ZSu7YG0e?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_gahuza/8f17/live/f84490b0-7166-11ee-a503-4588075e3427.jpg" class="news-img" alt="&#x27;Namenye ntevye ko umucance wanje Ndadaye bamugandaguye ... nabikiwe na musenyeri Bududira&#x27; - Laurence Ndadaye" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>23 Oct 2023</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#4407. Why is a giant hand appearing on X? Heres what users are seeing.</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://mashable.com/tech/x-pointing-hand-promote-button-popup" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://helios-i.mashable.com/imagery/articles/01rUEUwTWbDiEM5GrPIwVBX/hero-image.fill.size_1200x675.v1793120226.jpg" alt="Why is a giant hand appearing on X? Heres what users are seeing." loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://helios-i.mashable.com/imagery/articles/01rUEUwTWbDiEM5GrPIwVBX/hero-image.fill.size_1200x675.v1793120226.jpg" alt="Why is a giant hand appearing on X? Heres what users are seeing." style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>X would like you to pay to promote your posts. And if you've managed to ignore the button offering that option, a giant hand may soon point it out for you.</p>
-<p>Users across the Elon Musk-owned social media platform have been sharing screenshots of a hand appearing while they compose posts, directing their attention toward the Promote button. The animation is hard to miss, which appears to be the point.</p>
-<p>"I just went to write a tweet and a massive hand popped up pointing to the promote button," The Verge’s Tom Warren wrote on X on Oct. 26.</p>
-<p>The button offers paid promotion, allowing users to spend money to get their posts in front of more people. X already offers tools for promoting posts without setting up an advertising campaign.</p>
-<p>The hand is a particularly literal way of drawing attention to them. And it’s certainly getting noticed.</p>
-<p>"Jumpscared the shit out of me," wrote one user. Another wrote, "I thought I’d been hacked!" describing his rather seasonal experience: "I wish I could explain how jarring this hand and animation was in the X app. It was truly shocking, almost like a Halloween gag, but I'm pretty sure it was real. I guess I see the promote button now."</p>
-<p>Others were less concerned with the hand's appearance than with where it was pointing. "The fact that it’s pointing at promote and not post is the real comedy here," wrote one user. Another account described the experience as getting "physically assaulted by the algorithm into buying ads." One put it plainly: "This should somehow be illegal."</p>
-<p>One startled user tagged @X and @grok to ask, "What is that hand? Is this a Halloween thing?" Grok replied, describing it as a new prompt encouraging users to pay for extra reach, adding that it was "Not confirmed as a Halloween prank, though the timing makes it feel like one."</p>
-<p>That hand is a new X compose-screen nudge. A realistic (sometimes animated) arm pops up while drafting to point at the Promote button, encouraging you to boost the post for extra reach. It started rolling out in the last day or so and has jumped out at lots of people. Not confirmed as a Halloween prank, though the timing makes it feel like one. - Grok</p>
-<p>One iOS user said the hand was more than a static graphic. "It’s animated, and you can move it around," they wrote, adding, "Hopefully it’s just a one-time popup."</p>
-<p>TBPN president Dylan Abruscato also shared his surprise at an arm appearing just as he was about to post. He called it the "most Nikita-coded thing I’ve ever seen," referring to the growth tactics associated with X's former product chief, Nikita Bier.</p>
-<p>"So obstructive, yet so effective," Abruscato added.</p>
-<p>The hand’s appearance coincides with a leadership change at X. Peter Sellis, a former product executive at Snapchat and Discord, announced on Oct. 26 that he was joining the company to lead product. (He hasn’t said whether he had a hand in this particular update. Get it?)</p>
-<p>It’s also unclear how widely the hand is appearing. One Android user said they hadn’t encountered it. Another user said it disappeared before they could capture it.</p>
-<p>For now, the hand has succeeded in getting people to post about the Promote button. Getting them to actually pay to use it might require a different, more subtle approach.</p>
-<p>Want more tech and digital culture news delivered to your inbox daily or sent straight to your device? Sign up for Mashable's Top Stories newsletter or get Mashable push alerts today.</p>
-<p>Olivia Tauber is the deputy editor of digital culture, covering creators, media, movies, beauty, and more. Based in New York, her work has appeared in The New York Times, Vanity Fair, The Cut, Teen Vogue, Complex, and Interview Magazine. She holds a Master's degree in Journalism from NYU and a Bachelor's from the University of Michigan. She also runs Fan Mail, a weekly pop-culture newsletter.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://mashable.com/tech/x-pointing-hand-promote-button-popup" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/gahuza/articles/c03dd54g4zvo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">&#x27;Namenye ntevye ko umucance wanje Ndadaye bamugandaguye ... nabikiwe na musenyeri Bududira&#x27; - Laurence Ndadaye</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/gahuza/articles/c03dd54g4zvo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_uzbek/6704/production/_131227362_1021820919_0_0_1600_2238_1440x900_80_0_1_8357088c72b976ca58209c75bf4a2962.jpg.jpg" class="news-img" alt="Махсус лойиҳа: Каримовдан “аразлаган” “инжиқ” Туркманистон билан Мирзиёев нега яқинлашишга ошиқмоқда?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>09 Oct 2023</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#2868. Gavin Newsom Takes Emergency Action as El Niño Threatens California&#x27;s Pacific Coast Highway</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.surfer.com/news/gavin-newsom-el-nino-pacific-coast-highway" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>A massive crack below PCH at El Morro has turned a legendary coastal zone into ground zero for California’s fight to keep its most iconic highway intact.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.surfer.com/news/gavin-newsom-el-nino-pacific-coast-highway" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/uzbek/uzbekistan-66853875?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Махсус лойиҳа: Каримовдан “аразлаган” “инжиқ” Туркманистон билан Мирзиёев нега яқинлашишга ошиқмоқда?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/uzbek/uzbekistan-66853875?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_persian/1F09/production/_114554970_creepingcoupstill-003.jpg" class="news-img" alt="&#x27;کودتای خزنده&#x27; در سپاه؛ نوار صوتی جلسه‌ای محرمانه در زمان جنگ" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>21 Sep 2020</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#991. I’ve Been a Bridesmaid Six Times, and This Is the Face Mask I Use Before Each Wedding</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>World</strong> &nbsp;|&nbsp; 
-        <a href="https://www.harpersbazaar.com/beauty/skin-care/a74252727/111-skin-sheet-mask-review/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/f18818c3-0c00-469e-a45c-ed57abb6a18e.gif?crop=1xw:0.889xh;0xw,0.054xh&amp;resize=1200:*" alt="I’ve Been a Bridesmaid Six Times, and This Is the Face Mask I Use Before Each Wedding" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://hips.hearstapps.com/hmg-prod/images/f18818c3-0c00-469e-a45c-ed57abb6a18e.gif?crop=1xw:0.889xh;0xw,0.054xh&resize=1200:*" alt="I’ve Been a Bridesmaid Six Times, and This Is the Face Mask I Use Before Each Wedding" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>111Skin’s face mask is the closest thing to a real facial</p>
-<p>My life lately has looked like a remake of 27 Dresses. I’ve had the pleasure of being a bridesmaid six times in less than two years, which means full glam for multiple days in a row. While a professional facial before each wedding would be glorious, that’s not the reality. For every wedding I go to (whether I’m a bridesmaid or not), I pack a suitcase’s worth of skincare to give my skin a facial glow even if I didn’t get one. One item always makes it into my cosmetic bag: 111Skin’s facial masks.</p>
-<p>I first came across 111Skin masks while on a trip to Anguilla. After three or four days in the sun, my skin was parched, dull, and irritated. I popped on one of the sheet masks, and within 20 minutes, my skin was noticeably brighter, plumper, and more hydrated. While K-beauty skincare masks are trending, especially those designed to stay on for hours or even overnight, 111Skin masks always have a place in my routine, especially when I just need a quick glow-up. Time is especially crucial when I’m being squeezed into a tight makeup slot among a dozen other bridesmaids. These masks not only revive my skin fast, but 111Skin also offers a range of mask types to choose from, depending on what my skin needs that day, from the depuffing Cryo line to the more luxe Celestial Black Diamond line, designed to lift and firm. Prices start at $85 for a pack of three to $140 for a pack of five. (If you break it down by cost per mask, it’s less than $30 for a spa-like facial at home.)</p>
-<p>Each face sheet mask has a corresponding under-eye mask—another personal favorite element of 111Skin. Three of the sheet masks, including the Rose Gold, Cryo, and Celestial Black Diamond, come in a hydrogel mask. I typically steer away from hydrogel because of its slippery nature, but 111Skin’s version is weighty enough that it grips onto the skin. The Y Theorem mask, which is designed for soothing and strengthening stressed skin, swaps hydrogel for biocellulose—a lightweight gel-like texture that doesn’t budge.</p>
-<p>On big-event days, like my endless weddings, I often reach for the Y Theorem or the Cryo sheet mask. I don’t like to experiment with active ingredients or exfoliants before weddings, and the Y Theorem utilizes the brand’s proprietary NAC Y2 complex (which is infused with vitamin C, NAC, and escin) to repair and rejuvenate irritated or stressed skin. Plus, this formula has calming centella asiatica and ectoin.</p>
-<p>On the other hand, when I wake up puffy and inflamed, which happens more often after a welcome party, the Cryo mask is my first line of defense. It contains caffeine and a tetrapeptide to instantly—yes, really—depuff and make skin look more alive. I often keep this mask in the fridge for extra depuffing benefits, and I even pair the sheet mask with the Cryo depuffing eye masks to double down on reducing inflammation.</p>
-<p>In an ideal world, I would use a sheet mask every day, but that’s not sustainable or economical, so I save these for special occasions. When I do incorporate 111Skin masks into my routine, whether for a wedding or a random weekday pick-me-up, my skin looks and feels visibly refreshed for a few days afterward. Plus, it’s a little moment of relaxation before a long day spent celebrating, eating, and dancing the night away.</p>
-<p>For more than 150 years, Harper’s Bazaar has been the preeminent fashion, beauty, and lifestyle resource for women at every age. We cover what’s new and what’s next in fashion by working with the world’s leading authorities in ready-to-wear, footwear, accessories, and more. Every story we publish has been thoroughly researched and vetted by our team of editors and industry experts.</p>
-<p>The Barn Jacket Is the Anchor to Every Fall Outfit</p>
-<p>The 10 Best French Beauty Products for Mature Hair</p>
-<p>Gap and Victoria Beckham Reunite for a Capsule</p>
-<p>Experts Love These Eyeliners for Women Over 40</p>
-<p>Every Fall Outfit Should Include These Sneakers</p>
-<p>Bazaar’s Guide to Shopping Brown Suede This Fall</p>
-<p>We Found the Top Clarifying Shampoos for Gray Hair</p>
-<p>How to Style Fall 2026’s Top Denim Trends</p>
-<p>Ready for the Holidays? Start with These Advents</p>
-<p>We may earn commission from links on this page, but we only recommend products we back.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.harpersbazaar.com/beauty/skin-care/a74252727/111-skin-sheet-mask-review/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/persian/iran-features-53961947?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">&#x27;کودتای خزنده&#x27; در سپاه؛ نوار صوتی جلسه‌ای محرمانه در زمان جنگ</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/persian/iran-features-53961947?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_uzbek/11615/production/_110898117_de22.jpg" class="news-img" alt="BBC News Ўзбек хизмати &quot;Бобурий маликалар изидан&quot; номли уч қисмдан иборат ҳужжатли-драматик фильм суратга олди" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>14 Feb 2020</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#981. This Connor Ives Coat Is Fall&#x27;s Celebrity Breakout Piece</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Business</strong> &nbsp;|&nbsp; 
-        <a href="https://www.vogue.com/article/connor-ives-fall-coat-trend-kendall-jenner-kate-moss" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://assets.vogue.com/photos/6ae0f7aa9c8897947047dbd7/16:9/w_1280,c_limit/Coats_9x16_V2-1.jpg" alt="This Connor Ives Coat Is Fall&#x27;s Celebrity Breakout Piece" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://assets.vogue.com/photos/6ae0f7aa9c8897947047dbd7/16:9/w_1280,c_limit/Coats_9x16_V2-1.jpg" alt="This Connor Ives Coat Is Fall's Celebrity Breakout Piece" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>The fall season is known for many glorious things—leaf-peeping, Halloween, perhaps even some apple-picking—but true fashion people know it to be, above all else, one crucial thing: Coat season.</p>
-<p>After the sweltering summer months, fall is prime time to dust off your best outerwear, pull it out of the back of your closet, and once again make the coat the focal point. And without fail, every season, there’s an enduring style that always pops up on all of the cool it girls. . . a groovy Penny Lane coat, that is.</p>
-<p>Flash back to the 2000 classic film Almost Famous, and Penny Lane’s free-spirited wardrobe (worn by actor Kate Hudson) still feels extremely fresh. In fact, her shaggy, faux fur-trimmed coat is so iconic that has since been countlessly recreated by modern-day designers, and worn by celebrities such as Bella Hadid and Zoe Kravitz. But what if we told you. . . that there’s a new fall It coat in town this year. One that still feels Penny Lane-coded, but more unexpectedly so.</p>
-<p>Cue this season’s Connor Ives robe coat. First debuted during the American designer’s fall 2025 runway show, the luxurious outerwear is now having a moment. Made of a silk-satin base and trimmed with repurposed vintage fox fur along the collar and cuffs, this bohemian topper has already been spotted on several occasions this fall season—on A-listers like Kendall Jenner and Kate Moss, no less—despite its hefty price tag ($6,000 and up).</p>
-<p>Moss was one of the first trendsetters to rock it out on the streets—all the way back in January, in fact. The supermodel wore one of Ives’s shorter black silk robe coats, pairing it with a classic pair of light-wash skinny jeans. A few months later, Zoe Kravitz also wore a light-blue iteration while attending an SNL after-party with boyfriend Harry Styles. A star coat was born.</p>
-<p>This autumnal season, the slightly 1970s statement piece has only continued to grow in its power. Model Laura Harrier wore the same black version as Moss this month, with capri leggings and pointed pumps in L.A. Just this week, Kendall Jenner wore a long, cream style, finishing off her look with black high-waisted trousers and a tonal Chanel maxi tote.</p>
-<p>If you really think about it, it’s no wonder the Connor Ives coats are becoming a breakout hit of the season: Like the OG Penny Lane coats, they are a total no-brainer: You can pair them with your most discreet everyday basics, and the striking piece instantly does all of the work for your outfit. It makes a statement, but in a super low-lift way. Isn’t that what you want out of a splurge-worthy investment coat?</p>
-<p>Most importantly, though, the Ives coats are super cozy and plushy—perfect for those frigid fall days. It’s essentially a (chic) way to wrap yourself up in a snuggly blanket; only, you can also wear it out to dinner or a party and still look very put-together. Sounds like a win-win to us.</p>
-<p>Michelle Obama Brings American Style to Céline Dion’s Paris Comeback Show</p>
-<p>Kim Kardashian and Lewis Hamilton Have Found Their Loved-up Couple Style Rhythm</p>
-<p>A Brutally Honest Look at What Three Fashion People Bought—and Spent—in One Month</p>
-<p>Amal Clooney Isn’t Letting Go of Boho Just Yet</p>
-<p>Listen to The Run-Through with Vogue, a weekly podcast featuring the most exciting stories and hot takes from the worlds of culture, politics, sports and–of course–fashion</p>
-<p>The Vogue Runway app has expanded! Update to the latest version to see all Vogue content, as well as new features like our Runway Genius quiz, Group Chats, and posts from Vogue contributors.</p>
-<p>Become a Vogue Business Member! Join today to gain access to our latest series ‘Fashion’s Real Reset Starts Now’. The ultimate resource for fashion and beauty industry professionals.</p>
-<p>Explore the Runway Image Archive where you can access over 1.2 million runway images from past and present fashion shows.</p>
-<p>Never miss a story: Add Vogue.com to your preferred sources in Google.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.vogue.com/article/connor-ives-fall-coat-trend-kendall-jenner-kate-moss" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/uzbek/uzbekistan-51462034?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">BBC News Ўзбек хизмати &quot;Бобурий маликалар изидан&quot; номли уч қисмдан иборат ҳужжатли-драматик фильм суратга олди</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/uzbek/uzbekistan-51462034?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_uzbek/79EF/production/_109451213_feruzatwofinal.jpg" class="news-img" alt="Ўзбекистон аёллари Ипак Йўли бозорларини қандай қўлга олмоқда? - BBCUzbek тадқиқ этади" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>30 Oct 2019</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#4356. AI &#x27;hacker&#x27; finds 4 severe bugs in popular industrial control software in under 4 hours</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://www.theregister.com/security/2026/10/27/ai-hacker-finds-4-severe-bugs-in-popular-industrial-control-software-in-under-4-hours/5305811" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://image.theregister.com/5305858.jpg?imageId=5305858&amp;x=0&amp;y=0&amp;cropw=100&amp;croph=100&amp;panox=0&amp;panoy=0&amp;panow=100&amp;panoh=100&amp;width=1200&amp;height=683" alt="AI &#x27;hacker&#x27; finds 4 severe bugs in popular industrial control software in under 4 hours" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://image.theregister.com/5305858.jpg?imageId=5305858&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683" alt="AI 'hacker' finds 4 severe bugs in popular industrial control software in under 4 hours" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>One critical, three high-severity EPICS bugs could disrupt research experiments</p>
-<p>An autonomous AI agent discovered four vulnerabilities in the decades-old, widely used EPICS (Experimental Physics and Industrial Control System) open source software toolkit, including a critical flaw that could allow remote attackers to execute code on systems used to control particle accelerators and fusion experiments.</p>
-<p>The bugs include a critical, 9.8-rated under CVSS v3.1 integer overflow vulnerability (CVE-2026-114595), leading to an attacker-controlled out-of-bounds heap write and potentially remote code execution; an 8.2-rated, high-severity, improper message-length validation flaw (CVE-2026-114596), causing an out-of-bounds memory write and controller-process crash; a 7.5-rated, high-severity insufficient bounds checking bug (CVE-2026-114597) that allows out-of-bounds memory reads and process crashes; and a 7.5-rated, high-severity type confusion flaw (CVE-2026-114598) that can lead to denial of service and could expose adjacent memory contents.</p>
-<p>All four affect EPICS Base, which is used to operate some of the world's largest scientific research projects and facilities, and organizations should update to version 7.0.11, which includes the fixes.</p>
-<p>“Successful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition, corrupt memory, disclose sensitive information, or potentially execute arbitrary code,” the US Cybersecurity and Infrastructure Security Agency (CISA) warned in a Tuesday advisory.</p>
-<p>An AI agent called Cipher independently found all four previously unknown security holes - investigating and testing the unfamiliar EPICS system, and validating the four exploits - in three hours and 49 minutes, Causal Security co-founder Shubham Raj told The Register.</p>
-<p>“The initial investigation required no human intervention, followed by one instruction authorizing deeper exploitability testing in a secure environment,” Raj said.</p>
-<p>Earlier this year, Causal Security’s Cipher, which Raj described as “a fully autonomous super hacker that can reason across the technology stack,” found multiple critical attack paths in power-grid systems used across North America and Europe, prompting an October 8 security advisory from CISA.</p>
-<p>EPICS, originally developed by Los Alamos National Laboratory and Argonne National Laboratory, is used to build and remotely control distributed Supervisory Control and Data Acquisition (SCADA) systems, connecting operators to physical devices. It’s used in around 90 major scientific, university, and industrial projects and facilities globally including Argonne National Laboratory's Advanced Photon Source and ITER's fusion reactor control system.</p>
-<p>All four of these flaws illustrate how AI agents are really good at finding vulnerabilities in industrial and operational technologies - systems and equipment that used to be able to rely on obscurity to protect them from hackers - and add to defenders' concerns that it's only a matter of time until an autonomous cyberattack shuts down critical services, like power grids or water systems. These are the types of digital intrusions that can cause physical harm.</p>
-<p>Raj points to CVE-2026-114595, the critical integer-overflow vulnerability, as an example. “It allows attacker-controlled network data to cause an out-of-bounds heap memory write, with potential for remote code execution,” he told us.</p>
-<p>“EPICS controllers sit between operators and physical equipment, handling measurements, commands, and control functions,” he continued. “Operationally: Imagine a particle accelerator in the middle of an expensive experiment. An attacker could potentially crash a controller, interrupt critical measurements or control functions, and force operators to halt the experiment. That could mean lost experimental work, significant downtime, and expensive recovery.”</p>
-<p>Plus, if an attacker was able to develop an RCE exploit, this could allow them to “take control of the affected process, manipulate readings, interfere with control functions, or disrupt the equipment connected to it,” Raj said.</p>
-<p>The prerequisite for exploiting these vulns in a real scientific facility is being able to reach the vulnerable EPICS services on a facility's control network. But this could occur if the networks weren’t sufficiently segmented, or another system had access to the vulnerable EPICS network.</p>
-<p>“Once an attacker is able to find a network, which is either misconfigured or they are able to reach, it’s pretty easy to carry out the attacks,” Raj said, adding that exploitation wouldn’t require deep OT knowledge, or understanding of how particle accelerators or fusion reactors work. “Someone with conventional exploitation skills could investigate them, and increasingly capable AI systems could help develop exploits without requiring specialized OT expertise.”</p>
-<p>Manipulating specific physical processes does require additional knowledge, he added. “But an attacker doesn't need to understand the physics of a particle accelerator to disrupt the software controlling it. Crashing critical processes or interrupting monitoring and control can already have serious operational consequences. What's changing is that attackers may no longer need years of specialized expertise just to discover these weaknesses.” ®</p>
-<p>Quake AI is developing APIs to let autonomous agents access its services more efficiently</p>
-<p>PARTNER CONTENT: Learn what the flaws are, how far exploitation has gone, and how to get to full coverage fast with Tanium</p>
-<p>Good for its bottom line, not great news for yours, or for the PC and smartphone markets</p>
-<p>Keeping secrets is difficult in an open world, but we've done it before and must do it again</p>
-<p>Predicts slower growth as savings from automation hit price of extended deals</p>
-<p>Investigation finds businesses dominated govt meetings while communities were left out of decisions about AI Growth Zones</p>
-<p>It's more important than chips, 'leccy and the net, after all</p>
-<p>Not a bombshell, but it rivals pricier models on some tasks at a tenth of Astra's API price</p>
-<p>New rules also shut out solo developers, fledgling projects, and anyone who doesn't speak English</p>
-<p>The Magnificent Seven are galloping off with the profits, while the rest of the S&P 500 see no benefit, claims Apollo</p>
-<p>PLUS: US takes down Iranian propaganda sites; Marketing company asks 'Why Do We Have Your Information?' And more!</p>
-<p>PLUS: China upgrades smartphone surveillance tools; Ring eases anti-snooping stance; and more</p>
-<p>Voting village reports have been so successful, says Jeff Moss, that the whole of DEF CON will now be included</p>
-<p>Went at equivalent of $3.5B+ valuation for entire firm, though portion sold not specified</p>
-<p>On the plus side, infosec's a good bet for a long, stable career</p>
-<p>Daemonarchy is unaffiliated with the Linux original, built with AI help, and could complicate FreeBSD's debate over AI contributions</p>
-<p>Interesting new project from the minds behind SparkyLinux</p>
-<p>But learns tough lessons about AI in the process</p>
-<p>Increasing awareness and adoption, followed by increasing donations</p>
-<p>Persistent agents appeal to AI companies, but demand isn't obvious</p>
-<p>GNOME 51 is here, and Ubuntu interim releases are getting interesting again</p>
-<p>Contact usAdvertise with usWho we areNewsletter</p>
-<p>The Next PlatformDevClassBlocks and FilesSituation Publishing</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.theregister.com/security/2026/10/27/ai-hacker-finds-4-severe-bugs-in-popular-industrial-control-software-in-under-4-hours/5305811" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
-            </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#3469. Jonathan Taylor Trade: 3 Best Landing Spots for Colts Star Running Back</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.mensjournal.com/news/jonathan-taylor-trade-best-landing-spots-vikings-seahawks-broncos" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Will the Indianapolis Colts trade star running back Jonathan Taylor before the deadline?</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.mensjournal.com/news/jonathan-taylor-trade-best-landing-spots-vikings-seahawks-broncos" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
-            </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#2898. Southwest Credit Cards Boost Welcome Offers up to 90,000 Points (Limited Time)</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.nerdwallet.com/credit-cards/news/southwest-credit-cards-boost-welcome-offers-october-2026" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>In time for the holiday season, Southwest credit cards are offering new cardholders heftier welcome offers and a final chance to have those bonus points count toward a Companion Pass.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.nerdwallet.com/credit-cards/news/southwest-credit-cards-boost-welcome-offers-october-2026" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
-            </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#3964. 10 Qualities of Exceptional Advocates</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Business</strong> &nbsp;|&nbsp; 
-        <a href="https://www.psychologytoday.com/us/blog/the-recovery-coach/202610/10-qualities-of-exceptional-advocates" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2026-10/pexels-timur-weber-8560658.jpg?itok=KKrYWb00" alt="10 Qualities of Exceptional Advocates" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2026-10/pexels-timur-weber-8560658.jpg?itok=KKrYWb00" alt="10 Qualities of Exceptional Advocates" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>We’re all holding onto something we’re sure we can’t give up on, but research shows that letting go can boost our happiness a lot more than we might think.</p>
-<p>Self Tests are all about you. Are you outgoing or introverted? Are you a narcissist? Does perfectionism hold you back? Find out the answers to these questions and more with Psychology Today.</p>
-<p>Posted October 27, 2026
-
-|
-
-
-Reviewed by Margaret Foley</p>
-<p>If you’re like me, you probably have some role models, mentors, or idols you look up to and respect for their awe-inspiring skills, gifts. and talents. This is the case in almost every field, whether in the arts, entertainment, business, or government, and whether these idols are leaders, scientists, or athletes.</p>
-<p>If I asked you why you admire these individuals, you would likely be able to quickly list several of their positive qualities, such as honesty, personal integrity, talent, creativity, intelligence, or physical abilities.</p>
-<p>Similarly, I’ve been thinking recently about several people I admire who are advocates in the areas of social change, mental health, and humanitarian efforts. I’ve noticed there seems to be a common set of qualities among those who are highly skilled in fields that promote efforts to improve the lives of others.</p>
-<p>So here’s my list of 10 qualities that I think exceptional advocates often exhibit:</p>
-<p>Enthusiastic, driven, compassionate, caring. All of these characteristics convey the passion of exceptional advocates. Their work is more than a job requirement or a professional responsibility. It’s a calling and a lifelong mission.</p>
-<p>Great advocates are often the most knowledgeable person in the room (region, state, nation) on their area of focus. They are continually learning, plugged into current streams of information, and always ready to share their knowledge and expertise to educate others.</p>
-<p>Whether expressing themselves verbally or in writing, and regardless of the medium (print, video, social media), these amazing advocates communicate clearly, persuasively, and respectfully to share information and viewpoints, and to advance their mission.</p>
-<p>Without a clear goal, there is no clear focus and no clear path forward. Exceptional advocates have laser-sharp goals, whether the goal is passing helpful legislation, creating new programs, or garnering support for worthy causes.</p>
-<p>Great advocates seem to have connections everywhere, with extensive networks at all levels. They are adept at building partnerships and coalitions and in connecting people with useful resources. They are often the first person people go to for information, support, and advice.</p>
-<p>The most effective advocates know the power of collaboration and compromise. Not every battle can be won. Sometimes small victories are the only road to eventual success. These advocates know that flexibility is essential in moving steadily forward to achieve their longer-term goals.</p>
-<p>What does it mean to be inspiring? It’s hard to articulate, but great advocates move us, and they stir our thoughts and feelings. They give us hope for a brighter tomorrow, and they outline a path for how we can reach it.</p>
-<p>The best advocates not only inspire us, but they also instill in us a desire to pitch in and help out to collectively achieve a worthwhile goal. They show us how to raise our own voices to be heard and how to help others find their voice. They also remind us that we all matter and we all have a part to play.</p>
-<p>Advocacy is not a sprint; it’s a marathon. Important goals can take years or decades to achieve. Great advocates show up and keep showing up. They are not deterred by setbacks or disappointment. They are the first to arrive and the last to leave.</p>
-<p>In their hearts, great advocates are public servants. They do their work not for glory or fame, but for the quiet satisfaction of helping others and the steadfast belief that the work is the right thing to do and the only thing to do.</p>
-<p>While most of us may not reach the level of these exceptional advocates, we can certainly follow their example and try to learn how to use some of these same qualities in our own causes and passions.</p>
-<p>And remember, you don’t have to be exceptional. You just have to have a desire to make a difference and a willingness to put in a little work and effort toward your goals. Let’s get started.</p>
-<p>A version of this post also appears at davidsusman.com. Copyright 2026.</p>
-<p>Share this post
-    
-
-
-
-Facebook
-
-
-
-
-
-
-
-
-
-
-Bluesky
-
-
-
-
-
-Linkedin
-
-
-
-
-
-Email</p>
-<p>There was a problem adding your email address. Please try again.</p>
-<p>David Susman, Ph.D. is a clinical psychologist, mental health advocate, and Executive Advisor for Clinical Services for the Kentucky Department of Behavioral Health, Developmental and Intellectual Disabilities.</p>
-<p>Get the help you need from a therapist near you–a FREE service from Psychology Today.</p>
-<p>Psychology Today © 2026 Sussex Publishers, LLC</p>
-<p>We’re all holding onto something we’re sure we can’t give up on, but research shows that letting go can boost our happiness a lot more than we might think.</p>
-<p>Self Tests are all about you. Are you outgoing or introverted? Are you a narcissist? Does perfectionism hold you back? Find out the answers to these questions and more with Psychology Today.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.psychologytoday.com/us/blog/the-recovery-coach/202610/10-qualities-of-exceptional-advocates" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
-            </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#2319. Drought-Tolerant Perennials for Mid-Atlantic Gardens</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.finegardening.com/article/drought-tolerant-perennials-for-mid-atlantic-gardens" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://images.finegardening.com/app/uploads/2026/10/23022115/123_EpimediumgrandiflorumLilafee_credit-Ed-Lyon-scaled-e1688693640836-thumb-1x1.jpg" alt="Drought-Tolerant Perennials for Mid-Atlantic Gardens" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://images.finegardening.com/app/uploads/2026/10/23022115/123_EpimediumgrandiflorumLilafee_credit-Ed-Lyon-scaled-e1688693640836-thumb-1x1.jpg" alt="Drought-Tolerant Perennials for Mid-Atlantic Gardens" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>When we think of drought-tolerant plants, we often picture prairie plants with deep roots that can reach far into the soil for moisture. But after years of gardening in the Midwest and Mid-Atlantic, I’ve learned that deep roots aren’t the only reason a plant can withstand dry conditions. Some of the most resilient plants have surprisingly shallow root systems.</p>
-<p>The following three perennials have impressed me with their ability to handle drought once established. Two are excellent choices for sunny gardens, while the third proves that even difficult, dry shade can support beautiful plants.</p>
-<p>Read More: Best Plants for Your Shopping List in the Mid-Atlantic</p>
-<p>Size: 12 to 30 inches tall and 12 to 18 inches wide</p>
-<p>Conditions: Full sun; dry to moderately moist, well-drained soil</p>
-<p>Butterfly weed is one of those plants that I wish more gardeners would grow. With all the encouragement to plant milkweed for monarch butterflies, many people immediately think of common milkweed. But common milkweed can spread vigorously through rhizomes and seed, sometimes crowding out neighboring plants. Butterfly weed offers a much more compact alternative, with a wonderful mounding habit and gorgeous bright orange flowers.</p>
-<p>I love orange in the garden and use it extensively, particularly alongside white flowers. But if orange isn’t your favorite color, there are yellow-flowered selections of butterfly weed, too. I recently visited a friend’s gravel garden in Wilmington, Delaware, where orange and yellow plants were growing together and producing seedlings with different flower colors.</p>
-<p>As a prairie plant, butterfly weed needs excellent drainage. Its long, tuberous roots help it withstand dry conditions once established, but those roots also mean it’s best to choose a permanent location rather than move mature plants around the garden. Be patient during establishment. Butterfly weed may take a little time to get going, but it can live for many years. And beyond its value to pollinators, I think it’s every bit as pretty as the more traditional ornamental perennials we grow.</p>
-<p>Conditions: Full sun; dry to moderately moist, well-drained soil</p>
-<p>If you asked me to name my favorite perennials, lesser calamint would probably make my top five. I spent about 25 years gardening in the Madison, Wisconsin, area, where I was fortunate to be surrounded by some remarkable horticulturists. Roy Diblik was among those who introduced many of us to this plant through his work at Northwind Perennial Farm. Once we saw how well it performed, we started growing it ourselves.</p>
-<p>Lesser calamint produces masses of tiny white flowers that remind me of baby’s breath. It has a lovely, rounded habit, and that fine texture is especially effective when mixed with larger-leaved or coarser plants. There are selections with pale blue or lavender flowers, but I’m perfectly happy with the bright white blooms. When the plant is in full flower, it can be absolutely covered with pollinating insects.</p>
-<p>And this is one tough perennial. I’ve seen lesser calamint used in difficult roadside plantings where it performed exceptionally. The important thing is to keep excess moisture away from its roots. Give it plenty of sunlight and well-drained soil, and it can handle dry conditions remarkably well.</p>
-<p>Gardeners sometimes worry about plants that seed around, but I’ve never found lesser calamint particularly troublesome. It may produce a few seedlings, but they’re easy to recognize and remove. It’s a reliable, good-looking plant that plays well with others.</p>
-<p>Size: 9 to 18 inches tall and 12 to 24 inches wide</p>
-<p>Conditions: Partial to full shade; well-drained soil; tolerates dry shade once established</p>
-<p>Epimedium is one of my favorite examples of why we shouldn’t assume that drought-tolerant plants need deep roots. Its roots are shallow and fibrous, forming a relatively flat mat that’s easy to lift when dividing plants. Looking at that root system, you might expect epimedium to be one of the first plants to suffer during a drought. But I’ve seen exactly the opposite.</p>
-<p>Several years ago, I attended an American Public Gardens Association conference in Toronto during a severe drought. We visited a garden where the perennial borders were suffering terribly. Nearly everything had wilted from the lack of moisture, yet the epimedium foliage looked as though it had been watered all along. That experience has stayed with me.</p>
-<p>Not every epimedium is equally drought tolerant, but many selections perform wonderfully in dry shade once established. They’re especially useful as ground covers beneath trees and in woodland gardens.</p>
-<p>One of my favorites to recommend is ‘Lilafee’ (Epimedium grandiflorum ‘Lilafee’), a vigorous selection with lovely purple flowers. Epimedium flowers are delicate, almost like little fairies hovering above the foliage. They’re the sort of flowers that make you stop, kneel down, and look closely. I think we need more plants that encourage us to slow down and enjoy our gardens.</p>
-<p>Epimediums can be expensive, particularly when you’re trying to establish a large planting. My advice is to buy a couple each year rather than waiting until you can afford a dozen. Over time, those few plants can develop into a beautiful planting, and you’ll be glad you started.</p>
-<p>To learn more about these plants from Ed, as well as five more drought-tolerant plant recommendations, check out our podcast: Episode 4: Plants for Drought.</p>
-<p>Problem-Solving Plants for Challenging Shade Garden Conditions</p>
-<p>Discuss this article or ask gardening questions with a regional gardening expert on the Gardening Answers forum.</p>
-<p>And for more Mid-Atlantic regional reports, click here.</p>
-<p>Ed Lyon is a retired professional horticulturist and gardener with 25 years of experience in public gardens, most recently as director of Reiman Gardens at Iowa State University in Ames, Iowa. He is the author of Growing the Midwest Garden and currently resides in Pennsylvania.</p>
-<p>Photos by Ed Lyon unless otherwise noted.</p>
-<p>Johnny’s Selected Seeds Connecta® Cultivation Kit</p>
-<p>Fine Gardening receives a commission for items purchased through links on this site, including Amazon Associates and other affiliate advertising programs.</p>
-<p>The Crevice Garden: How to make the perfect home for plants from rocky places</p>
-<p>Fine Gardening receives a commission for items purchased through links on this site, including Amazon Associates and other affiliate advertising programs.</p>
-<p>Dramm 17050 50′ ColorStorm 1/2″ Standard Soaker Hose</p>
-<p>Fine Gardening receives a commission for items purchased through links on this site, including Amazon Associates and other affiliate advertising programs.</p>
-<p>Get our latest tips, how-to articles, and instructional videos sent to your inbox.</p>
-<p>Succulents have sparked a lot of interest in recent years, and many people have taken on the hobby of growing them in their homes. As gardeners expand their succulent collections,…</p>
-<p>Try ‘Gold Nugget’ hens and chicks in your garden and containers I try not to get swept up in new plant fads, but every once in a while something is…</p>
-<p>While these plants can take the cold, they may need special care to thrive in certain environments. Follow these guidelines to ensure that your hardy cacti and succulents last for…</p>
-<p>Take your passion for plants to the next level</p>
-<p>"As a recently identified gardening nut I have tried all the magazines and this one is head and shoulders above the pack."</p>
-<p>DIY Succulent Pumpkin Centerpiece for Fall Fall is one of the best times of year! It means colorful changing leaves, sweet treats, family gatherings, and of course seasonal decorations! I…</p>
-<p>Get the latest how-to and design inspiration articles plus special offers sent straight to your inbox.</p>
-<p>Fine Gardening receives a commission for items purchased through links on this site, including Amazon Associates and other affiliate advertising programs.</p>
-<p>To unlock this page,
-		    Become a Member Today.Already a member? Log in</p>
-<p>Join today to view Member-Exclusive articles and videos, plus ALL our regional content.</p>
-<p>To unlock this page,
-		    Join Now.Already a member? Log in</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.finegardening.com/article/drought-tolerant-perennials-for-mid-atlantic-gardens" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
-            </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#988. Bella Hadid Knows the Power of a Pair of Casual Stilettos</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Business</strong> &nbsp;|&nbsp; 
-        <a href="https://www.vogue.com/article/bella-hadid-casual-stilettos-2026-10-27" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://assets.vogue.com/photos/6ae0ec419c8897947047d724/16:9/w_1280,c_limit/BGUS_3726059_002.jpg" alt="Bella Hadid Knows the Power of a Pair of Casual Stilettos" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://assets.vogue.com/photos/6ae0ec419c8897947047d724/16:9/w_1280,c_limit/BGUS_3726059_002.jpg" alt="Bella Hadid Knows the Power of a Pair of Casual Stilettos" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Fashion month is over. The Victoria’s Secret fashion show is in the rearview. Yet, Bella Hadid stays in her heels.</p>
-<p>Today in Los Angeles, the model opted for an aughts-inspired look while out running errands. Hadid was seen wearing a cropped graphic navy tee with a pair of mid-rise bootcut Frame jeans, which she toughened up with an oversized, slouchy black Balmain leather jacket and an hourglass-shaped Balmain Sphynx bag.</p>
-<p>But Hadid’s footwear choice elevated the off-duty look from errands ’fit to runway-ready. Instead of a pair of sneakers, ballerinas—or even sneakerinas—she opted for a pair of knife-sharp brown Prada slingbacks with a puffed-up rosette on the vamp. It’s the kind of detail that transforms a look from laidback to intentional: while jeans and a tee are the pinnacle of casual, there’s nothing nonchalant about a stiletto.</p>
-<p>Next time you find yourself at a loss for what to wear, consider borrowing from Bella Hadid’s latest outfit formula and create a little tension between relaxed clothing and a high-maintenance shoe. It’s the perfect fashion vehicle to announce, “I care—but not too much.”</p>
-<p>Michelle Obama Brings American Style to Céline Dion’s Paris Comeback Show</p>
-<p>Kim Kardashian and Lewis Hamilton Have Found Their Loved-up Couple Style Rhythm</p>
-<p>A Brutally Honest Look at What Three Fashion People Bought—and Spent—in One Month</p>
-<p>Amal Clooney Isn’t Letting Go of Boho Just Yet</p>
-<p>Listen to The Run-Through with Vogue, a weekly podcast featuring the most exciting stories and hot takes from the worlds of culture, politics, sports and–of course–fashion</p>
-<p>The Vogue Runway app has expanded! Update to the latest version to see all Vogue content, as well as new features like our Runway Genius quiz, Group Chats, and posts from Vogue contributors.</p>
-<p>Become a Vogue Business Member! Join today to gain access to our latest series ‘Fashion’s Real Reset Starts Now’. The ultimate resource for fashion and beauty industry professionals.</p>
-<p>Explore the Runway Image Archive where you can access over 1.2 million runway images from past and present fashion shows.</p>
-<p>Never miss a story: Add Vogue.com to your preferred sources in Google.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.vogue.com/article/bella-hadid-casual-stilettos-2026-10-27" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
-            </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#4353. Fuzzers vs. AI: Comparing Fuzzilli and BigSleep on JavaScript Engines</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://projectzero.google/2026/10/fuzzing-v-AI.html" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://projectzero.google/images/preview_image.png" alt="Fuzzers vs. AI: Comparing Fuzzilli and BigSleep on JavaScript Engines" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://projectzero.google/images/preview_image.png" alt="Fuzzers vs. AI: Comparing Fuzzilli and BigSleep on JavaScript Engines" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Project Zero compared two automated tools used by Google to find vulnerabilities in Chromeâs JavaScript engine, V8, on a regular basis. Fuzzilli is a generative JavaScript engine fuzzer and BigSleep is an LLM-based bug finding system. In the past six months, BigSleep found more vulnerabilities than Fuzzilli (45 versus 37) with a 25% overlap in the specific bugs reported. Since this comparison methodology has a tendency to underestimate overlap, we also performed dedicated experiments to test theoretical overlap in vulnerabilities reported since 2023. These experiments estimated overlap at roughly 60%. Regardless of which value is accurate, a substantial portion of vulnerabilities were discoverable by only LLMs or only fuzzing. While it is extremely promising that LLMs have become able to find so many vulnerabilities so quickly, fuzzing and LLMs are still complementary approaches. We recommend vendors perform both fuzzing and agentic analysis of their code to maximize the number of vulnerabilities that get reported before they impact users.</p>
-<p>Fuzzing has long been successfully applied to software projects such as Chrome or V8 (Chromeâs JavaScript engine) to detect bugs. Recently, the arrival of powerful LLMs able to read, reason about, and write code is causing a transformative change to software development and software security. With hundreds, sometimes thousands of new bugs and vulnerabilities having been discovered in well-fuzzed targets, a natural question arises: how do new LLMs compare to âtraditionalâ fuzzers? Are they starting to replace them or do the two approaches complement each other? To help answer this, we look at three key questions:</p>
-<p>How many bugs does each approach find in the real world?</p>
-<p>What is the overlap between the two approaches?</p>
-<p>What is the âshapeâ of bugs discovered by one system but not the other?</p>
-<p>For this blog post, we will limit ourselves to two concrete systems: Fuzzilli, a JavaScript engine fuzzer, and BigSleep, an agentic bug finding system. Both of these systems run in production and automatically look for bugs in newly added code, which makes them fairly directly comparable. Specifically, Fuzzilli runs continuously across many instances, with the first ones usually picking up new changes within a few hours, while BigSleep currently runs once per day and is prompted to review new commits and write proof-of-concept testcases for any bugs it discovers. Both systems report bugs through Clusterfuzz, which will do basic crash triaging, then file bug reports in Chromeâs issue tracker.</p>
-<p>We also limit ourselves to V8 as a target, a high-performance JavaScript and WebAssembly engine with a sophisticated and mature testing and fuzzing setup. In particular, Fuzzilli is a special-purpose fuzzing tool designed to find bugs in these engines. The usually complicated nature of these bugs makes for an interesting âplaygroundâ to compare the two approachesâ ability to find deep and complex bugs in well-tested software. We leave it to future work to perform similar analysis on a broader set of targets, fuzzers, and agentic bug finding systems.</p>
-<p>We will now look into each of the three main questions in a dedicated section. Each section will first summarize the general approach, then describe the methodology in detail (often as bullet points, so you can skip those blocks if you donât care too much about the details) before exploring the results. We conclude with an attempt at interpreting the results to get a picture of the current state of fuzzing vs. AI.</p>
-<p>This is the simplest part to analyze, although with some caveats weâll see in a bit. The basic idea is to query issues from Chromiumâs bugtracker (where V8 bugs are tracked) and extract various statistics from there. This is especially easy since thereâs a dedicated hotlist for each of the two systems. We limit our analysis to the six months from April to September 2026 as the automatic BigSleep pipeline only became active in April this year. As such, our raw data comes from the following two bug tracker queries:</p>
-<p>Fuzzilli: hotlistid:5433121 created:2026-04-01..2026-09-30</p>
-<p>BigSleep: hotlistid:8067258 created:2026-04-01..2026-09-30</p>
-<p>From there, the raw numbers of bug reports are:</p>
-<p>Small win for BigSleep. However, this includes all types of bugs, and BigSleep initially also found a lot of configuration and integration issues in V8, for example crbug.com/503869331 where the unsafe flag blocking mechanism didnât work properly yet. These are legitimate issues, but less relevant for our comparison since thereâs little real-world security impact. One easy way to get rid of these is to look specifically at vulnerabilities by limiting the results to type:vulnerability:</p>
-<p>Suddenly a clear win for the fuzzers? Not quite. There are still some problems with this data, notably duplicates and unactionable reports (e.g. bugs closed as WAI). At first, this seems like a simple thing to fix: just include another constraint such as status:(fixed | verified). Unfortunately, things are a bit more complicated. Take for example Fuzzilli bug crbug.com/511935486. The events on this bug are basically:</p>
-<p>The bug is filed by Clusterfuzz on May 11 and assigned to an engineer</p>
-<p>The bug is closed by Clusterfuzz as the testcase no longer reproduces later that same day</p>
-<p>As such, this bug received zero developer interactions. Most likely what happened here is that this bug was a duplicate of another bug, crbug.com/511210507, but Clusterfuzz didnât realize it as the crash signature (derived from the stack trace) was slightly different. When the other bug received a fix, the testcase stopped reproducing on Clusterfuzz, which closed the issue.</p>
-<p>Maybe the best thing we can do is to look at âactionableâ bugs, defined as those that are not marked as duplicates or WAI and that received at least one fix commit referencing them. Then, looking at only Type-Vuln bugs filters out a lot of the less-relevant BigSleep bugs, even though these were âactionableâ. With that, the final picture looks like this:</p>
-<p>So in terms of vulnerabilities, itâs roughly a tie (small advantage BigSleep) at the moment: 45 vs. 37.</p>
-<p>This naturally raises the question of cost: how expensive is each of the two approaches and what does that mean in terms of cost-per-bug? Unfortunately, itâs challenging to make a comparison at this stage in the research. While some effort has been dedicated to making Clusterfuzz more efficient, similar effort has not been expended for Big Sleep and neither system is particularly calibrated for an optimal cost-per-bug ratio.</p>
-<p>The next question is how much these approaches overlap each other. For this, our approach is twofold: we first attempt to find an answer in the bugtracker, by trying to identify bugs discovered by both systems. Next, we run a dedicated experiment in which we let BigSleep try to rediscover old Fuzzilli bugs.</p>
-<p>The basic idea is to see which bugs were found by both systems, so weâre effectively looking for duplicate bug reports. Similar to part 1, there are a few steps we need to take to ensure we get a somewhat accurate picture:</p>
-<p>First, we look for bugs filed by one system that get deduplicated into a bug filed by the other. For example crbug.com/522410841 which is a duplicate of crbug.com/522860268. This is a clear overlap.</p>
-<p>Next, we need to take into account that many âunactionableâ reports (those with zero associated fixes) are often duplicates. For those reports, we need to find the commit that fixed them, then look at the bug associated with that commit, and treat these two bugs as duplicates. This can be a multi-prong relationship: both bug X found by BigSleep and bug Y found by Fuzzilli might be a duplicate of bug Z reported by someone/something else. In that case, that bug still counts as overlap.</p>
-<p>Then, we need to realize that many duplicates never receive a bugtracker entry since they are already deduplicated at the Clusterfuzz level (since both Fuzzilli and BigSleep rely on Clusterfuzz for basic triage and bug filing). As such, we need to query Clusterfuzzâs underlying database to find more duplicates.</p>
-<p>Finally, we need to decide what to do with separate bugs that get fixed by the same CL, for example the four bugs fixed by crrev.com/c/7965120. While this can legitimately happen for distinct bugs, itâs probably more likely for the bugs to be duplicates (such as in this case), and so we count them as such.</p>
-<p>With all the different types of deduplication, we get this final picture:</p>
-<p>Again, looking at just the actionable vulnerability reports (likely the best measure), we see an overlap of roughly 25% (20 out of a total of 81), with a slight majority of these found first by Fuzzilli and later by BigSleep.</p>
-<p>The second way to measure the overlap is to run a dedicated experiment in which we try to re-discover bugs found by one system in the past using the other. Specifically, here we try to re-discover old Fuzzilli bugs using a BigSleep setup thatâs as close to the production configuration as possible. For each bug we collect the commit that (likely) introduced the bug, and ask the agent to review those changes just as in the production CI environment. Note that the other direction, trying to rediscover past BigSleep bugs with Fuzzilli is more difficult to set up, since fuzzers cannot easily be given a similar âstarting pointâ. Moreover, for many of these bugs we already know the outcome of such an experiment: the majority of âhistoricâ BigSleep bugs (e.g. those from 2025) were found after fuzzers like Fuzzilli had already been fuzzing vulnerable builds for months, sometimes years. So they would most likely also not rediscover them in an experiment (except perhaps in a few cases where Fuzzilli was since updated to support new language features). Similarly, in production, BigSleep only reports crashes with a delay of 1-2 days (as thereâs currently only one run per day). As such, fuzzers also get a head-start there.</p>
-<p>In more detail, here is how the experiment is set up:</p>
-<p>We start with a list of historic Fuzzilli bugs (from early 2023 until mid-2026) by querying the bug tracker hotlist. This gives us around 1150 raw bugs.</p>
-<p>We restrict this to only type:vulnerability as these are the types of bugs we care most about and will remove some ânoiseâ as above. We are left with roughly 600 vulnerabilities.</p>
-<p>Next, we filter this list down to bugs that reproduce in the environment used by the agent. This involves two parts:</p>
-<p>Bugs that reproduce on an x64 debug+asan build of the d8 shell as provided by Chromeâs public build infrastructure. This is important because many bugs only reproduce in special builds, for example because they are architecture-specific or need certain compile-time features.</p>
-<p>Bugs that can be reproduced without special flags. The problem here is that fuzzers often set custom flags, either to enable in-development features (e.g. --experimental-wasm-jspi in crbug.com/361123483) or to turn on different fuzzing modes that make certain types of bugs easier to discover (e.g. --deopt-every-n-times in crbug.com/362784006). However, we canât let the agent set arbitrary flags on historic V8 builds as these didnât have a âsafe-flags onlyâ mode (leading to many false-positive crashes), and we also donât want to tell the agent which flags it should use for a given challenge as that would be a hint. As such, for simplicity we limit ourselves to bugs that can reproduce with a standard set of flags (--fuzzing, --jit-fuzzing, --expose-gc) and only allow the agent to set those.</p>
-<p>We now perform some deduplication similar to what we did above to identify implicit duplicates, which we remove. This leaves us with a final number of 112 bugs.</p>
-<p>For a realistic comparison, we then convert these bugs into âcode review challengesâ similar to the ones used by the production BigSleep pipeline. For that, we try to identify the commit that (likely) introduced the bug, for example based on bisection. We note that this skews the comparison against BigSleep for two reasons:</p>
-<p>We likely sometimes identify the wrong commit that is unrelated to the bug in question, making the task harder or even impossible.</p>
-<p>We only have one commit per bug, while in the real world, the agent might discover the bug from another, subsequent commit that touches a similar part of the codebase.</p>
-<p>We now run the agent for 25 attempts on each commit. The agent is asked to find bugs related to the commit and prove their existence by writing a testcase that crashes the vulnerable build. The attempt is terminated once a crash is found, so each attempt can report at most one bug. We use essentially the same configuration that was used in production BigSleep at that time, including the same underlying model: Gemini 3.6 flash.</p>
-<p>Finally, we run some post-processing on the results to check if the agent found the ârightâ bug or an unrelated one. For that, we check that the testcase crashes the pre-fix revision but not the post-fix revision. This is imperfect but fairly easy to implement.</p>
-<p>Here are the results from the experiment:</p>
-<p>Starting from just the commits that (likely) introduced the bugs, BigSleep was able to re-discover ~62% of the original bugs, while finding a different (but by now fixed) bug for another ~12% of commits. On around 26% of the commits it failed to find any bugs.</p>
-<p>One thing to worry about with experiments such as this one is memorization: the LLM remembering specific bugs from its (pre-)training data and as such having an easier time âre-discoveringâ them during evaluation. We can try to get some idea of the effect of this by looking at the success rates for bugs from different time spans, e.g. every half-year period for which we have bugs in the data set. If there was memorization, weâd expect higher success rates (both for a single attempt and for the combined run) on bugs prior to the learning data cutoff of the model. Here are the results for our experiment:</p>
-<p>For the model used in this experiment (Gemini 3.6 flash), the knowledge cutoff date is March 2026. Combining that with the fact that in early 2026, Chrome bugs would only become publicly visible after ~3 months, the effective knowledge cutoff for Fuzzilli bugs should be around Jan 2026. Looking at the data, there seems to be no statistically significant amount of memorization pre-2026. We note, however, that this may be different for other models or future model generations and as such recommend that this be re-evaluated for similar experiments in the future.</p>
-<p>A follow-up question we might ask is how the overlap compares with âdifficultyâ. For example, in the best case a system like BigSleep would easily find issues that fuzzers struggle with and vice versa. In that case, budget that was previously spent on long fuzzing sessions may now be re-allocated and put to different uses. Here are the results of analysing this, where âbug difficultyâ is measured by the time it took Fuzzilli to discover the bug:</p>
-<p>While we do get a statistically significant result here (although not of particularly great magnitude), it actually points in the other direction! Bugs that are hard to find for a fuzzer are likely also hard to find for an AI agent. As such, those fuzzers should probably be kept running for now.</p>
-<p>Another thing we can look at is a per-component breakdown of the bugs and their rediscovery rates:</p>
-<p>Interestingly, the overlap is significantly smaller for compiler bugs. This is the area where Fuzzilli probably specializes most in, which may explain the results. Later on (in part 3), weâll also develop another hypothesis for why (some) bugs in the compilers may be more difficult to rediscover for BigSleep.</p>
-<p>A final question is how much the specific prompting played a role in the performance of the AI agent. For that, we run two quick follow-up experiments, only on the bugs that werenât previously re-discovered and with different prompts:</p>
-<p>Instead of starting from commits, we start from the vulnerable file or function. This may be an easier starting point but is still a fairly realistic setup since both can for example be obtained by extracting modified files and functions from a given commit.</p>
-<p>Instead of asking the agent to find memory corruption vulnerabilities (what we care most about), we specifically tell it that assertion failures and similar crashes are also desirable.</p>
-<p>Running these two experiments with only 5 attempts per bug (instead of the 25 used in the main experiment), the agent re-discovered 10 additional bugs in total: 8 from the different starting points and 7 with the rephrased prompt (with 5 found in both runs).</p>
-<p>In total, combining these results with our original experiment, we get the following picture:</p>
-<p>So the share of âcorrectâ bugs found climbs to ~70%, and we find some kind of bug for ~84% of starting points. However, for fairness it should be noted that equivalent tweaks to a fuzzer could likely also result in higher discovery rates for certain bugs, so the results of this follow-up experiment should be treated with some caution.</p>
-<p>The main results from our two angles are:</p>
-<p>In production, the overlap is noticeable but not substantial at around 25%.</p>
-<p>In our experiment, overlap was around 60% of historic Fuzzilli bugs (70% with additional runs that used different prompts).</p>
-<p>The overlap is not uniformly distributed:</p>
-<p>Bugs that are difficult for a fuzzer to find are more likely to also be difficult to find for an agent, so thereâs more overlap on âeasyâ bugs.</p>
-<p>The overlap seems to be smaller in the JIT Compilers and higher in the rest of the engine.</p>
-<p>From just the experiment, we might expect a higher overlap in production. However, there are probably a few factors that prevent(ed) this:</p>
-<p>Thereâs a limited time window for overlaps: once a bug reported by either system is fixed, the other system no longer has a chance to rediscover it (as the bug wonât reproduce on Clusterfuzz and will therefore be discarded).</p>
-<p>Our experiment only looked at a subset of Fuzzilli bugs that reproduce on a standard x64 d8 fuzzer build and without special flags. In production, each system has access to slightly different and specialized builds, as well as different runtime flag constraints, and there the overlap is potentially smaller.</p>
-<p>Pipeline hiccups such as overloaded servers or bugs in the automation likely prevented a number of commits from being reviewed by BigSleep in the last months, so bugs introduced by them may have been missed.</p>
-<p>Since its introduction in April, the model underlying the BigSleep pipeline has been upgraded multiple times. Earlier models likely performed worse, and we expect future models to perform better.</p>
-<p>In this section, we will first look at three case studies of bugs found by one system but not the other, then attempt to draw conclusions from these and other bugs.</p>
-<p>This bug is a nice example of BigSleep benefiting from the underlying modelâs reasoning capabilities to discover a variant that was (likely) too complex to trigger by a fuzzer in a reasonable amount of time. Itâs also a good example to show the general working of an agentic bug finding system.</p>
-<p>Before diving into the bug specifics, we first need to look at some JavaScript internals, specifically variable initialization. In JavaScript, variables declared with the let or const keywords cannot be used before they are initialized, and attempting to do so will lead to an exception (âReferenceError: Cannot access 'foobar' before initializationâ). In V8âs terminology, these variables reside in a âtemporal dead zoneâ (TDZ) until they are initialized. Internally, V8 sets variables in the TDZ to a special sentinel value, the_hole, and then checks for this value when accessing the variableâs content.</p>
-<p>To limit the performance impact of these hole-checks, V8âs bytecode compiler implements an optimization (behind the default-enabled --ignition-elide-redundant-tdz-checks flag) to identify redundant checks and subsequently remove them. The idea here is to identify âdominatingâ checks where it can then be guaranteed that a hole-check has already been performed for a given variable on all possible paths leading to the current position.</p>
-<p>This is a security-relevant optimization as an incorrectly removed hole-check would result in the internal the_hole value leaking to JavaScript code, a condition that has historically been exploitable (although new mitigations for this bug class have since shipped).</p>
-<p>The original bug (issue 40071027 - discovered two years earlier by Fuzzilli!) involved do-while loops containing a break statement. In a do-while loop, the loop condition evaluates after the body. If the condition contains an assignment to a variable, the bytecode compiler will mark the variable as initialized. However, if a break statement executes in the loop body in the first iteration, then the condition will never execute. The bytecode compiler originally failed to account for this, leading to an incorrectly omitted hole check and subsequent leak of the_hole value.</p>
-<p>To fix this, the implementation of BytecodeGenerator::VisitDoWhileStatement was modified in the following way:</p>
-<p>Specifically, the patch works by creating a HoleCheckElisionScope for processing the condition code in case the loop contains break statements. This means that any updates to the TDZ state of variables will be discarded once the scope object is destroyed. As such, code after the loop will see the previous TDZ state (which is the correct behavior in this case).</p>
-<p>The BigSleep agent began its analysis by examining the patch to VisitDoWhileStatement, realizing that the fix relied on loop_builder.break_labels()->empty() to decide if a protective HoleCheckElisionScope was required. It then began creating and testing various hypotheses for scenarios in which no break statement was registered with a given loop but the condition would still be skipped at runtime. For example, it hypothesized that a try-catch in combination with a throw inside the loop might confuse the hole-check elision logic. It then investigated how try-catch was implemented in the bytecode compiler and concluded that this was handled correctly.</p>
-<p>Eventually, the agent started investigating labeled breaks, which allow directly breaking out of inner loops. It hypothesized that these might not be handled correctly and continued to investigate how these were being processed, for example by studying the logic in BytecodeGenerator::VisitBreakStatement. This time, it seemed to have identified a real flaw: in the case of nested breaks, the inner loop was apparently not being informed of the existence of a break statement! It therefore formulated the following vulnerability hypothesis:</p>
-<p>The agent then began writing a testcase to prove the existence of this bug. The initial attempt with simply two nested loops and a label failed, however, as the bytecode compiler would add another protective scope object for the labeled block. To work around this, the agent decided to use a switch statement. When handling a switch statement, the bytecode compiler uses a HoleCheckElisionMergeScope to compute the intersection of initialization states across all branches. By ensuring that the variable was initialized in a default case, the merge logic then concluded that the variable was correctly initialized on all paths.</p>
-<p>With that, the agent had everything in place to produce a testcase to demonstrate the vulnerability. Below is the agentâs PoC:</p>
-<p>We can see how this bug would be difficult for a fuzzer to find since the testcase is quite complex. While a coverage-guided fuzzer would have received rewards for triggering individual code paths (such as the handling of labeled break, the switch statement, the do-while loop, etc. in the parser), there is no additional reward for putting these together âin the right wayâ and so ending up with a testcase like this is quite difficult.</p>
-<p>This bug is an example of a relatively simple bug type that is challenging to discover with standard fuzzing approaches.</p>
-<p>To understand this bug, it is necessary to briefly look into exception handling in V8. Take the following example JavaScript code:</p>
-<p>Here, we have a function consisting of a try-catch block in which an exception is raised. Running this in d8 with --print-bytecode, we can see the internal bytecode that the engine generates to execute the JavaScript code:</p>
-<p>For the purpose of this bug, the relevant part is mostly the last line of the output. Here, the bytecode essentially says âif there is an exception while the PC is between offset 3 and 6 in this bytecode, then execution should continue at offset 6 (the start of the exception handler)â.</p>
-<p>The agent spotted the bug while looking at the following function, responsible for writing the handler table data structure in memory:</p>
-<p>Here, the int offset is being combined with a few other bits of data into a new int value. As such, the handler_offset cannot have the full integer range in the new field, possibly leading to integer truncation issues. The agent then investigated the specific bounds of these values and realized that the HandlerOffsetField had only 28 bits (allowing for 256MB) while the maximum bytecode size was 512MB! From there it was relatively simple to craft a testcase that crashes, simply by creating a huge function (resulting in >256MB of bytecode) with an exception handler at the end, then triggering an exception inside of it. The result is a jump to a wrong bytecode offset, a primitive thatâs easily exploited. Here is the relevant part of the testcase:</p>
-<p>Such a testcase would again be difficult to craft by a fuzzer as the fuzzer isnât rewarded for creating large code (at least not with generic coverage feedback). In fact, the fuzzer is likely even actively discouraged from finding this bug since generating and executing large bytecode takes some time (in debug builds, the testcase generated by the agent needs a few seconds to trigger) and would therefore probably have led to timeouts during fuzzing.</p>
-<p>This bug is a good example of a type of bug that is likely difficult to find just by looking at (one part) of the source code. It was originally discovered by Fuzzilli and not rediscovered by any of the experiments from part 2.</p>
-<p>Consider the following piece of JavaScript code:</p>
-<p>Here we create multiple variables holding values of different types. Note, however, that we never declare the type of a variable, and that variables can hold values of different types throughout their lifetime (i first contains an integer, later a string). What we see here is that JavaScript is a dynamically typed language, and so variables (and also object fields, etc.) have no fixed type. However, the actual runtime values still need to have a type: the engine somehow needs to know that foobar is a string value and that certain operations (e.g. substring search) can therefore be performed on it. Conceptually, this is possible by representing runtime values with a struct such as</p>
-<p>However, this is somewhat inefficient since we now need something like 16 bytes to represent a simple 4-byte integer at runtime. As such, modern JS engines use clever tagging schemas, which rely on unused pointer bits to encode type information. Specifically, in V8 the JSValue type is a tagged pointer (or just tagged for short) which stores one bit of type information in the least-significant bit:</p>
-<p>As such, to figure out the type of a value at runtime, the engine first looks at the least-significant bit. If that is zero, the value can be âuntaggedâ to obtain the integer value by right-shifting by one. On the other hand, if the bit is one, the value is a valid pointer to an object that contains further type information. For more details on V8âs pointer tagging scheme see also this blog post.</p>
-<p>Letâs start by looking at the testcase produced by the fuzzer, which isnât overly long:</p>
-<p>The bug is caused during optimization of the loop by the Maglev compiler, specifically due to a conflict between two stages of the compiler pipeline: the initial graph builder and the later MaglevPhiRepresentationSelector.</p>
-<p>The graph builder is responsible for building the initial Maglev intermediate representation (IR) of the code. For that, it consumes both the input code (in the form of V8 bytecode) as well as runtime feedback that was collected while the code executed in lower tiers such as the interpreter. When processing the loop in this testcase, the following happens:</p>
-<p>The resulting code for the loop now looks roughly like this (in Maglev pseudocode):</p>
-<p>The purpose of this optimizer is to identify Phi nodes where all inputs have the same raw representation (e.g. int32), and if so convert the Phi to that representation to avoid future untagging operations. For the code above, the code sees that both inputs to i3 are int32 and therefore decides to convert the Phi to int32 representation. Following CheckedSmiUntag operations then become a no-op and can be removed, while consumers that need a tagged value now require a conversion step. With that, the final code now looks like this:</p>
-<p>The bug now occurs because of two optimizations interacting badly with each other:</p>
-<p>Specifically, what can happen now is that eventually, i3 becomes larger than the maximum Smi value. At that point, Int32ToNumber can no longer fit the integer into a Smi and instead allocates a HeapNumber object (a container holding a larger number, basically). At this point, however, the UnsafeSmiUntag is no longer safe as the input is now a pointer. This leads to a corrupted pointer value being extracted and subsequently to memory corruption. Note that in the original code, this could not have happened as the HeapNumber wouldâve been rejected by the CheckedSmiUntag(i3).</p>
-<p>What may have made this bug difficult to find for BigSleep is the fact that both optimizations are correct in isolation. As such, looking at just one of them wouldâve made it difficult to spot the issue. The agent would somehow have needed to hypothesize about the other optimization or stumbled upon the relevant code by chance (or exhaustive search).</p>
-<p>Looking at the examples above as well as other bugs found by LLMs, we can see a few clear examples of bugs where an LLM has the advantage:</p>
-<p>On the other hand, here are some advantages that fuzzers enjoy (for now):</p>
-<p>There is probably also a category of bugs that are hard to find for both approaches: bugs that are very non-local (bad for the agent) and require complex testcases (bad for the fuzzer) to trigger. In this case, a fuzzer would probably discover the individual pieces of the testcase (through coverage feedback) but wonât be able to find the right combination to trigger the bug (as in our first example). A code-reviewing agent, on the other hand, may struggle with the large search space of code fragments that may interact badly with each other (as in our last example). This is only a hypothesis, however, and would require further experiments and data to validate.</p>
-<p>In this blog post, weâve compared coverage-guided fuzzers with vulnerability-discovery agents that read and reason about the source code. Specifically, weâve looked at Fuzzilli and BigSleep, which both run as automated pipelines on V8 to discover newly introduced bugs. Looking at the data from those pipelines, we saw a roughly equal share of vulnerabilities found in the last 6 months (around 40 each), and a moderate overlap in discovered bugs of around 25%. However, in a dedicated experiment, overlap was closer to 60%. For now, this means that the two approaches remain complementary, and specialized fuzzing continues to provide value by finding bugs quickly and identifying certain kinds of issues that are otherwise hard to spot. At the same time, LLMs only very recently became capable of finding bugs in software like V8 at all, and have made tremendous progress since. The model used for our experiment is by now already outdated and outperformed by newer generations. Looking to the future, we expect further model improvements, potentially coupled with better prompting and more flexible harnesses (that e.g. allow the model to build, improve, and run fuzzers itself instead of being limited to pure code auditing), to lead to a growing share of bugs being discovered by agentic systems.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://projectzero.google/2026/10/fuzzing-v-AI.html" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
-            </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#1003. At the WNBA Finals, Zendaya Pairs Her Home Team Pride With a Snakeskin Tee She Co-Designed</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Lifestyle</strong> &nbsp;|&nbsp; 
-        <a href="https://www.harpersbazaar.com/celebrity/latest/a74262819/zendaya-2026-wnba-finals-snakeskin-top-merch-family-photos/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/90d27ad5-1eed-41cc-845b-3a514c6de483.jpeg?crop=0.349xw:0.262xh;0.272xw,0.379xh&amp;resize=1200:*" alt="At the WNBA Finals, Zendaya Pairs Her Home Team Pride With a Snakeskin Tee She Co-Designed" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://hips.hearstapps.com/hmg-prod/images/90d27ad5-1eed-41cc-845b-3a514c6de483.jpeg?crop=0.349xw:0.262xh;0.272xw,0.379xh&resize=1200:*" alt="At the WNBA Finals, Zendaya Pairs Her Home Team Pride With a Snakeskin Tee She Co-Designed" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Every product on this page was chosen by a Harper's BAZAAR editor. We may earn commission on some of the items you choose to buy.</p>
-<p>We’s long known Zendaya is a tennis girl, but last night, she proved she’s a basketball fan, too. Showing up in San Francisco, California, for game five of the 2026 WNBA Finals between the Golden State Valkyries and the Atlanta Dream, the Bay Area native cheered on her home team with her niece and tons of purple spirit.</p>
-<p>Styling a piece from her second collaborative collection with Law Roach and activewear brand On, which dropped earlier this month, Zendaya arrived wearing a sporty, snakeskin long-sleeve top she helped design. The now sold-out style, just one of many python garments crafted for the new drop, featured a wide crewneck silhouette and skintight fit. But by the time she settled into the game, the actor had acquired a lavender Valkyries T-shirt—free for everyone at the arena—and slipped it over her comfy base layer.</p>
-<p>Of course, the Euphoria star added a bit of fashion history to her game-day look. In photos of the star meeting the team, she was seen wearing her sporty top with a structured Jean Paul Gaultier skirt from the house’s Fall 2003 collection. Merging a utilitarian spirit with subtle provocative detailing, the khaki-colored bottoms were crafted with oversize cargo pockets, a drawstring closure, and black bondage-inspired straps. She finished things off with a pair of chunky black leather knee-high biker boots from Miu Miu’s Fall 1999 collection, with built-in shin guards and sculptural heels.</p>
-<p>Once in the crowd, Zendaya grabbed some “Ballhalla Loud” inflatable noisemakers and cheered on the team with her family.</p>
-<p>Meghann Fahy Is So Chic in a Gray Businesswear Set</p>
-<p>Kendall Jenner’s Butter-Yellow Fur Coat Is a Dream</p>
-<p>Katie Holmes and BF Jason Coordinate Airport Looks</p>
-<p>Taylor Swift Returns to Nashville to Make History</p>
-<p>Duchess Meghan Joins Junior MasterChef Australia</p>
-<p>Lamine Yamal Trades His Jersey for a Chanel Suit</p>
-<p>Only Kim Kardashian Could Pull Off This Silhouette</p>
-<p>Queen Letizia and Her Daughters Match in Jeans!</p>
-<p>Dua Lipa’s London Literature Festival Style Streak</p>
-<p>All the Best Celebrity Halloween Costumes of 2026</p>
-<p>Kim Kardashian and Kris Jenner Go Archival</p>
-<p>We may earn commission from links on this page, but we only recommend products we back.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.harpersbazaar.com/celebrity/latest/a74262819/zendaya-2026-wnba-finals-snakeskin-top-merch-family-photos/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
-            </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article><div class="pagination"><a href="index.html">1</a><a href="page2.html">2</a><a href="page3.html">3</a><a href="page4.html">4</a><a href="page5.html">5</a><a href="page6.html">6</a><a href="page7.html">7</a><a href="page8.html">8</a><a href="page9.html">9</a><a href="page10.html">10</a><a href="page11.html">11</a><a href="page12.html">12</a><a href="page13.html">13</a><a href="page14.html">14</a><a href="page15.html">15</a><a href="page16.html">16</a><a href="page17.html">17</a><a href="page18.html">18</a><a href="page19.html">19</a><a href="page20.html">20</a><a href="page21.html">21</a><a href="page22.html">22</a><a href="page23.html">23</a><a href="page24.html">24</a><a href="page25.html">25</a><a href="page26.html">26</a><a href="page27.html">27</a><a href="page28.html">28</a><a href="page29.html">29</a><a href="page30.html">30</a><a href="page31.html">31</a><a href="page32.html">32</a><a href="page33.html">33</a><a href="page34.html">34</a><a href="page35.html">35</a><a href="page36.html">36</a><a href="page37.html">37</a><a href="page38.html">38</a><a href="page39.html">39</a><a href="page40.html">40</a><a href="page41.html" class="active">41</a><a href="page42.html">42</a><a href="page43.html">43</a><a href="page44.html">44</a><a href="page45.html">45</a><a href="page46.html">46</a><a href="page47.html">47</a><a href="page48.html">48</a><a href="page49.html">49</a><a href="page50.html">50</a><a href="page51.html">51</a><a href="page52.html">52</a><a href="page53.html">53</a><a href="page54.html">54</a><a href="page55.html">55</a><a href="page56.html">56</a><a href="page57.html">57</a><a href="page58.html">58</a><a href="page59.html">59</a><a href="page60.html">60</a><a href="page61.html">61</a><a href="page62.html">62</a><a href="page63.html">63</a><a href="page64.html">64</a><a href="page65.html">65</a><a href="page66.html">66</a><a href="page67.html">67</a><a href="page68.html">68</a><a href="page69.html">69</a><a href="page70.html">70</a><a href="page71.html">71</a><a href="page72.html">72</a><a href="page73.html">73</a><a href="page74.html">74</a><a href="page75.html">75</a><a href="page76.html">76</a><a href="page77.html">77</a><a href="page78.html">78</a><a href="page79.html">79</a><a href="page80.html">80</a><a href="page81.html">81</a><a href="page82.html">82</a><a href="page83.html">83</a><a href="page84.html">84</a><a href="page85.html">85</a><a href="page86.html">86</a><a href="page87.html">87</a><a href="page88.html">88</a><a href="page89.html">89</a><a href="page90.html">90</a><a href="page91.html">91</a><a href="page92.html">92</a><a href="page93.html">93</a><a href="page94.html">94</a><a href="page95.html">95</a><a href="page96.html">96</a><a href="page97.html">97</a><a href="page98.html">98</a><a href="page99.html">99</a><a href="page100.html">100</a><a href="page101.html">101</a><a href="page102.html">102</a><a href="page103.html">103</a><a href="page104.html">104</a><a href="page105.html">105</a><a href="page106.html">106</a><a href="page107.html">107</a><a href="page108.html">108</a><a href="page109.html">109</a><a href="page110.html">110</a><a href="page111.html">111</a><a href="page112.html">112</a><a href="page113.html">113</a><a href="page114.html">114</a><a href="page115.html">115</a><a href="page116.html">116</a><a href="page117.html">117</a><a href="page118.html">118</a><a href="page119.html">119</a><a href="page120.html">120</a><a href="page121.html">121</a><a href="page122.html">122</a><a href="page123.html">123</a><a href="page124.html">124</a><a href="page125.html">125</a><a href="page126.html">126</a><a href="page127.html">127</a><a href="page128.html">128</a><a href="page129.html">129</a><a href="page130.html">130</a><a href="page131.html">131</a><a href="page132.html">132</a><a href="page133.html">133</a><a href="page134.html">134</a><a href="page135.html">135</a><a href="page136.html">136</a><a href="page137.html">137</a><a href="page138.html">138</a><a href="page139.html">139</a><a href="page140.html">140</a><a href="page141.html">141</a><a href="page142.html">142</a><a href="page143.html">143</a><a href="page144.html">144</a><a href="page145.html">145</a><a href="page146.html">146</a><a href="page147.html">147</a><a href="page148.html">148</a><a href="page149.html">149</a><a href="page150.html">150</a><a href="page151.html">151</a><a href="page152.html">152</a><a href="page153.html">153</a><a href="page154.html">154</a><a href="page155.html">155</a><a href="page156.html">156</a><a href="page157.html">157</a><a href="page158.html">158</a><a href="page159.html">159</a><a href="page160.html">160</a><a href="page161.html">161</a><a href="page162.html">162</a><a href="page163.html">163</a><a href="page164.html">164</a><a href="page165.html">165</a><a href="page166.html">166</a><a href="page167.html">167</a><a href="page168.html">168</a><a href="page169.html">169</a><a href="page170.html">170</a><a href="page171.html">171</a><a href="page172.html">172</a><a href="page173.html">173</a><a href="page174.html">174</a><a href="page175.html">175</a><a href="page176.html">176</a><a href="page177.html">177</a><a href="page178.html">178</a><a href="page179.html">179</a><a href="page180.html">180</a><a href="page181.html">181</a><a href="page182.html">182</a><a href="page183.html">183</a><a href="page184.html">184</a><a href="page185.html">185</a><a href="page186.html">186</a><a href="page187.html">187</a><a href="page188.html">188</a><a href="page189.html">189</a><a href="page190.html">190</a><a href="page191.html">191</a><a href="page192.html">192</a><a href="page193.html">193</a><a href="page194.html">194</a><a href="page195.html">195</a><a href="page196.html">196</a><a href="page197.html">197</a><a href="page198.html">198</a><a href="page199.html">199</a><a href="page200.html">200</a><a href="page201.html">201</a><a href="page202.html">202</a><a href="page203.html">203</a><a href="page204.html">204</a><a href="page205.html">205</a><a href="page206.html">206</a><a href="page207.html">207</a><a href="page208.html">208</a><a href="page209.html">209</a><a href="page210.html">210</a><a href="page211.html">211</a><a href="page212.html">212</a><a href="page213.html">213</a><a href="page214.html">214</a><a href="page215.html">215</a><a href="page216.html">216</a><a href="page217.html">217</a><a href="page218.html">218</a><a href="page219.html">219</a><a href="page220.html">220</a><a href="page221.html">221</a><a href="page222.html">222</a><a href="page223.html">223</a><a href="page224.html">224</a><a href="page225.html">225</a><a href="page226.html">226</a><a href="page227.html">227</a><a href="page228.html">228</a><a href="page229.html">229</a><a href="page230.html">230</a><a href="page231.html">231</a><a href="page232.html">232</a><a href="page233.html">233</a><a href="page234.html">234</a><a href="page235.html">235</a><a href="page236.html">236</a><a href="page237.html">237</a><a href="page238.html">238</a><a href="page239.html">239</a><a href="page240.html">240</a><a href="page241.html">241</a><a href="page242.html">242</a><a href="page243.html">243</a></div><footer>&copy; 2026 News Portal Indonesia. All rights reserved.</footer>
+            <h2 class="news-title"><a href="https://www.bbc.com/uzbek/uzbekistan-50219916?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Ўзбекистон аёллари Ипак Йўли бозорларини қандай қўлга олмоқда? - BBCUzbek тадқиқ этади</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/uzbek/uzbekistan-50219916?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article></div><div class="pagination"><a href="index.html">1</a><a href="page2.html">2</a><a href="page3.html">3</a><a href="page4.html">4</a><a href="page5.html">5</a><a href="page6.html">6</a><a href="page7.html">7</a><a href="page8.html">8</a><a href="page9.html">9</a><a href="page10.html">10</a><a href="page11.html">11</a><a href="page12.html">12</a><a href="page13.html">13</a><a href="page14.html">14</a><a href="page15.html">15</a><a href="page16.html">16</a><a href="page17.html">17</a><a href="page18.html">18</a><a href="page19.html">19</a><a href="page20.html">20</a><a href="page21.html">21</a><a href="page22.html">22</a><a href="page23.html">23</a><a href="page24.html">24</a><a href="page25.html">25</a><a href="page26.html">26</a><a href="page27.html">27</a><a href="page28.html">28</a><a href="page29.html">29</a><a href="page30.html">30</a><a href="page31.html">31</a><a href="page32.html">32</a><a href="page33.html">33</a><a href="page34.html">34</a><a href="page35.html">35</a><a href="page36.html">36</a><a href="page37.html">37</a><a href="page38.html">38</a><a href="page39.html">39</a><a href="page40.html">40</a><a href="page41.html" class="active">41</a></div><footer>&copy; 2026 News Portal. All rights reserved.</footer>
 </div></body></html>

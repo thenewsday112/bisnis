@@ -4,119 +4,64 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>News Portal Indonesia - Page 32</title>
-<meta name="description" content="Page 32">
-<link rel="canonical" href="https://railfansday.github.io/newsweb/page32.html">
+<title>Page 32</title>
+<meta name="description" content="Latest news page 32">
+<link rel="canonical" href="https://thenewsday112.github.io/newsmenuday/page32.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-body{font-family:'Segoe UI',system-ui,sans-serif;background:#f4f6f8;margin:0;padding:20px;color:#333;line-height:1.6}
-.container{max-width:1000px;margin:0 auto}
-header{background:#1e293b;color:#fff;padding:20px;border-radius:12px;margin-bottom:20px;text-align:center;box-shadow:0 4px 6px rgba(0,0,0,.1)}
-header h1{margin:0;font-size:26px;letter-spacing:1px}
-nav{background:#fff;padding:10px;border-radius:12px;margin-bottom:24px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center;box-shadow:0 2px 4px rgba(0,0,0,.05)}
-nav a{padding:8px 16px;border-radius:8px;color:#475569;text-decoration:none;font-weight:600;transition:all .2s;font-size:14px}
-nav a:hover,nav a.active{background:#2563eb;color:#fff}
-.article-card{background:#fff;padding:24px;margin-bottom:24px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2563eb}
-.article-card h2{margin:0 0 12px;font-size:22px;color:#1e293b}
-.article-meta{font-size:13px;color:#64748b;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid #e2e8f0}
-.article-meta a{color:#2563eb;text-decoration:none;font-weight:bold}
-.article-body{font-size:16px;line-height:1.8;color:#334155}
-.article-body img{max-width:100%;height:auto;border-radius:8px;margin:16px 0}
-.pagination{text-align:center;margin:40px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
-.pagination a{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;color:#334155;font-weight:bold;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.05);transition:all .2s}
-.pagination a:hover{background:#f1f5f9}
-.pagination a.active{background:#2563eb;color:#fff}
-footer{text-align:center;color:#64748b;font-size:14px;padding:30px 0;border-top:1px solid #e2e8f0;margin-top:20px}
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+}
+* { box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: var(--bg-color); margin: 0; padding: 0; color: var(--text-main); line-height: 1.6; }
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+header.site-header { background: var(--card-bg); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.header-inner { max-width: 1100px; margin: 0 auto; padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; }
+.logo { font-size: 24px; font-weight: 800; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+nav.category-nav { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; scrollbar-width: none; }
+nav.category-nav::-webkit-scrollbar { display: none; }
+nav.category-nav a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 14px; padding: 8px 16px; border-radius: 20px; white-space: nowrap; transition: all 0.2s; background: var(--bg-color); }
+nav.category-nav a:hover, nav.category-nav a.active { background: var(--primary); color: white; }
+.news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; margin-top: 20px; }
+.news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; border: 1px solid var(--border-color); }
+.news-card:hover { transform: translateY(-4px); box-shadow: 0 12px 20px -5px rgba(0,0,0,0.1); }
+.news-img { width: 100%; height: 180px; object-fit: cover; background: #e2e8f0; display: block; }
+.news-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+.news-meta { display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 600; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.badge { background: #eff6ff; color: var(--primary); padding: 4px 10px; border-radius: 20px; }
+.news-title { margin: 0 0 12px 0; font-size: 18px; font-weight: 800; line-height: 1.4; }
+.news-title a { color: var(--text-main); text-decoration: none; }
+.news-title a:hover { color: var(--primary); }
+.news-excerpt { color: var(--text-muted); font-size: 14px; margin-bottom: 16px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.read-more { margin-top: auto; font-size: 14px; font-weight: 600; color: var(--primary); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
+.read-more:hover { color: var(--primary-dark); }
+.pagination { display: flex; justify-content: center; gap: 8px; margin: 40px 0; flex-wrap: wrap; }
+.pagination a { display: inline-flex; align-items: center; justify-content: center; min-width: 40px; height: 40px; padding: 0 10px; border-radius: 8px; background: var(--card-bg); color: var(--text-main); text-decoration: none; font-weight: 600; border: 1px solid var(--border-color); transition: all 0.2s; }
+.pagination a:hover, .pagination a.active { background: var(--primary); color: white; border-color: var(--primary); }
+.ad-container { background: var(--card-bg); padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 20px; border: 1px solid var(--border-color); }
+footer { text-align: center; padding: 40px 20px; color: var(--text-muted); border-top: 1px solid var(--border-color); margin-top: 40px; background: var(--card-bg); }
+@media (max-width: 768px) { .header-inner { flex-direction: column; align-items: flex-start; gap: 15px; } nav.category-nav { width: 100%; } }
 </style>
 </head>
 <body>
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">📰 News Portal</a>
+    </div>
+    <div class="header-inner" style="padding-top:0;">
+        <nav class="category-nav"><a href="index.html" class="active">All News</a><a href="technology.html" class="">Technology</a><a href="business.html" class="">Business</a><a href="sports.html" class="">Sports</a><a href="entertainment.html" class="">Entertainment</a><a href="health.html" class="">Health</a><a href="science.html" class="">Science</a><a href="other.html" class="">Other</a></nav>
+    </div>
+</header>
 <div class="container">
-<header><h1>News Portal Indonesia</h1></header>
-<nav><a href="index.html" class="active">🏠 All News</a><a href="technology.html">📰 Technology</a><a href="business.html">📰 Business</a><a href="sports.html">📰 Sports</a><a href="entertainment.html">📰 Entertainment</a><a href="health.html">📰 Health</a><a href="science.html">📰 Science</a><a href="politics.html">📰 Politics</a><a href="world.html">📰 World</a><a href="travel.html">📰 Travel</a><a href="food.html">📰 Food</a><a href="automotive.html">📰 Automotive</a><a href="education.html">📰 Education</a><a href="lifestyle.html">📰 Lifestyle</a><a href="other.html">📰 Other</a></nav>
-<h1 style="color:#1e293b;border-left:5px solid #2563eb;padding-left:15px;margin-bottom:30px;">News Portal Indonesia - Page 32</h1>
-<article class="article-card">
-    <h2>#555. Unexpected cold water from the north delayed squid arrivals and surprised fishers in the northeastern US</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Business</strong> &nbsp;|&nbsp; 
-        <a href="https://www.earth.com/animals/northwest-atlantic-cold-pulse-squid/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://www.earth.com/img/16x9/1920/media-2026/2026/10/26074717/longfin-squid-basket-whoi.jpg" alt="Unexpected cold water from the north delayed squid arrivals and surprised fishers in the northeastern US" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.earth.com/img/16x9/1920/media-2026/2026/10/26074717/longfin-squid-basket-whoi.jpg" alt="Unexpected cold water from the north delayed squid arrivals and surprised fishers in the northeastern US" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Study links a mysterious pulse of cold water off the northeastern U.S. coast to major fishing disruptions, including delayed squid arrivals and the return of cold-water mackerel.</p>
-<p>Commercial fishers in the northeastern United States started seeing odd catches in the summer of 2023. Squid catches dropped off, while mackerel, a cold-water fish that had declined for years, suddenly returned. A cold pulse of fresh water was moving onto the continental shelf.</p>
-<p>Longfin squid usually reach southern New England in May and stay through July. In 2024 they did not arrive until August.</p>
-<p>Scientists at the Woods Hole Oceanographic Institution (WHOI) and NOAA now tie the delay to that cold pulse. The water came down from the Scotian Shelf and the Grand Banks, but the team can’t yet say what pushed it south.</p>
-<p>The paper credits the fishing industry with spotting the event. Industry representatives and scientists held weekly informal calls, known as the Squid Squad, and Rhode Island’s Commercial Fisheries Research Foundation (CFRF) ran regular ocean update meetings.</p>
-<p>By March 2024 several commercially important fish species were reaching New Jersey four to five weeks late. Adult shortfin squid tolerate 40 to 58°F (4.5 to 14.5°C) but prefer a salinity of 34.5 to 36.5. In May and June they were missing from the shelf break, the outer edge of the continental shelf.</p>
-<p>Noelle Olsen, a senior research biologist at CFRF, said several captains told her in spring 2024 that their target species “were up to five weeks late or missed their usual spring run altogether.”</p>
-<p>The R/V Roger Revelle sailed from Morehead City, North Carolina, on June 6, 2024, and worked until June 11. Magdalena Andres was chief scientist. The plan drew on the Squid Squad calls and a May meeting in Rhode Island.</p>
-<p>The ship recovered moorings off Cape Hatteras and took CTD casts to 3,300 feet (1,000 meters) with a SeaBird 911+ instrument. It finished with a line north across the shelf along 71 degrees west.</p>
-<p>Scientists on board traded notes with four squid companies on water conditions and on squid seen at the surface at night.</p>
-<p>Fishing boats out of Rhode Island and nearby states have taken ocean profiles south of New England since 2014. The crews lower an RBR Concerto CTD, a probe that records conductivity, temperature and depth six or eight times a second.</p>
-<p>CFRF and WHOI run it as the Shelf Research Fleet. More than 1,000 profiles have been logged, and the data are open to the public.</p>
-<p>The study used 11 years of casts from Zone 2, the second of six rectangular zones south of New England. The team also pulled in NASA’s SMAP salinity satellite, NOAA satellite temperatures and the Revelle data.</p>
-<p>In May 2024 the boats’ average surface salinity was 30.7, against an open-ocean average of about 35. No May in the 11-year record had been fresher.</p>
-<p>NOAA’s ECOMON survey, running since 1977, ranks 2024 as the second-largest freshening of the Northeast shelf, after 1998.</p>
-<p>Satellite maps first show the fresh water in July 2023. It lay along the shelf edge from the Tail of the Grand Banks to the eastern tip of Cape Cod. It spread southwest and toward shore and got to Cape Hatteras in December 2023.</p>
-<p>By January 2024 it covered the Gulf of Maine, Georges Bank and the shelf down to Cape Hatteras. At the June 2024 peak, much of the shelf and slope was 1.5 to 2.0 salinity units fresher than normal. WHOI says surface water during the pulse ran 5 to 9°F (3 to 5°C) below the 20-year average.</p>
-<p>South of Cape Hatteras, the Revelle read surface salinity of 35 to 36, normal there. Northeast of the cape it dropped as low as 29. The track average came out at 31.8, against about 33 for typical mid-shelf water.</p>
-<p>On June 10 and 11, the surface along 71 degrees west, south of New England, was about 63°F (17°C). The R/V Neil Armstrong had measured close to 72°F (22°C) in the same area in June 2021. Over the slope, the fresh layer was 165 to 230 feet (50 to 70 meters) thick.</p>
-<p>Longfin squid do best in water of 50 to 57°F (10 to 14°C). Few turned up in southern New England in June and July 2024. In late August, boats finally caught them southwest of Hudson Canyon.</p>
-<p>The NOAA Fisheries landings database puts the Northeast longfin harvest at 39 million pounds in 2023 and 29 million in 2024. Its value dropped from $39 million to $32.5 million.</p>
-<p>Shortfin squid did a little better. Their catch went up from 6.4 million to 7 million pounds in 2024.</p>
-<p>Final 2025 numbers haven’t been tallied. Preliminary quota monitoring by NOAA’s Greater Atlantic Regional Fisheries Office shows the catch more than doubled by weight.</p>
-<p>The pulse followed years of fast warming. The Gulf of Maine has been transformed by warming waters. Lobster fishers have faced an unprecedented decline in southern New England.</p>
-<p>The authors looked upstream at the Labrador Sea and the Tail of the Grand Banks, off Newfoundland. They used daily sea surface height maps from the Copernicus Marine Service, with the 30-year trend removed. The 2023 maps point to a Gulf Stream lying farther south there than during 2009 to 2018.</p>
-<p>Earlier studies proposed that a northward shift of the Gulf Stream can block the Labrador Current. That keeps its cold water off the U.S. shelf. The authors write that the 2023 southward shift fits that mechanism.</p>
-<p>Monthly JRA55 wind records from the Japan Meteorological Agency showed a change over the Grand Banks in 2023 too. The 2009 to 2018 pattern vanished. In its place came one that earlier studies linked to a fresher Northeast shelf.</p>
-<p>Glen Gawarkiewicz, a WHOI senior scientist, led the study. He said that “the coastal ocean in the northeastern U.S. has a very complicated seesaw between flow from the north bringing cold fresh water and flow offshore from the Gulf Stream bringing warm, salty water, and those influences swing back and forth. It’s always in flux.”</p>
-<p>Paula Fratantoni leads the oceanography branch at NOAA’s Northeast Fisheries Science Center and co-wrote the paper. “A relatively small shift in the trajectory of a large-scale current like the Gulf Stream can lead to dramatic changes locally,” she said.</p>
-<p>Because the Gulf Stream and the winds are linked, the data can’t show which one drove the event. The authors write that targeted model experiments will be needed.</p>
-<p>Argo floats are free-drifting robots that dive and resurface while recording temperature and salinity. One of them, float 4902601, took five profiles over the slope in June 2024.</p>
-<p>From those casts, the team estimated 200 to 460 cubic miles (840 to 1,933 cubic kilometers) of extra fresh water, a rough figure.</p>
-<p>A 2024 model study had predicted a pause in the region’s warming. The cold of May and June 2024 was stronger than that, though the model averaged over larger areas.</p>
-<p>By October 2024 a warm core ring, an eddy shed by the Gulf Stream, had ended the pulse. The authors add that the event differed from the cold blob south of Greenland in location, duration and salinity.</p>
-<p>How each species responded still needs study, the authors say. In 2024 the first signs came from fishing crews, through the Squid Squad calls and the CTD casts made from their boats.</p>
-<p>The full study was published in the journal Journal of Geophysical Research: Oceans.</p>
-<p>Check us out on EarthSnap, a free app brought to you by Eric Ralls and Earth.com.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.earth.com/animals/northwest-atlantic-cold-pulse-squid/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
-            </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;"><h1 style="font-size:28px; font-weight:800; margin:0;">Page 32</h1></div><div class="ad-container">
 <div style="text-align:center;margin:20px 0;">
     <script type="text/javascript">
         atOptions = {
@@ -129,1342 +74,245 @@ footer{text-align:center;color:#64748b;font-size:14px;padding:30px 0;border-top:
     </script>
     <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
 </div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#10. Apple refreshes the iMac, entry-level MacBook Pro with the M6 chip</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://arstechnica.com/apple/2026/10/apple-refreshes-the-imac-entry-level-macbook-pro-with-the-m6-chip/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Additionally, the N1 chip brings Wi-Fi 7 and Bluetooth 6.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://arstechnica.com/apple/2026/10/apple-refreshes-the-imac-entry-level-macbook-pro-with-the-m6-chip/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+</div><div class="news-grid">
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_amharic/19fc/live/62d0b5e0-c712-11f1-bc2e-018d645d8d21.png" class="news-img" alt="&#x27;በሕይወት እንተርፋለን አላልንም&#x27; ፡ በህወሓት ቁጥጥር ስር የቆዩት የቀድሞ ባለሥልጣናት ምን ገጠማቸው?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>13 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#959. The 5 Runway-Approved Denim Skirt Trends to Know for Fall and Winter</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://www.elle.com/fashion/trend-reports/a74195111/denim-skirt-trend-2026/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/9ce9df66-dfad-4232-91ec-ae7da078aad7.jpg?crop=1xw:0.868xh;0xw,0.03xh&amp;resize=1200:*" alt="The 5 Runway-Approved Denim Skirt Trends to Know for Fall and Winter" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://hips.hearstapps.com/hmg-prod/images/9ce9df66-dfad-4232-91ec-ae7da078aad7.jpg?crop=1xw:0.868xh;0xw,0.03xh&resize=1200:*" alt="The 5 Runway-Approved Denim Skirt Trends to Know for Fall and Winter" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Every item on this page was chosen by an ELLE editor. We may earn commission on some of the items you choose to buy.</p>
-<p>Discover the chicest ways to wear this season’s wardrobe hero.</p>
-<p>A denim skirt is one of those timeless staples that makes getting dressed during the colder months that much easier. Not only does it pair effortlessly with just about everything already in your closet, but a maxi length is particularly well-suited to the season, offering added warmth and endless opportunities for layering. And after seeing denim skirts make their way down the spring/summer 2027 runways, I’ve been reminded of just how versatile this closet essential can be.</p>
-<p>Designers are putting their own spin on the timeless staple, introducing bold silhouettes, unexpected details, and stylish alternatives to the classic denim skirt we know and love. Season after season, I find myself discovering new ways to wear pieces that have been in my wardrobe for years. And while not every runway trend earns a place in my closet, there’s something inspiring about seeing familiar favorites reimagined in fresh ways. This fall, I’m taking a few styling cues from the runways and giving my denim lineup a little more attention, whether that means experimenting with a new silhouette or trying a statement-making style adorned with ruffles or fringe.</p>
-<p>Ahead, discover the denim skirt trends catching our eye this season, along with ELLE editor-approved picks to shop for each.</p>
-<p>Never underestimate the difference a front slit can make. This seemingly small detail adds movement to an otherwise structured silhouette, lending even the most polished denim skirts a more effortless feel. Whether you gravitate toward Khaite’s sophisticated dark wash or Calvin Klein’s more laid-back take, there’s a style to suit every aesthetic. And with boot season in full swing, a front slit offers the perfect opportunity to show off your favorite pair without sacrificing the coverage of a maxi skirt.</p>
-<p>For a more polished approach to denim, the straight skirt is a timeless favorite. Its clean lines and structured silhouette give it a tailored feel without looking too formal. Proenza Schouler’s sleek midi is a great example of just how sophisticated this style can look, making it just as appropriate for the office as it is for everyday wear. Paired with a crisp button-down or a simple knit, it’s an effortless option for days when you want to look a little more put together.</p>
-<p>There’s plenty of room to play with texture when it comes to denim skirts. Lace, embroidery, patchwork, and fringe are giving classic styles a whole new look. Take Monse’s fringed denim skirt from the spring/summer 2027 runway, for example. This detail works just as well off the runway, with Rabanne offering its own take on the fringed style. Meanwhile, Farm Rio takes a different approach with intricate embroidery, showing just how much variety there is within this trend.</p>
-<p>There’s a reason A-line skirts never really go out of style. With a subtle nod to vintage fashion, this silhouette has a nostalgic appeal that feels especially relevant right now. Consider embracing the trend yourself with a style like Ami’s maxi version, which keeps things simple and understated—it’s a versatile choice that feels ideal for fall.</p>
-<p>Mermaid-inspired skirts are having a moment, and the silhouette is now making its way into denim. Hugging the hips before flaring out at the hem, this cut creates a feminine, figure-flattering shape with just the right amount of drama. From shorter styles to maxi skirts, the length and flare can be as subtle or exaggerated as you like, depending on the look you’re going for. Shop the style below, including Jacquemus’s romantic ruffled design and Ulla Johnson’s dramatic, floor-skimming take.</p>
-<p>Every product featured on ELLE.com is independently researched, tested, or editor-approved. We only recommend products that we stand behind, and the merchandise featured on our site is always driven by editorial and product testing standards, not by affiliate deals or advertising relationships. Any content created in partnership with advertisers is marked as such.</p>
-<p>The Biggest Bridal Fashion Week Trends for 2027</p>
-<p>Why ‘Marie Antoinette’ Still Rules Fashion</p>
-<p>Statement Skirts and Tech Jackets Define Fall</p>
-<p>Sense and Sensibility’s High-Fashion Costumes</p>
-<p>Rafael Pavarotti’s Bold Fashion Photos Hit Paris</p>
-<p>We may earn commission from links on this page, but we only recommend products we back.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.elle.com/fashion/trend-reports/a74195111/denim-skirt-trend-2026/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/amharic/articles/cwj0lze7lp23o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">&#x27;በሕይወት እንተርፋለን አላልንም&#x27; ፡ በህወሓት ቁጥጥር ስር የቆዩት የቀድሞ ባለሥልጣናት ምን ገጠማቸው?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/amharic/articles/cwj0lze7lp23o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_swahili/bb3a/live/2098f340-c703-11f1-a64c-550be9e3c66b.jpg" class="news-img" alt="Joseph Kabila: Kutoka urais hadi kuongoza muungano unaojumuisha M23" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>13 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#4390. Battle of the Smart Rings: Oura Sues Ultrahuman for Patent Infringement — Again</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://www.cnet.com/tech/mobile/battle-smart-rings-oura-filed-lawsuit-against-ultrahuman-again/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>The smart ring maker wants to ban the Ultrahuman Ring Pro.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.cnet.com/tech/mobile/battle-smart-rings-oura-filed-lawsuit-against-ultrahuman-again/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/swahili/articles/c65yn5e2r1xgo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Joseph Kabila: Kutoka urais hadi kuongoza muungano unaojumuisha M23</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/swahili/articles/c65yn5e2r1xgo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_somali/0ccd/live/a30c3a80-c6f9-11f1-a64c-550be9e3c66b.png" class="news-img" alt="Israa&#x27;iil ma waxay muran kala dhex dhigtay Turkiga iyo waddan uu saaxiib dhaw la yahay muddo dheer?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>13 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#565. Rubin Observatory reveals its first dwarf planet candidate in our solar system</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://phys.org/news/2026-10-rubin-observatory-reveals-dwarf-planet.html" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Scientists may add a new dwarf planet to the official roster of our solar system. The distant, icy body, provisionally dubbed 2026 ED138, orbits our system beyond Pluto. It was spotted earlier this month by a scientist combing through data from the Simonyi Survey Telescope at the NSF-DOE Vera C. Rubin Observatory.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://phys.org/news/2026-10-rubin-observatory-reveals-dwarf-planet.html" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/somali/articles/ck9qzwyzrx4yo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Israa&#x27;iil ma waxay muran kala dhex dhigtay Turkiga iyo waddan uu saaxiib dhaw la yahay muddo dheer?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/somali/articles/ck9qzwyzrx4yo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_tigrinya/0e74/live/7b0a2f00-c71d-11f1-a64c-550be9e3c66b.jpg" class="news-img" alt="&#x27;ብህይወት ክንወፅእ፡ ተስፋ ኣይነበረናን&#x27; - ፍሉይ ቃለመሓትት ኮሎኔል ተወልደ ምስ ቢቢሲ" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>13 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#576. 3 out of 4 responses to UK smoke-free generation consultation were AI bot-generated</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://phys.org/news/2026-10-responses-uk-free-generation-ai.html" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Three-quarters of all the responses to the U.K.'s public consultation in 2023 on creating a smoke-free generation and restricting disposable vape sales were generated by AI bots, finds an analysis of publicly available data and freedom of information requests, published online in the journal Tobacco Control.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://phys.org/news/2026-10-responses-uk-free-generation-ai.html" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/tigrinya/articles/cv5ynrp4d6e6o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">&#x27;ብህይወት ክንወፅእ፡ ተስፋ ኣይነበረናን&#x27; - ፍሉይ ቃለመሓትት ኮሎኔል ተወልደ ምስ ቢቢሲ</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/tigrinya/articles/cv5ynrp4d6e6o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_amharic/4bb3/live/3e0e7740-c6e2-11f1-a64c-550be9e3c66b.jpg" class="news-img" alt="ኢትዮጵያ አዲስ ከገነባችው የወርቅ ማጣሪያ ፋብሪካ ምን ያህል ታተርፋለች?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>13 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#28. Guidewire buys Hyperexponential for $1.7B in cash</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://techcrunch.com/2026/10/27/guidewire-buys-hyperexponential-for-1-7b-in-cash/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://techcrunch.com/wp-content/uploads/2026/10/Golden-AI-finance-collage.png?resize=1200,600" alt="Guidewire buys Hyperexponential for $1.7B in cash" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://techcrunch.com/wp-content/uploads/2026/10/Golden-AI-finance-collage.png?resize=1200,600" alt="Guidewire buys Hyperexponential for $1.7B in cash" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Buy One Founder Summit Ticket, Get a Second for Free. Register now.</p>
-<p>Disrupt doors open Oct. 13. Get your pass and bring someone with you at 50% off. REGISTER NOW.</p>
-<p>Insurance tech company Guidewire announced Tuesday the acquisition of the agentic underwriting insurance company Hyperexponential for $1.7 billion in cash.</p>
-<p>The deal, expected to close sometime next year, is to help bring AI agents to work alongside humans to underwrite, analyze, and price decisions. The deal is worth around $2 billion in total, with $400 million in additional capital reserved if certain revenue targets are hit.</p>
-<p>Backed by Andreessen Horowitz and Battery Ventures, Hyperexponential was founded in 2017 and has raised nearly $90 million to date, according to PitchBook. So this marks a significant return for investors. The U.K.-based AI startup says nearly 600 insurers across 40 different countries use its software.</p>
-<p>Buy One Pass, Get a Second FreeCover more ground at TechCrunch’s ultimate founder bootcamp of the year by bringing your co-founder or partner for freeBook before the BOGO deal expires</p>
-<p>Every weekday and Sunday, you can get the best of TechCrunch’s coverage.</p>
-<p>TechCrunch Mobility is your destination for transportation news and insight.</p>
-<p>Startups are the core of TechCrunch, so get our best coverage delivered weekly.</p>
-<p>Provides movers and shakers with the info they need to start their day.</p>
-<p>By submitting your email, you agree to our Terms and Privacy Notice.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://techcrunch.com/2026/10/27/guidewire-buys-hyperexponential-for-1-7b-in-cash/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/amharic/articles/c63djk471nldo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">ኢትዮጵያ አዲስ ከገነባችው የወርቅ ማጣሪያ ፋብሪካ ምን ያህል ታተርፋለች?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/amharic/articles/c63djk471nldo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_pidgin/72eb/live/3ff29d60-c6de-11f1-9a39-31b474234113.jpg" class="news-img" alt="Breaking Bad actor RJ Mitte don die at di age of 34" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">HEALTH</span>
+                <span>13 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#1803. Mozilla wants you to come back to Firefox, so it’s going on a nostalgia trip</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://www.tubefilter.com/2026/10/27/mozilla-come-back-to-firefox-old-school-youtube/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p><p><img alt="" class="attachment-featured-image size-featured-image wp-post-image" height="1131" src="https://www.tubefilter.com/wp-content/uploads/2026/10/firefox-campaign.jpg" style="float: left; margin: 0 15px 15px 0;" width="1901" />The internet was a different place back in 2009. Social media feeds were actually driven by social interactions, the creator community was a tight-knit group of lovable outsiders, and Firefox reached its peak market share. During the final year of the 2000s, 32% of internet users chose Mozilla's browser when surfing the web.</p>
-<p>In the nearly two decades since, that market share has experienced a significant decline. Google's Chrome is still a top choice, Apple's Safari is the default option on iPhones, and Microsoft's Edge has improved upon its predecessor, Internet Explorer. Only about 3% of internet users currently browse with Firefox.</p>
-<p>Visit <a href="https://www.tubefilter.com">Tubefilter</a>  for more great stories.</p></p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.tubefilter.com/2026/10/27/mozilla-come-back-to-firefox-old-school-youtube/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/pidgin/articles/cmkge26d9921o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Breaking Bad actor RJ Mitte don die at di age of 34</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/pidgin/articles/cmkge26d9921o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_amharic/31ff/live/d708c490-c652-11f1-9a39-31b474234113.jpg" class="news-img" alt="&quot;ሁለት እህቶቼን አጥቻለሁ&quot;፡ 139 ሰዎች ከሞቱበት የጂቡቲው የጀልባ አደጋ የተረፉ ኢትዮጵያውያን ምስክርነት" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>13 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#4553. Apple’s next-gen OLED MacBook Pro could start at a steep $2,899</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.digitaltrends.com/computing/apples-next-gen-oled-macbook-pro-could-start-at-a-steep-2899/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>"At $2,899, the 14-inch model would mark the highest starting price for a new MacBook Pro model, surpassing the $2,799 Apple charged for a 17-inch version introduced in 2006," says a Bloomberg.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.digitaltrends.com/computing/apples-next-gen-oled-macbook-pro-could-start-at-a-steep-2899/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/amharic/articles/cj5yn41zper4o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">&quot;ሁለት እህቶቼን አጥቻለሁ&quot;፡ 139 ሰዎች ከሞቱበት የጂቡቲው የጀልባ አደጋ የተረፉ ኢትዮጵያውያን ምስክርነት</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/amharic/articles/cj5yn41zper4o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_swahili/6e49/live/5b6e7640-c6a7-11f1-a64c-550be9e3c66b.jpg" class="news-img" alt="Mwaka mmoja baada ya Raila: Nini kimebadilika?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>13 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#16. South Carolina&#x27;s measles outbreak jumped to Washington state 5 times in 2 weeks</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Health</strong> &nbsp;|&nbsp; 
-        <a href="https://arstechnica.com/health/2026/10/domestic-travel-poses-growing-risk-for-measles-and-a-new-challenge-for-states/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>International travel used to be the main risk of measles cases in the US—not anymore.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://arstechnica.com/health/2026/10/domestic-travel-poses-growing-risk-for-measles-and-a-new-challenge-for-states/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/swahili/articles/cm3wv1weq04go?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Mwaka mmoja baada ya Raila: Nini kimebadilika?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/swahili/articles/cm3wv1weq04go?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_somali/f871/live/57f0afe0-c654-11f1-a64c-550be9e3c66b.png" class="news-img" alt="Saraakiisha hay&#x27;adda socdaalka Maraykanka oo baaray guriga Ilhan Cumar" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>12 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#3905. In Life, as in the Navy, He Knew How to Change Course</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Business</strong> &nbsp;|&nbsp; 
-        <a href="https://www.psychologytoday.com/us/blog/for-the-moment/202610/in-life-as-in-the-navy-he-knew-how-to-change-course" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2026-10/180ca8e4-c4fd-4ef9-ab5a-c597e0724061_972x712.jpg?itok=9xYzpniW" alt="In Life, as in the Navy, He Knew How to Change Course" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2026-10/180ca8e4-c4fd-4ef9-ab5a-c597e0724061_972x712.jpg?itok=9xYzpniW" alt="In Life, as in the Navy, He Knew How to Change Course" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>We’re all holding onto something we’re sure we can’t give up on, but research shows that letting go can boost our happiness a lot more than we might think.</p>
-<p>Self Tests are all about you. Are you outgoing or introverted? Are you a narcissist? Does perfectionism hold you back? Find out the answers to these questions and more with Psychology Today.</p>
-<p>Posted October 27, 2026
-
-|
-
-
-Reviewed by Monica Vilhauer Ph.D.</p>
-<p>The following is an excerpt from my memoir, And Now, Back to Me: Stories from an Empty Nest. How this man responds when he finds out he needs to stay in the rehabilitation facility, when his heart had been set on coming home, is all you need to know about the man I am so lucky to call my father.</p>
-<p>Ten minutes or so after it’s been decided that he needs to stay in the rehabilitation facility for another two weeks instead of going home as scheduled, my father leaves a long message on my phone. He makes a point of speaking slowly so that I can take notes. “Reets,” he says. “I need you to get some things from my house. My cell phone is in the little cubby in my car. It should be fully charged. But just in case, the charger is in your bedroom.” I love that he calls it my bedroom, even after all these years. “Also, I need stamps, address labels, and note cards, which you’ll find in the drawers of my desk. And don’t forget the thumbtacks.” He must mean paper clips. Yes, I’m sure he does. “I really appreciate you doing this for me. I don’t know what I’d do without you girls.”</p>
-<p>When I arrive at the rehabilitation facility the next morning, his favorite Dunkin’ Donuts coffee in one hand, a bag filled with his requested supplies in the other, I watch him go about the business of setting up shop. Here, in the corner of his room, the nightstand has become his filing cabinet. His bedside table is now his desk. The rocker is his chair. And with that, he’s ready to go about conducting the daily routine of his life, keeping himself busy, making his days productive, no matter where he is or what circumstances he might find himself in.</p>
-<p>Maybe his ability to make do with what he has, to make his home wherever he happens to find himself, was born out of necessity. Growing up the youngest of twenty-one children (not a typo!), he and his brothers and sisters ate dinner in shifts and slept three to a bed. If his childhood didn’t teach him enough about how to make the best of what was available, then joining the Navy at age eighteen was all the education he needed. He quickly learned to turn a mug of black Navy-issue coffee into a morning ritual; to express a genuine interest in other people’s lives, total strangers though they might be; and to appreciate beauty, even tucked away in a little sanctuary he made for himself on the deck of a ship while waiting for the sun to rise on an early-morning watch. That is how he made his way in the world from World War II to Korea to Vietnam, and all the places in between.</p>
-<p>This way of his, this uncanny ability to accept what comes, to adapt and change course at a moment’s notice, lies at the core, in my opinion, of why he recently celebrated his ninety-second birthday. It’s not as though it’s been smooth sailing. It hasn’t. In the time since we lost Mom, his wife of sixty-three years, there have been heart ailments, a hip replacement, a broken wrist, a small stroke, a blood infection, and a stubborn gallstone. Yet always, there he was, rising to the occasion and finding a silver lining.</p>
-<p>As we’ve traveled through these challenges together, he’s said to me many times, “I am where I am. I don’t know why. I’m not sure what’s coming at me next. But I’m grateful to be here, with all the love and care that surrounds me. Might as well make the best of it.”</p>
-<p>His words—which echo through my head along with the vision of my dad sitting at his “desk,” the bedside table in his rehabilitation room—are instructive as I go forward, arranging and rearranging the bits and pieces of my new way of empty-nest living. His inspiration reminds me that our attitude means more than any of our circumstances. Our mindset possesses the awesome power to change the course of our moments, our days, and, yes, our lives.</p>
-<p>Lucky for me, I have his example to lead the way. I see him calling his relatives and friends to find out how they’re doing, going out to lunch whenever he gets the chance, sending notes of appreciation to all those who help make his days brighter. He's always showing genuine interest in the lives of those around him and finding ways to help however he can.</p>
-<p>That acceptance of his, that grace of embracing whatever moment he finds himself in—perhaps shared mostly by example—that’s Dad’s best advice of all.</p>
-<p>Share this post
-    
-
-
-
-Facebook
-
-
-
-
-
-
-
-
-
-
-Bluesky
-
-
-
-
-
-Linkedin
-
-
-
-
-
-Email</p>
-<p>There was a problem adding your email address. Please try again.</p>
-<p>Rita Lussier, a former Providence Journal columnist, is the author of the memoir, And Now, Back to Me.</p>
-<p>Get the help you need from a therapist near you–a FREE service from Psychology Today.</p>
-<p>Psychology Today © 2026 Sussex Publishers, LLC</p>
-<p>We’re all holding onto something we’re sure we can’t give up on, but research shows that letting go can boost our happiness a lot more than we might think.</p>
-<p>Self Tests are all about you. Are you outgoing or introverted? Are you a narcissist? Does perfectionism hold you back? Find out the answers to these questions and more with Psychology Today.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.psychologytoday.com/us/blog/for-the-moment/202610/in-life-as-in-the-navy-he-knew-how-to-change-course" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/somali/articles/cwkg5zrj27ero?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Saraakiisha hay&#x27;adda socdaalka Maraykanka oo baaray guriga Ilhan Cumar</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/somali/articles/cwkg5zrj27ero?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_pidgin/c652/live/0bc2bce0-c649-11f1-b47f-e3f9cf703bc3.jpg" class="news-img" alt="Who be Geoff Ogunlesi wey marry American jewelry designer Jennifer Meyer" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">BUSINESS</span>
+                <span>12 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#2149. Hasan Piker Sues Scott Jennings</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Politics</strong> &nbsp;|&nbsp; 
-        <a href="https://reason.com/volokh/2026/10/27/hasan-piker-sues-scott-jennings/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://d2eehagpk5cl65.cloudfront.net/img/q60/uploads/2026/10/PikervJennings.jpg" alt="Hasan Piker Sues Scott Jennings" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://d2eehagpk5cl65.cloudfront.net/img/q60/uploads/2026/10/PikervJennings.jpg" alt="Hasan Piker Sues Scott Jennings" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Mostly law professors | Sometimes contrarian | Often libertarian | Always independent</p>
-<p>From the complaint in Piker v. Jennings; of course, this is just Piker's side of the story—I expect we'll get Jennings' in a forthcoming motion to dismiss:</p>
-<p>On August 11, 2026, Scott Jennings falsely told a nationwide podcast audience that Hasan Piker was "out there calling for Black voters to be lynched." He falsely told his listeners that Mr. Piker had a "plan of returning our country to lynchings." And then he falsely told his social media followers that Mr. Piker "says the USA should resume lynchings against black people."</p>
-<p>All of Mr. Jennings' accusations are false. Mr. Piker has never advocated the lynching of Black Americans, or anyone else. He has never called for a return to lynchings. And he has never proposed anything remotely resembling the supposed plan that Mr. Jennings falsely attributed to him.</p>
-<p>Mr. Jennings did not merely mischaracterize something Mr. Piker said. He took a false, fabricated, and manipulated video of Mr. Piker, added a made-up quotation that Mr. Piker never uttered, and then made accusations that went beyond even what the manipulated footage purported to show. Mr. Jennings presented those accusations as fact, telling his viewers to "[l]isten for yourself" about Mr. Piker, knowing that he was playing a falsified video of Mr. Piker for those viewers, and completely disregarding the truth of Mr. Piker's actual words.</p>
-<p>The underlying footage came from a broadcast nearly two years earlier on Twitch, an online streaming service owned by Amazon. On October 29, 2024, Mr. Piker was reacting to a debate between two Black political commentators, one liberal and one conservative. When the conservative commentator blamed "woke DAs" for policies supposedly harming Black Americans, Mr. Piker mocked him by sarcastically portraying that comment as nostalgia for an era before the civil rights movement. Laughing, Mr. Piker said:</p>
-<p>He said, "We need more Klansmen, okay? Can we go back to a better time when lynchings were happening? This is what I like as a Black man. Also, there's no real racism in America." My man said, "woke DAs," dude. What are you saying?</p>
-<p>Mr. Piker was plainly ridiculing the commentator's position. He was not endorsing it. The debate video remained visible behind him. Mr. Piker introduced the remarks with "He said," laughed as he delivered them, and concluded by questioning the commentator's argument. His viewers understood the sarcasm. Some laughed along. Others expressly described his comments as hyperbole. Still others predicted that someone would eventually remove the context and circulate the resulting footage as though Mr. Piker had been speaking sincerely.</p>
-<p>That is precisely what happened. In August 2026, a 42-second video began circulating on social media that combined fragments of three separate Twitch broadcasts. The portions taken from Mr. Piker's October 2024 stream had been cropped, shortened, and rearranged. The underlying debate was removed from view. So was the contemporaneous audience commentary.</p>
-<p>The words "He said," which identified the object of Mr. Piker's ridicule, were omitted. Mr. Piker's laughter and subsequent explanation were also removed. The resulting video portrayed sarcastic criticism of another as though it were an expression of Mr. Piker's own beliefs.</p>
-<p>On August 11, 2026, Mr. Jennings broadcast that false video on The Scott Jennings Show, misrepresenting the manipulated video as authentic. But Mr. Jennings did not stop at repeating someone else's misleading edit. He added his own caption to the video, presented as a direct quotation from Mr. Piker:</p>
-<p>PIKER: "LET'S GO BACK TO A BETTER TIME WHEN LYNCHINGS WERE HAPPENING" …</p>
-<p>Mr. Piker never said those words. The original broadcast does not contain that statement. Neither does the manipulated video that Mr. Jennings chose to air. Mr. Jennings converted a sarcastic question, expressly attributed to and directed toward someone else, into a patently false first-person statement of Mr. Piker's own supposed beliefs, and then relayed that false statement to his viewers.</p>
-<p>Mr. Jennings then went even further. After warning Black listeners to pay particular attention, Mr. Jennings accused Mr. Piker of "calling for Black voters to be lynched" and referred to "the Piker plan of returning our country to lynchings." Later that day, Mr. Jennings published the same false accusation on social media, telling his followers that Mr. Piker believed the United States "should resume lynchings against black people."</p>
-<p>These were not expressions of disagreement with Mr. Piker's politics. Nor were they rhetorical characterizations of an admittedly controversial commentator. They were factual assertions about what Mr. Piker had said and advocated in his work. Each statement was demonstrably false.</p>
-<p>The distinction matters. Mr. Jennings was free to criticize Mr. Piker, to condemn his political positions, or to argue that his commentary was offensive. Mr. Jennings was also free to play Mr. Piker's actual words, and provide his own commentary on what Mr. Piker actually said. Mr. Jennings was not free to do what he did: knowingly attribute to Mr. Piker statements that Mr. Piker never made, and then present those invented statements as evidence that Mr. Piker supports the racially motivated murder of Black Americans….</p>
-<p>NEXT: Alibaba and the Forty Lobbyists, and the First Amendment</p>
-<p>Eugene Volokh is the Thomas M. Siebel Senior Fellow at the Hoover Institution at Stanford, and the Gary T. Schwartz Distinguished Professor of Law Emeritus and Distinguished Research Professor at UCLA School of Law. Naturally, his posts here (like the opinions of the other bloggers) are his own, and not endorsed by any institution. He is also the co-host of the Free Speech Unmuted podcast.</p>
-<p>This site is protected by reCAPTCHA and the Google Privacy
-                        Policy and Terms of
-                        Service apply.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://reason.com/volokh/2026/10/27/hasan-piker-sues-scott-jennings/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/pidgin/articles/cm62yzp890zno?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Who be Geoff Ogunlesi wey marry American jewelry designer Jennifer Meyer</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/pidgin/articles/cm62yzp890zno?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_burmese/c533/live/914e9c50-c3ae-11f1-bc2e-018d645d8d21.jpg" class="news-img" alt="ရခိုင်ကို ပိတ်ဆို့တိုက်ခိုက်တဲ့စစ်တပ်ဗျူဟာ အောင်မြင်နိုင်မလား" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>12 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#585. Open database tracks Earth&#x27;s water cycle by standardizing decades of satellite data</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://phys.org/news/2026-10-database-tracks-earth-standardizing-decades.html" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>All water comes from somewhere. Researchers who want to know where it comes from rely on water isotopes, variants of water molecules with slightly different masses, as location identifiers. In particular, the specific ratio of heavy to light water isotopes is unique to the water's origin and processes it has undergone and can provide information on how water travels across the globe.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://phys.org/news/2026-10-database-tracks-earth-standardizing-decades.html" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/burmese/articles/cmwyvd7xyd5wo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">ရခိုင်ကို ပိတ်ဆို့တိုက်ခိုက်တဲ့စစ်တပ်ဗျူဟာ အောင်မြင်နိုင်မလား</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/burmese/articles/cmwyvd7xyd5wo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_amharic/fabc/live/404c85d0-c631-11f1-9a39-31b474234113.jpg" class="news-img" alt="ሶማሊያ በኢትዮጵያ እና በኤርትራ መካከል በተፈጠረው ውጥረት ገለልተኛ መሆኗን ገለፀች" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>12 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#594. Can planting trees on riverbanks save salmon rivers from global warming?</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>World</strong> &nbsp;|&nbsp; 
-        <a href="https://phys.org/news/2026-10-trees-riverbanks-salmon-rivers-global.html" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Every summer, Québec rivers increasingly reach water temperature levels that threaten Atlantic salmon (Salmo salar). Just a few extra degrees can make the difference between a favorable and hostile habitat for this iconic species.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://phys.org/news/2026-10-trees-riverbanks-salmon-rivers-global.html" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/amharic/articles/c94g1emrz851o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">ሶማሊያ በኢትዮጵያ እና በኤርትራ መካከል በተፈጠረው ውጥረት ገለልተኛ መሆኗን ገለፀች</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/amharic/articles/c94g1emrz851o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_uzbek/92b1/live/fca86430-c56c-11f1-a64c-550be9e3c66b.jpg" class="news-img" alt="Ўзбекистон, Қирғизистон ва Қозоғистон: &quot;Яндекс&quot; хизматларида узилишлар нимани англатади?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>12 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#541. A Routine Blood Test Could Predict Dementia Risk 15 Years in Advance</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Health</strong> &nbsp;|&nbsp; 
-        <a href="https://scitechdaily.com/a-routine-blood-test-could-predict-dementia-risk-15-years-in-advance/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>A large study tracking more than 316,000 adults for up to 15 years suggests that a routine blood test may reveal important clues about future dementia risk.</p>
-<p>A standard blood test taken during a routine health check could offer clues about dementia risk more than a decade later. In a study of more than 316,000 adults, researchers found that people with unusually low or high levels of hemoglobin were more likely to develop dementia, although the risks varied depending on the type of disease.</p>
-<p>Hemoglobin is the oxygen-carrying protein in red blood cells. Low levels are commonly associated with anemia, while unusually high levels can result from smoking, dehydration, or certain heart and lung conditions. The findings suggest that this familiar blood measurement may also reflect broader aspects of physical health associated with brain aging.</p>
-<p>Researchers analyzed health records from 316,542 Korean adults aged 40 and older who underwent national health screenings in 2004 and 2005. Participants were divided into five groups based on their hemoglobin levels, from the lowest 20% to the highest 20%. National health insurance records were then used to track new dementia diagnoses through the end of 2019.</p>
-<p>Compared with the group that had the lowest dementia rate, participants in the lowest hemoglobin category had a 16% higher risk of developing dementia from any cause. Those in the highest category had a 7% greater risk.</p>
-<p>The findings, published in the Journal of Alzheimer’s Disease and presented at the 39th ECNP Congress in Munich, also identified differences between Alzheimer’s disease and vascular dementia.</p>
-<p>For Alzheimer’s disease, the increased risk was concentrated among people with the lowest hemoglobin levels. Participants in this group were 14% more likely to develop the disease than those in the reference group.</p>
-<p>The relationship was different for vascular dementia (caused by reduced blood flow to the brain). People in the lowest hemoglobin category had a 19% higher risk, while those in the highest category had an 18% higher risk. However, the association did not follow a consistent pattern across all five hemoglobin groups. The researchers also observed clearer and more consistent relationships among women than men.</p>
-<p>Lead researcher Dr. Hyun Soo Kim, an assistant professor at Dong-A University College of Medicine in Busan, South Korea, emphasized that the results do not establish a direct causal relationship.</p>
-<p>“The findings do not show that hemoglobin itself causes dementia, but suggest that abnormal hemoglobin levels may be a visible marker of wider physical vulnerability relevant to brain health.”</p>
-<p>Kim added, “Dementia is one of the fastest-growing health challenges in aging societies, and there are not many treatments and no cure. Identifying simple, accessible markers of future risk could help researchers and clinicians better understand how whole-body health relates to brain health over time.”</p>
-<p>Hemoglobin is already measured in standard blood tests around the world, making it considerably more accessible than specialized brain imaging or newer dementia biomarkers. The researchers suggest that existing blood test results could potentially help scientists investigate connections between general physical health and long-term cognitive decline.</p>
-<p>Kim explained, “A blood test most people already get at a routine check-up may say something about their brain health many years later. In this large Korean cohort, people with unusually low hemoglobin, and, to a smaller degree, those with unusually high hemoglobin, were more likely to develop dementia. This does not prove that hemoglobin causes dementia, but it supports the idea that general physical health, including the body’s ability to carry oxygen, matters for long-term brain health.”</p>
-<p>Because the study was observational, it cannot determine whether abnormal hemoglobin levels contribute directly to dementia. Other medical conditions could influence both hemoglobin measurements and brain health. Early dementia processes might also affect nutrition, body weight, frailty, or anemia before the disease is formally diagnosed.</p>
-<p>“We want to emphasize that the findings should not be interpreted as advice to take iron supplements, to raise hemoglobin levels, or to lower high hemoglobin levels in order to prevent dementia. An abnormal hemoglobin result should instead be discussed with a doctor, because it may point to underlying health issues that deserve attention,” Kim said.</p>
-<p>The study drew on health records from South Korea, leaving questions about whether the same relationships apply to people from other ethnic, geographic, and medical backgrounds. Further research is also needed to establish whether identifying abnormal hemoglobin levels can meaningfully improve dementia risk assessment or prevention.</p>
-<p>Dr. Lindsey Sinclair (University of Southampton), who was not involved in the research, commented:</p>
-<p>“There is a growing body of evidence that physical health and brain health are intertwined. We are also increasingly aware that changes supporting better brain health, be they medical or lifestyle changes, are important in mid-life to reduce the risk of later dementia. While this study shows a possible link between hemoglobin levels and dementia risk, more work is required to understand if this link is present in people from a wider range of backgrounds; and what can best be done to reduce dementia risk in people with the lowest and highest levels of hemoglobin.”</p>
-<p>Never miss a breakthrough: Join the SciTechDaily newsletter.Follow us on Google and Google News.</p>
-<p>Save my name, email, and website in this browser for the next time I comment.</p>
-<p>Type above and press Enter to search. Press Esc to cancel.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://scitechdaily.com/a-routine-blood-test-could-predict-dementia-risk-15-years-in-advance/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/uzbek/articles/c8wy9d077x9vo/cyr?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Ўзбекистон, Қирғизистон ва Қозоғистон: &quot;Яндекс&quot; хизматларида узилишлар нимани англатади?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/uzbek/articles/c8wy9d077x9vo/cyr?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_marathi/397a/live/f4de6060-c625-11f1-9a39-31b474234113.jpg" class="news-img" alt="दिल्लीत कलम 163, अनेक मेट्रो स्टेशन बंद; राहुल गांधींचा सुप्रीम कोर्टाकडे मोर्चा" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>12 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#2863. Oil Rig Catastrophe: Horrifying Video Shows Massive Prospector 5 Topple Into the Atlantic With 115 Aboard (Video)</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.surfer.com/news/prospector-5-oil-rig-collapse-video" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>An enormous jack-up rig off Gabon suddenly loses stability and sinks as rescue craft scramble nearby. Watch the chilling Prospector 5 footage and learn what failed.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.surfer.com/news/prospector-5-oil-rig-collapse-video" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/marathi/watch/c50mew74w1ygo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">दिल्लीत कलम 163, अनेक मेट्रो स्टेशन बंद; राहुल गांधींचा सुप्रीम कोर्टाकडे मोर्चा</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/marathi/watch/c50mew74w1ygo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_amharic/0e42/live/0236b740-c611-11f1-a64c-550be9e3c66b.jpg" class="news-img" alt="ወደ ትግራይ የተጓዙት የፌደራል መንግሥቱ ከፍተኛ ባለሥልጣናት ምን አሉ?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>12 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#3191. ‘She’s living the dream’: My stepmother said I can buy my childhood home for $850,000. Is she taking advantage of me?</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.marketwatch.com/story/shes-living-the-dream-my-stepmother-said-i-can-buy-my-childhood-home-for-850-000-is-she-taking-advantage-of-me-1fdda7b5?mod=mw_rss_topstories" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>“My late father bought our house for $250,000 in the 1990s.”</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.marketwatch.com/story/shes-living-the-dream-my-stepmother-said-i-can-buy-my-childhood-home-for-850-000-is-she-taking-advantage-of-me-1fdda7b5?mod=mw_rss_topstories" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/amharic/articles/ck0j0gy185lzo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">ወደ ትግራይ የተጓዙት የፌደራል መንግሥቱ ከፍተኛ ባለሥልጣናት ምን አሉ?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/amharic/articles/ck0j0gy185lzo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_swahili/89a6/live/fbcea690-c5db-11f1-a64c-550be9e3c66b.jpg" class="news-img" alt="BBC Africa Eye: Ni nani aliwapiga risasi waombolezaji wa Raila Odinga?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>12 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#41. From 8VC to Benchmark, here’s what’s hiding in October SEC filings</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://techcrunch.com/2026/10/27/from-8vc-to-benchmark-heres-whats-hiding-in-october-sec-filings/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://techcrunch.com/wp-content/uploads/2023/12/GettyImages-1650189797.jpg?resize=1200,900" alt="From 8VC to Benchmark, here’s what’s hiding in October SEC filings" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://techcrunch.com/wp-content/uploads/2023/12/GettyImages-1650189797.jpg?resize=1200,900" alt="From 8VC to Benchmark, here’s what’s hiding in October SEC filings" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Buy One Founder Summit Ticket, Get a Second for Free. Register now.</p>
-<p>Disrupt doors open Oct. 13. Get your pass and bring someone with you at 50% off. REGISTER NOW.</p>
-<p>October was a big month for venture funds, per SEC filings. The filings show that established names are currently commanding top dollar from LPs, especially with a specialized focus. Here are some of the most notable ones we found that haven’t been meaningfully announced or have seen important updates.</p>
-<p>For one, Trust Ventures filed Monday to raise a $400 million Fund V. The Austin-based firm was founded in 2017 by Salen Churi to back founders building in highly regulated industries. Koch Disruptive Technologies notably backed the firm’s debut fund back in 2018. It previously sought to raise a $225 million Fund IV in 2023, though it’s unclear if or when that fund closed. Deep tech fund Interlagos Capital is also raising a $400 million Fund II.</p>
-<p>Elsewhere, Victor Lazarte and Kris Fredrickson, two former Benchmark VCs, have raised $1.252 billion for their debut AI fund called Diffusion ONE. Forbes previously reported back in May that the two had teamed up (after raising smaller funds of their own) to launch this fund with a target of $800 million, meaning it’s far surpassed that original target. The firm has already cut big checks since its debut, including co-leading Harvey’s $550 million Series H with Lightspeed Ventures and taking part in Etched’s $300 million Series C, announced in July.</p>
-<p>Speaking of Benchmark, the firm filed what looks like four new partner-only funds, called Benchmark Partners Founders’ Fund T1, Benchmark Partners Founders’ Fund 2, Benchmark Partners Founders’ Fund 2-A, and Benchmark Partners Founders’ Fund T1-A, seeking to raise $220 million, $132 million, $4.5 million, and $7.5 million, respectively. Jack Altman, who recently left his own firm to join Benchmark, is listed in each filing.</p>
-<p>Meanwhile, Joe Lonsdale’s 8VC also seems to be seeking to raise new vehicles — including a $400 million fund called 8VC DSS III; a $30.35 million fund called 8VC COSC; a $20.35 million 8VC BRSC fund; and a fund called 8VC AI Fund XI, which has already raised $13.5 million, including from 8VC itself. This follows the July news that 8VC raised $1.5 billion for Fund VII.</p>
-<p>Earlier this month, Notable Capital, backers of companies like Anthropic, Airbnb, and Square, filed to raise a fifth fund, while Neil Mehta’s Greenoaks, which co-led Anthropic’s $65 billion Series H, filed to raise a fund called Greenoaks 7. The timing is good as Anthropic just took another major step in its efforts to go public, meaning the firms are already prepared to market themselves based on possible handsome returns. According to PitchBook, Greenoaks has also backed companies like Ramp and Anthropic.</p>
-<p>Industry Ventures, meanwhile, has raised at least $1.7 billion for its secondaries fund, which opened in late July. The size of the vehicle shows how important that market has become, as appetite grows to buy into hot exiting private companies. One family office advisor told TechCrunch last month about how popular the secondaries market has become, while Emily Zheng, a senior VC analyst at PitchBook, said that stakes in Anthropic and OpenAI are some of the “most contested real estate in venture.”</p>
-<p>When you purchase through links in our articles, we may earn a small commission. This doesn’t affect our editorial independence.</p>
-<p>Dominic-Madori Davis is a senior venture capital and startup reporter at TechCrunch. She is based in New York City.</p>
-<p>You can contact or verify outreach from Dominic by emailing [email protected] or via encrypted message at +1 646 831-7565 on Signal.</p>
-<p>Buy One Pass, Get a Second FreeCover more ground at TechCrunch’s ultimate founder bootcamp of the year by bringing your co-founder or partner for freeBook before the BOGO deal expires</p>
-<p>Microsoft offers buyouts to around 60,000 employees</p>
-<p>Grok releases the first seven minutes of its AI-generated ‘Odyssey’</p>
-<p>The AI graveyard: a running list of projects and startups that didn’t make it</p>
-<p>Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell</p>
-<p>Warhound raises $200M to engineer war dogs and arm them with Anduril gear</p>
-<p>Uber puts all 30,000 employees on ChatGPT Work</p>
-<p>Airbnb limits chores for guests, sparking backlash from hosts</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://techcrunch.com/2026/10/27/from-8vc-to-benchmark-heres-whats-hiding-in-october-sec-filings/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/swahili/articles/cj20v4dv0dq9o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">BBC Africa Eye: Ni nani aliwapiga risasi waombolezaji wa Raila Odinga?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/swahili/articles/cj20v4dv0dq9o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_marathi/d54c/live/ec7afde0-c58d-11f1-9a39-31b474234113.png" class="news-img" alt="अभिजीत दिपकेंना आजीच्या निधनाची बातमी पोलिसांनी कधी सांगितली? आरोप - प्रत्यारोप" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>11 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#4566. M6 vs. M5 MacBook Pro (14-inch): Should M5 owners even bother?</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.digitaltrends.com/computing/m6-vs-m5-macbook-pro-14-inch-should-m5-owners-even-bother/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>The M6 keeps the same design but sneaks in real speed and modern wireless, courtesy of the new M6 chip that brings more CPU cores.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.digitaltrends.com/computing/m6-vs-m5-macbook-pro-14-inch-should-m5-owners-even-bother/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/marathi/watch/c8040zdy0dqlo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">अभिजीत दिपकेंना आजीच्या निधनाची बातमी पोलिसांनी कधी सांगितली? आरोप - प्रत्यारोप</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/marathi/watch/c8040zdy0dqlo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_uzbek/8427/live/6b6b7910-c55a-11f1-9a39-31b474234113.jpg" class="news-img" alt="Украинага &#x27;янги президент керак&#x27;ми, Россия ўзи бошқарилувчи бомбаларини ишга солди, Саудияга янги ҳужум – ўзбекистонликлар ҳам &#x27;яраланган&#x27;. Видео" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>11 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#3359. A Puffer Jacket That Transforms Into a Travel Neck Pillow Is 65% Off at Macy’s</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Travel</strong> &nbsp;|&nbsp; 
-        <a href="https://www.mensjournal.com/shopping/weatherproof-mens-packable-neck-pillow-zip-front-quilted-jacket-macys-sale" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>“Great for traveling.”</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.mensjournal.com/shopping/weatherproof-mens-packable-neck-pillow-zip-front-quilted-jacket-macys-sale" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/uzbek/articles/cx054mmmen14o/cyr?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Украинага &#x27;янги президент керак&#x27;ми, Россия ўзи бошқарилувчи бомбаларини ишга солди, Саудияга янги ҳужум – ўзбекистонликлар ҳам &#x27;яраланган&#x27;. Видео</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/uzbek/articles/cx054mmmen14o/cyr?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_bengali/573d/live/f3d4b770-c547-11f1-b4f1-2359026a88ee.jpg" class="news-img" alt="বিবিসি বাংলার ৮৫ বছর: রেডিও থেকে স্মার্টফোনের পর্দায় বিশ্বাসের এক দীর্ঘ যাত্রা" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>11 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article><div class="pagination"><a href="index.html">1</a><a href="page2.html">2</a><a href="page3.html">3</a><a href="page4.html">4</a><a href="page5.html">5</a><a href="page6.html">6</a><a href="page7.html">7</a><a href="page8.html">8</a><a href="page9.html">9</a><a href="page10.html">10</a><a href="page11.html">11</a><a href="page12.html">12</a><a href="page13.html">13</a><a href="page14.html">14</a><a href="page15.html">15</a><a href="page16.html">16</a><a href="page17.html">17</a><a href="page18.html">18</a><a href="page19.html">19</a><a href="page20.html">20</a><a href="page21.html">21</a><a href="page22.html">22</a><a href="page23.html">23</a><a href="page24.html">24</a><a href="page25.html">25</a><a href="page26.html">26</a><a href="page27.html">27</a><a href="page28.html">28</a><a href="page29.html">29</a><a href="page30.html">30</a><a href="page31.html">31</a><a href="page32.html" class="active">32</a><a href="page33.html">33</a><a href="page34.html">34</a><a href="page35.html">35</a><a href="page36.html">36</a><a href="page37.html">37</a><a href="page38.html">38</a><a href="page39.html">39</a><a href="page40.html">40</a><a href="page41.html">41</a><a href="page42.html">42</a><a href="page43.html">43</a><a href="page44.html">44</a><a href="page45.html">45</a><a href="page46.html">46</a><a href="page47.html">47</a><a href="page48.html">48</a><a href="page49.html">49</a><a href="page50.html">50</a><a href="page51.html">51</a><a href="page52.html">52</a><a href="page53.html">53</a><a href="page54.html">54</a><a href="page55.html">55</a><a href="page56.html">56</a><a href="page57.html">57</a><a href="page58.html">58</a><a href="page59.html">59</a><a href="page60.html">60</a><a href="page61.html">61</a><a href="page62.html">62</a><a href="page63.html">63</a><a href="page64.html">64</a><a href="page65.html">65</a><a href="page66.html">66</a><a href="page67.html">67</a><a href="page68.html">68</a><a href="page69.html">69</a><a href="page70.html">70</a><a href="page71.html">71</a><a href="page72.html">72</a><a href="page73.html">73</a><a href="page74.html">74</a><a href="page75.html">75</a><a href="page76.html">76</a><a href="page77.html">77</a><a href="page78.html">78</a><a href="page79.html">79</a><a href="page80.html">80</a><a href="page81.html">81</a><a href="page82.html">82</a><a href="page83.html">83</a><a href="page84.html">84</a><a href="page85.html">85</a><a href="page86.html">86</a><a href="page87.html">87</a><a href="page88.html">88</a><a href="page89.html">89</a><a href="page90.html">90</a><a href="page91.html">91</a><a href="page92.html">92</a><a href="page93.html">93</a><a href="page94.html">94</a><a href="page95.html">95</a><a href="page96.html">96</a><a href="page97.html">97</a><a href="page98.html">98</a><a href="page99.html">99</a><a href="page100.html">100</a><a href="page101.html">101</a><a href="page102.html">102</a><a href="page103.html">103</a><a href="page104.html">104</a><a href="page105.html">105</a><a href="page106.html">106</a><a href="page107.html">107</a><a href="page108.html">108</a><a href="page109.html">109</a><a href="page110.html">110</a><a href="page111.html">111</a><a href="page112.html">112</a><a href="page113.html">113</a><a href="page114.html">114</a><a href="page115.html">115</a><a href="page116.html">116</a><a href="page117.html">117</a><a href="page118.html">118</a><a href="page119.html">119</a><a href="page120.html">120</a><a href="page121.html">121</a><a href="page122.html">122</a><a href="page123.html">123</a><a href="page124.html">124</a><a href="page125.html">125</a><a href="page126.html">126</a><a href="page127.html">127</a><a href="page128.html">128</a><a href="page129.html">129</a><a href="page130.html">130</a><a href="page131.html">131</a><a href="page132.html">132</a><a href="page133.html">133</a><a href="page134.html">134</a><a href="page135.html">135</a><a href="page136.html">136</a><a href="page137.html">137</a><a href="page138.html">138</a><a href="page139.html">139</a><a href="page140.html">140</a><a href="page141.html">141</a><a href="page142.html">142</a><a href="page143.html">143</a><a href="page144.html">144</a><a href="page145.html">145</a><a href="page146.html">146</a><a href="page147.html">147</a><a href="page148.html">148</a><a href="page149.html">149</a><a href="page150.html">150</a><a href="page151.html">151</a><a href="page152.html">152</a><a href="page153.html">153</a><a href="page154.html">154</a><a href="page155.html">155</a><a href="page156.html">156</a><a href="page157.html">157</a><a href="page158.html">158</a><a href="page159.html">159</a><a href="page160.html">160</a><a href="page161.html">161</a><a href="page162.html">162</a><a href="page163.html">163</a><a href="page164.html">164</a><a href="page165.html">165</a><a href="page166.html">166</a><a href="page167.html">167</a><a href="page168.html">168</a><a href="page169.html">169</a><a href="page170.html">170</a><a href="page171.html">171</a><a href="page172.html">172</a><a href="page173.html">173</a><a href="page174.html">174</a><a href="page175.html">175</a><a href="page176.html">176</a><a href="page177.html">177</a><a href="page178.html">178</a><a href="page179.html">179</a><a href="page180.html">180</a><a href="page181.html">181</a><a href="page182.html">182</a><a href="page183.html">183</a><a href="page184.html">184</a><a href="page185.html">185</a><a href="page186.html">186</a><a href="page187.html">187</a><a href="page188.html">188</a><a href="page189.html">189</a><a href="page190.html">190</a><a href="page191.html">191</a><a href="page192.html">192</a><a href="page193.html">193</a><a href="page194.html">194</a><a href="page195.html">195</a><a href="page196.html">196</a><a href="page197.html">197</a><a href="page198.html">198</a><a href="page199.html">199</a><a href="page200.html">200</a><a href="page201.html">201</a><a href="page202.html">202</a><a href="page203.html">203</a><a href="page204.html">204</a><a href="page205.html">205</a><a href="page206.html">206</a><a href="page207.html">207</a><a href="page208.html">208</a><a href="page209.html">209</a><a href="page210.html">210</a><a href="page211.html">211</a><a href="page212.html">212</a><a href="page213.html">213</a><a href="page214.html">214</a><a href="page215.html">215</a><a href="page216.html">216</a><a href="page217.html">217</a><a href="page218.html">218</a><a href="page219.html">219</a><a href="page220.html">220</a><a href="page221.html">221</a><a href="page222.html">222</a><a href="page223.html">223</a><a href="page224.html">224</a><a href="page225.html">225</a><a href="page226.html">226</a><a href="page227.html">227</a><a href="page228.html">228</a><a href="page229.html">229</a><a href="page230.html">230</a><a href="page231.html">231</a><a href="page232.html">232</a><a href="page233.html">233</a><a href="page234.html">234</a><a href="page235.html">235</a><a href="page236.html">236</a><a href="page237.html">237</a><a href="page238.html">238</a><a href="page239.html">239</a><a href="page240.html">240</a><a href="page241.html">241</a><a href="page242.html">242</a><a href="page243.html">243</a></div><footer>&copy; 2026 News Portal Indonesia. All rights reserved.</footer>
+            <h2 class="news-title"><a href="https://www.bbc.com/bengali/articles/c5wyr11lyzmeo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">বিবিসি বাংলার ৮৫ বছর: রেডিও থেকে স্মার্টফোনের পর্দায় বিশ্বাসের এক দীর্ঘ যাত্রা</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/bengali/articles/c5wyr11lyzmeo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_tigrinya/05b1/live/aedeb940-c4b6-11f1-9ce9-55293bd7f0d9.jpg" class="news-img" alt="ኤርትራ፡ ባይቶ ጸጥታ ኣብ ልዕሊ ኢትዮጵያ ስጕምቲ ንኽወስድ ጸዊዓ" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>10 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.bbc.com/tigrinya/articles/cqdjvdk2jl8ro?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">ኤርትራ፡ ባይቶ ጸጥታ ኣብ ልዕሊ ኢትዮጵያ ስጕምቲ ንኽወስድ ጸዊዓ</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/tigrinya/articles/cqdjvdk2jl8ro?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article></div><div class="pagination"><a href="index.html">1</a><a href="page2.html">2</a><a href="page3.html">3</a><a href="page4.html">4</a><a href="page5.html">5</a><a href="page6.html">6</a><a href="page7.html">7</a><a href="page8.html">8</a><a href="page9.html">9</a><a href="page10.html">10</a><a href="page11.html">11</a><a href="page12.html">12</a><a href="page13.html">13</a><a href="page14.html">14</a><a href="page15.html">15</a><a href="page16.html">16</a><a href="page17.html">17</a><a href="page18.html">18</a><a href="page19.html">19</a><a href="page20.html">20</a><a href="page21.html">21</a><a href="page22.html">22</a><a href="page23.html">23</a><a href="page24.html">24</a><a href="page25.html">25</a><a href="page26.html">26</a><a href="page27.html">27</a><a href="page28.html">28</a><a href="page29.html">29</a><a href="page30.html">30</a><a href="page31.html">31</a><a href="page32.html" class="active">32</a><a href="page33.html">33</a><a href="page34.html">34</a><a href="page35.html">35</a><a href="page36.html">36</a><a href="page37.html">37</a><a href="page38.html">38</a><a href="page39.html">39</a><a href="page40.html">40</a><a href="page41.html">41</a></div><footer>&copy; 2026 News Portal. All rights reserved.</footer>
 </div></body></html>

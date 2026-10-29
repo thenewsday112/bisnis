@@ -4,83 +4,64 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>News Portal Indonesia - Page 35</title>
-<meta name="description" content="Page 35">
-<link rel="canonical" href="https://railfansday.github.io/newsweb/page35.html">
+<title>Page 35</title>
+<meta name="description" content="Latest news page 35">
+<link rel="canonical" href="https://thenewsday112.github.io/newsmenuday/page35.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-body{font-family:'Segoe UI',system-ui,sans-serif;background:#f4f6f8;margin:0;padding:20px;color:#333;line-height:1.6}
-.container{max-width:1000px;margin:0 auto}
-header{background:#1e293b;color:#fff;padding:20px;border-radius:12px;margin-bottom:20px;text-align:center;box-shadow:0 4px 6px rgba(0,0,0,.1)}
-header h1{margin:0;font-size:26px;letter-spacing:1px}
-nav{background:#fff;padding:10px;border-radius:12px;margin-bottom:24px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center;box-shadow:0 2px 4px rgba(0,0,0,.05)}
-nav a{padding:8px 16px;border-radius:8px;color:#475569;text-decoration:none;font-weight:600;transition:all .2s;font-size:14px}
-nav a:hover,nav a.active{background:#2563eb;color:#fff}
-.article-card{background:#fff;padding:24px;margin-bottom:24px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2563eb}
-.article-card h2{margin:0 0 12px;font-size:22px;color:#1e293b}
-.article-meta{font-size:13px;color:#64748b;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid #e2e8f0}
-.article-meta a{color:#2563eb;text-decoration:none;font-weight:bold}
-.article-body{font-size:16px;line-height:1.8;color:#334155}
-.article-body img{max-width:100%;height:auto;border-radius:8px;margin:16px 0}
-.pagination{text-align:center;margin:40px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
-.pagination a{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;color:#334155;font-weight:bold;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.05);transition:all .2s}
-.pagination a:hover{background:#f1f5f9}
-.pagination a.active{background:#2563eb;color:#fff}
-footer{text-align:center;color:#64748b;font-size:14px;padding:30px 0;border-top:1px solid #e2e8f0;margin-top:20px}
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+}
+* { box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: var(--bg-color); margin: 0; padding: 0; color: var(--text-main); line-height: 1.6; }
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+header.site-header { background: var(--card-bg); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.header-inner { max-width: 1100px; margin: 0 auto; padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; }
+.logo { font-size: 24px; font-weight: 800; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+nav.category-nav { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; scrollbar-width: none; }
+nav.category-nav::-webkit-scrollbar { display: none; }
+nav.category-nav a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 14px; padding: 8px 16px; border-radius: 20px; white-space: nowrap; transition: all 0.2s; background: var(--bg-color); }
+nav.category-nav a:hover, nav.category-nav a.active { background: var(--primary); color: white; }
+.news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; margin-top: 20px; }
+.news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; border: 1px solid var(--border-color); }
+.news-card:hover { transform: translateY(-4px); box-shadow: 0 12px 20px -5px rgba(0,0,0,0.1); }
+.news-img { width: 100%; height: 180px; object-fit: cover; background: #e2e8f0; display: block; }
+.news-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+.news-meta { display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 600; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.badge { background: #eff6ff; color: var(--primary); padding: 4px 10px; border-radius: 20px; }
+.news-title { margin: 0 0 12px 0; font-size: 18px; font-weight: 800; line-height: 1.4; }
+.news-title a { color: var(--text-main); text-decoration: none; }
+.news-title a:hover { color: var(--primary); }
+.news-excerpt { color: var(--text-muted); font-size: 14px; margin-bottom: 16px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.read-more { margin-top: auto; font-size: 14px; font-weight: 600; color: var(--primary); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
+.read-more:hover { color: var(--primary-dark); }
+.pagination { display: flex; justify-content: center; gap: 8px; margin: 40px 0; flex-wrap: wrap; }
+.pagination a { display: inline-flex; align-items: center; justify-content: center; min-width: 40px; height: 40px; padding: 0 10px; border-radius: 8px; background: var(--card-bg); color: var(--text-main); text-decoration: none; font-weight: 600; border: 1px solid var(--border-color); transition: all 0.2s; }
+.pagination a:hover, .pagination a.active { background: var(--primary); color: white; border-color: var(--primary); }
+.ad-container { background: var(--card-bg); padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 20px; border: 1px solid var(--border-color); }
+footer { text-align: center; padding: 40px 20px; color: var(--text-muted); border-top: 1px solid var(--border-color); margin-top: 40px; background: var(--card-bg); }
+@media (max-width: 768px) { .header-inner { flex-direction: column; align-items: flex-start; gap: 15px; } nav.category-nav { width: 100%; } }
 </style>
 </head>
 <body>
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">📰 News Portal</a>
+    </div>
+    <div class="header-inner" style="padding-top:0;">
+        <nav class="category-nav"><a href="index.html" class="active">All News</a><a href="technology.html" class="">Technology</a><a href="business.html" class="">Business</a><a href="sports.html" class="">Sports</a><a href="entertainment.html" class="">Entertainment</a><a href="health.html" class="">Health</a><a href="science.html" class="">Science</a><a href="other.html" class="">Other</a></nav>
+    </div>
+</header>
 <div class="container">
-<header><h1>News Portal Indonesia</h1></header>
-<nav><a href="index.html" class="active">🏠 All News</a><a href="technology.html">📰 Technology</a><a href="business.html">📰 Business</a><a href="sports.html">📰 Sports</a><a href="entertainment.html">📰 Entertainment</a><a href="health.html">📰 Health</a><a href="science.html">📰 Science</a><a href="politics.html">📰 Politics</a><a href="world.html">📰 World</a><a href="travel.html">📰 Travel</a><a href="food.html">📰 Food</a><a href="automotive.html">📰 Automotive</a><a href="education.html">📰 Education</a><a href="lifestyle.html">📰 Lifestyle</a><a href="other.html">📰 Other</a></nav>
-<h1 style="color:#1e293b;border-left:5px solid #2563eb;padding-left:15px;margin-bottom:30px;">News Portal Indonesia - Page 35</h1>
-<article class="article-card">
-    <h2>#119. Anthropic IPO warns its AI could blackmail people, become sentient, end humanity</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Seven potential AI nightmares pulled from Anthropic's 93-page "Risk Factor" tome.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
-            </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;"><h1 style="font-size:28px; font-weight:800; margin:0;">Page 35</h1></div><div class="ad-container">
 <div style="text-align:center;margin:20px 0;">
     <script type="text/javascript">
         atOptions = {
@@ -93,1675 +74,245 @@ footer{text-align:center;color:#64748b;font-size:14px;padding:30px 0;border-top:
     </script>
     <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
 </div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#1091. 120 Dirty Truth or Dare Questions That Are Actually Hot</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://sex.cosmopolitan.com/pleasure/a74251691/dirty-truth-or-dare-questions/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/04146c4e-c7b1-4229-be52-a3784d7ea0f2.jpg?crop=1xw:0.750187546887xh;center,top&amp;resize=1200:*" alt="120 Dirty Truth or Dare Questions That Are Actually Hot" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://hips.hearstapps.com/hmg-prod/images/04146c4e-c7b1-4229-be52-a3784d7ea0f2.jpg?crop=1xw:0.750187546887xh;center,top&resize=1200:*" alt="120 Dirty Truth or Dare Questions That Are Actually Hot" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Your next game night is about to get very NSFW.</p>
-<p>We may earn commission from links on this page, but we only recommend products we love. Promise.</p>
-<p>There's truth or dare, and then there's dirty truth or dare. You know, the version where the questions get a little more personal, the dares involve significantly less clothing, and suddenly you're learning things about your partner that definitely weren't covered on your first date.</p>
-<p>Sure, the game is fun (as games are), but there's a bonus benefit to it: Sometimes asking someone about their deepest, dirtiest fantasies is a lot easier when it's technically part of a game. Especially if you've been dying to bring up that one thing you want to try in bed but haven't quite figured out how to work it into casual conversation. (Turns out, “Hey, can you pass the salt? Also, how do you feel about being tied up?” isn't the smoothest approach for everyone.)</p>
-<p>“Because it's dirty truth or dare, you know it's an erotic adventure upfront,” explains Carol Queen, PhD, staff sexologist and chief cultural officer at Good Vibes. Of course, that doesn't mean anything goes. Queen recommends talking about boundaries beforehand and making sure everyone can skip a question or dare, no explanation required. We're trying to get turned on here, not make anyone regret agreeing to game night.</p>
-<p>So, if you're ready to find out what your partner's really into (or finally confess a few things yourself), we've got 120 dirty truth or dare questions and challenges to get things going. And hey, if you discover something you both want to try again after the game's over? Even better.</p>
-<p>The rules of dirty truth or dare are pretty much the same as the original game, just with a lot more sexual tension. Players take turns choosing between answering a dirty question (truth) or completing a sexy challenge (dare). Depending on who you're playing with, that might mean revealing a secret fantasy, sharing your biggest turn-on, or trying something new with a partner.</p>
-<p>Before things get too hot and heavy, though, it's worth establishing a few ground rules. As mentioned, Queen recommends talking about boundaries beforehand, especially since traditional truth or dare involves choosing your fate before knowing what you're agreeing to. Everyone should have the option to skip a question or dare, and a safeword can help players communicate when something is off-limits.</p>
-<p>And if you're worried about things getting awkward? Start with questions and dares you already know everyone will be comfortable with, then work your way up to the more adventurous stuff. As Queen advises, “Start with the things you are certain will be well-received.” You can always turn up the heat as you go, but nobody should feel pressured to participate in something they're not into.</p>
-<p>The Sexperts Have Spoken: Foot Fetishes Are Normal</p>
-<p>Looksmaxxing Culture Is Messing Up Men’s Sex Lives</p>
-<p>Add Extra Oomph to Your Sex Life With Arousal Gels</p>
-<p>Sex Pillows & Wedges for Ultra Comfy Boot-Knockin’</p>
-<p>The Viral Snail Vibe Gave Me One Hell of an Orgasm</p>
-<p>Butt Stuff Is Way Better With These 14 Tips</p>
-<p>You & Your Partner Should Try a Sex Toy Next Time</p>
-<p>We may earn commission from links on this page, but we only recommend products we back.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://sex.cosmopolitan.com/pleasure/a74251691/dirty-truth-or-dare-questions/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+</div><div class="news-grid">
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_amharic/5690/live/a3191440-cc5d-11f0-a709-e1cdbb15a6d6.jpg" class="news-img" alt="የኢትዮጵያ ሕዝብ ተወካዮች ምክር ቤት ታሪክ፣ አሠራር እና አወቃቀር" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>05 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#1099. Alright, I’ve Seen Enough—Let’s Stop Dating Male Podcasters</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Business</strong> &nbsp;|&nbsp; 
-        <a href="https://www.cosmopolitan.com/relationships/a74260445/male-podcasters-dating-red-flags/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/f43839d4-b31e-440c-afb4-b96f18e112fa.jpeg?crop=1xw:0.558xh;0xw,0.05xh&amp;resize=1200:*" alt="Alright, I’ve Seen Enough—Let’s Stop Dating Male Podcasters" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://hips.hearstapps.com/hmg-prod/images/f43839d4-b31e-440c-afb4-b96f18e112fa.jpeg?crop=1xw:0.558xh;0xw,0.05xh&resize=1200:*" alt="Alright, I’ve Seen Enough—Let’s Stop Dating Male Podcasters" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Seeing a man with a mic on my social media is a jump scare. First, because a man with a podcast is a major ick in and of itself. Secondly, a majority of the time, what’s coming out of their mouths is gross, misogynistic, factually incorrect—or all three. And if it’s not what’s coming out of their mouths on the mic, it’s what they’re doing when they’re not “on air.” The latest news cycle only confirms this.</p>
-<p>Now, I am proud to say that before this week, I knew virtually nothing about Ethan Klein aside from the fact that he was sort of a public figure and I didn’t like him. From the very few clips of the Frenemies podcast I saw (and very quickly scrolled away from) with Klein and Trisha Paytas, all I gathered was that Klein is sort of a dick. Now that I know he’s allegedly been cheating on his wife for 6 months...I know that my initial assessment was too tame.</p>
-<p>Klein is one of many male podcasters who are quite simply put: bad dudes. Aside from some of the obvious offenders like Andrew Tate, Myron Gaines, and Joe Rogan—who all spew toxic, brainless misogynistic trash on their podcasts—even the “positive” faces of male podcasting (Jay Shetty and Andrew Huberman) have faced revelations that complicate their squeaky-clean personas.</p>
-<p>I think we need to stop treating the male podcaster archetype as inherently harmless—or, worse, as evidence that a man is particularly emotionally intelligent. With very few exceptions, these men suck—and it’s time to stop dating them.</p>
-<p>“A podcast microphone attracts a very distinct psychological profile,” sex and relationship expert Gemma Nice tells Cosmopolitan. “Men who confuse monologue with communication, and external audience validation with genuine self-worth.”</p>
-<p>This isn't to say every man with a microphone is secretly a pathological liar, misogynist, or cheater (or all three like Klein, sorry). Obviously, there are plenty of perfectly normal men who happen to record themselves talking for a living. Well, I haven’t seen them, but I’m sure they’re out there. Because what does it actually mean when a man decides he needs an audience for his opinions?</p>
-<p>“Hosting a podcast gives an individual an uninterrupted platform where they talk for hours, control the narrative, and are rewarded with applause, downloads, and social media validation without anyone answering back in real time,” Nice says.</p>
-<p>But, she explains that healthy romantic relationships require the exact opposite skill set. A healthy relationship consists of active listening, emotional humility, and sitting comfortably in silence. When these men step away from the studio and into their private relationships, they often don't know how to relate to a partner without trying to win the conversation or lecture them.</p>
-<p>“When a partner pushes back or expresses hurt, a man addicted to the microphone immediately becomes defensive because his ego cannot handle being challenged without an audience on his side,” Nice says.</p>
-<p>When a man becomes a podcaster, it’s typically because he has discovered that there is an enormous market for men telling other men how to live—and that market is not exactly known for producing well-adjusted feminists.</p>
-<p>Research into the manosphere has found that podcasts can serve as a particularly effective vehicle for spreading misogynistic ideas because they package them inside more palatable formats like self-improvement, financial advice, mental-health discussions and conversations about masculinity. One analysis of popular “manfluencer” podcasts found that hypermasculine and male-supremacist ideas were frequently disguised as advice about self-reliance, success, and personal empowerment.</p>
-<p>And the guy doesn't necessarily have to come out and say women are inferior. He can just spend three hours explaining why modern women are “too demanding,” why men “aren't allowed to be men anymore,” why women should be more feminine, why dating apps are ruining society, why men need to “reclaim” their masculinity, and why the problem with your relationship is probably that a woman hasn’t learned how to communicate with a man properly. He can also spend multiple episodes making gross comments about their cohost’s fertility—like Klein did to Paytas.</p>
-<p>The men whose entire public persona is built around being obnoxious, inflammatory, condescending, cruel, misogynistic, chronically online, or just generally kind of a dick is not going to make a good partner. Let’s stop dating and marrying men whose favorite hobby is publicly humiliating other people—doing so only asks you to convince yourself that, with you, he'll suddenly become tender.</p>
-<p>Now, I’m not blaming Klein’s wife, Hila at all. But as potential dating prospects, we can learn from this situation. Some people out there see a man behaving terribly in public and immediately start imagining the private version of him they could unlock. They tell themselves, “He's just playing it up for the podcast,” “he's actually really sweet,” “he’d treat me differently,” or “he has a soft side.”</p>
-<p>We need to realize that the public persona is not a performance but an exaggerated version of who he actually is.</p>
-<p>“In a genuine partnership, moving forward and staying healthy requires being open, honest, raw and real with each other and having a genuine accountability without being the victim,” Nice explains. “But public podcasters often build brands around being infallible authorities.”</p>
-<p>So when they’re held accountable in real life, they don’t know how to process it. Nice explains that they instead become passive aggressive, dismiss hard conversations, or even use their platform to publicly air out their grievances.</p>
-<p>There are, of course, a few exceptions. Hearon (mentioned earlier) and podcast duo Joe Santagato and Frank Alvarez come to mind. What makes these men with mics not only tolerable but actually enjoyable is that they don't seem particularly interested in convincing you that they have unlocked the secret to being a man. Hearon gives pop-culture commentary similar to Klein, but he isn't constantly positioning himself as the final authority on human behavior. Santagato and Alvarez are, for the most part, just goofy. They aren't selling you a masculinity framework.</p>
-<p>This is the only reason a man should have a podcast, in my mind. I don't need you to teach me how to become a “better woman” or explain “female nature.” I don't need a six-part series on why modern dating is broken. I don't need you to tell 400,000 strangers about your relationship philosophy without any sort of credentials—or when you’re cheating on your wife. I just need you to be normal! Put the microphone down. Go outside. Have a conversation with one woman who isn't your producer.</p>
-<p>And for people who are in the dating pool right now: whether you’re on the apps or meeting someone in real life, if you see that a potential male partner has a podcast, RUN.</p>
-<p>Spooky! Ghosting Anxiety Is Ruining Dating</p>
-<p>Messy People Are Cheating In Their Notes Apps</p>
-<p>This New Dating App Is Swearing Off Swiping</p>
-<p>Does Your Wedding Plus-One Pass the Test?</p>
-<p>We Should Care About Financial Infidelity</p>
-<p>Dating Apps Are Different for People of Color</p>
-<p>The Men Are Struggling With Money in Relationships</p>
-<p>If You’re Dating a ChatBot, You’re Not Dating</p>
-<p>If a Friend Tells You Your Boyfriend Sucks, Listen</p>
-<p>We may earn commission from links on this page, but we only recommend products we back.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.cosmopolitan.com/relationships/a74260445/male-podcasters-dating-red-flags/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/amharic/articles/c39p1jv8kz2o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">የኢትዮጵያ ሕዝብ ተወካዮች ምክር ቤት ታሪክ፣ አሠራር እና አወቃቀር</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/amharic/articles/c39p1jv8kz2o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_sinhala/89a3/live/86bfaee0-bd92-11f1-bc2e-018d645d8d21.jpg" class="news-img" alt="ශ්‍රී ලංකාවේ ආයෝජනයට විදෙස් ආයෝජකයන් &#x27;තවමත් බය&#x27; ඇයි? ඇමෙරිකානු රාජ්‍ය දෙපාර්තමේන්තුව හෙළි කරන හේතු" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>05 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#3387. Huckberry Makes a Waxed Jacket That Looks Sharp, Will Last for Years, and Costs Under $200</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.mensjournal.com/shopping/flint-and-tinder-dry-wax-trucker-jacket-huckberry" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>It's Huckberry's most affordable waxed jacket, but it makes zero sacrifices on quality.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.mensjournal.com/shopping/flint-and-tinder-dry-wax-trucker-jacket-huckberry" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/sinhala/articles/c80464qq33yno?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">ශ්‍රී ලංකාවේ ආයෝජනයට විදෙස් ආයෝජකයන් &#x27;තවමත් බය&#x27; ඇයි? ඇමෙරිකානු රාජ්‍ය දෙපාර්තමේන්තුව හෙළි කරන හේතු</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/sinhala/articles/c80464qq33yno?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_tamil/08d9/live/c7e00150-c002-11f1-a64c-550be9e3c66b.jpg" class="news-img" alt="எல்நினோ எதிரொலி: இந்தியாவில் அனைவருக்கும் உணவுப் பாதுகாப்பை உறுதி செய்வது சவாலாகுமா?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>04 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#1107. A Colorful Striped Sweater Is the Easiest Way to Add Some Fun to Your Fall and Winter Dressing—This Chic Old Navy Style Is $25</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Lifestyle</strong> &nbsp;|&nbsp; 
-        <a href="https://www.cosmopolitan.com/style-beauty/fashion/a74264012/old-navy-colorful-striped-sweater/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/dba27f83-4693-4e42-bc35-cd7f4838c362.jpeg?crop=1xw:0.749918273946xh;center,top&amp;resize=1200:*" alt="A Colorful Striped Sweater Is the Easiest Way to Add Some Fun to Your Fall and Winter Dressing—This Chic Old Navy Style Is $25" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://hips.hearstapps.com/hmg-prod/images/dba27f83-4693-4e42-bc35-cd7f4838c362.jpeg?crop=1xw:0.749918273946xh;center,top&resize=1200:*" alt="A Colorful Striped Sweater Is the Easiest Way to Add Some Fun to Your Fall and Winter Dressing—This Chic Old Navy Style Is $25" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>We may earn commission from links on this page, but we only recommend products we love. Promise.</p>
-<p>With the season change, many of us have been faced with the reminder that the days will now be longer and darker. As we head into the depths of fall and winter, life will look a lot greyer. Hate to say it!</p>
-<p>If you're worried about feeling down in the coming months, consider adding color into your wardrobe. Also known as dopamine dressing, the bright-colored clothing movement is all about dressing with intention and boosting your happy hormones.</p>
-<p>An antidote to grey skies and miserable weather, colorful dressing is both a means to feel better and look stylish. Need some inspiration? Well, considering winter wardrobes require a lot of layering, a colorful striped sweater is a staple option for staying warm and driving up your dopamine.</p>
-<p>Right now, we're loving Old Navy $25 option, with red, pink, yellow, green and neutrals like black and white.  Beyond being colorful, it's crafted with a wool-blend, making it really cozy, too. We also love the flattering crew neckline and the ribbed cuffs, which add a layer of luxurious detailing, particularly considering the price.</p>
-<p>As for how to style it? Layer over your fave pair of jeans with a long-line coat and cozy Ugg boots for a windy wintry walk around the park. For a fancier affair, team your jumper with a satin midi skirt and block heel ballet shoes.</p>
-<p>I also love these colorful striped sweaters, too! Shop them here:</p>
-<p>Anthro’s Fringe Cardigan Is a Statement Layer</p>
-<p>These Mango Block-Heel Ballet Flats Are Trending</p>
-<p>The New Gap x Victoria Beckham Is Still in Stock</p>
-<p>Shop the Madhappy x Lucky Brand Collab Here</p>
-<p>Athleisure Brands You NEED in Your Closet</p>
-<p>EXCLUSIVE: KATSEYE’s Daniela Is LOUNGE’s New Muse</p>
-<p>Shop the Best ’Fits From ‘Nobody Wants This’ S3</p>
-<p>Fashion Girls Are Loving This Burgundy Midi Skirt</p>
-<p>These Zara Suede Wedge Boots Are Calling My Name</p>
-<p>5 Burgundy Outfit Formulas I’m Repeating All Fall</p>
-<p>The Adanola x Hailey Bieber Collab Is a Must-Shop</p>
-<p>We may earn commission from links on this page, but we only recommend products we back.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.cosmopolitan.com/style-beauty/fashion/a74264012/old-navy-colorful-striped-sweater/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/tamil/articles/cr74p83kvp82o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">எல்நினோ எதிரொலி: இந்தியாவில் அனைவருக்கும் உணவுப் பாதுகாப்பை உறுதி செய்வது சவாலாகுமா?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/tamil/articles/cr74p83kvp82o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_burmese/ba0e/live/7c26ec00-bd8d-11f1-9a76-4118bb2c2e43.jpg" class="news-img" alt="ရန်ကုန်က အဆင့်မြင့်ကွန်ဒို၊ စသုံးလုံးနဲ့ သော့မရသေးတဲ့၀ယ်သူတွေ" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>04 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#3209. As Trump touts energy companies’ fortunes, U.S. consumers face the most expensive year for gas prices ever</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.marketwatch.com/story/as-trump-touts-energy-companies-fortunes-u-s-consumers-face-the-most-expensive-year-for-gas-prices-ever-c467268c?mod=mw_rss_topstories" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>President Donald Trump can’t stop touting the fortunes U.S. energy companies have made during the Iran war, while canvassing the country to support Republican candidates ahead of next week’s midterm elections.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.marketwatch.com/story/as-trump-touts-energy-companies-fortunes-u-s-consumers-face-the-most-expensive-year-for-gas-prices-ever-c467268c?mod=mw_rss_topstories" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/burmese/articles/cqrm9mewnpv8o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">ရန်ကုန်က အဆင့်မြင့်ကွန်ဒို၊ စသုံးလုံးနဲ့ သော့မရသေးတဲ့၀ယ်သူတွေ</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/burmese/articles/cqrm9mewnpv8o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_swahili/0011/live/999c9b10-bfb1-11f1-a867-43a45cfe0db3.jpg" class="news-img" alt="Wafahamu wafanyabiashara wenye utata kama Wicknell Chivayo" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>04 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#3921. &#x27;Cobwebbing&#x27; Can Help You Move On in Dating</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://www.psychologytoday.com/us/blog/a-funny-bone-to-pick/202610/cobwebbing-can-help-you-move-on-in-dating" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2026-10/shutterstock_2605619293.jpg?itok=ZknKA1vs" alt="&#x27;Cobwebbing&#x27; Can Help You Move On in Dating" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2026-10/shutterstock_2605619293.jpg?itok=ZknKA1vs" alt="'Cobwebbing' Can Help You Move On in Dating" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>We’re all holding onto something we’re sure we can’t give up on, but research shows that letting go can boost our happiness a lot more than we might think.</p>
-<p>Self Tests are all about you. Are you outgoing or introverted? Are you a narcissist? Does perfectionism hold you back? Find out the answers to these questions and more with Psychology Today.</p>
-<p>Posted October 27, 2026
-
-|
-
-
-Reviewed by Margaret Foley</p>
-<p>Are your head and heart websites, so to speak—meaning, are they still filled with the remnants, or "cobwebs," of a previous relationship? Well, you might want to go "cobwebbing" then and remove all of them. "Cobwebbing," a term popularized by the dating app Bumble, means clearing away any "threads" that may be keeping you mentally or emotionally tied to an ex.</p>
-<p>This is not the same as spider-webbing, which I've described before for "A Funny Bone to Pick" as trapping someone in a bad, toxic relationship—a much creepier thing to do. No, cobwebbing is the opposite. It's about you getting away.</p>
-<p>Cobwebbing entails getting rid of any physical reminders of your ex—like that Slanket that you used to cuddle together in, that alpaca figurine that was your birthday gift from your ex, or that lair that you used to share. Oh, and if your ex is somehow still hanging out with you in some way, your ex would qualify as a physical reminder of your ex.</p>
-<p>Cobwebbing can be about simply discarding such objects or perhaps donating them to charity or someone else. Of course, some things—say, your ex or an apartment—may not be so easy to just throw down the trash chute or carry to Goodwill. In such cases, you may have to be the one who leaves and maintains as much physical distance as possible. This can include establishing very clear boundaries.</p>
-<p>Oh, and don't forget about the digital reminders, too. That includes deleting your ex's digits—meaning that person's contact info—photos, messages, playlists, and other such things from your phone, watch, computer, and appliances. It can be a good idea to unfollow your ex on social media as well, because do you really need to see your ex post stuff like "Living my best life," "Humbled to share that...," or "Ugh, 20 people told me I looked hot today, so annoying?"</p>
-<p>If you find it difficult to discard any of these things, that may be a clear sign that you are still holding on to your ex in some way. After all, nothing should be completely irreplaceable short of an original copy of Leonardo da Vinci's Mona Lisa—which really should be in the Louvre, by the way—or the inventory logs for Area 51. The only other exception may be if you and your ex had kids together, which aren't so easy to put in the trash bin, of course.</p>
-<p>Without such cobwebbing, the risk is that your ex will continue to haunt you—to live rent-free in your head and heart. And since both of those locations are like attics in that they don't have unlimited headroom and heartroom, such cobwebs may leave little space for anyone new. Still thinking about and having feelings for your ex—even if those feelings are resentment and hatred—could end up jeopardizing any future relationship.</p>
-<p>Plus, chances are any potential quality dates—those who can sense who you are and what you are feeling—will also have some kind of Spidey sense for cobwebs in you. Such cobwebs can end up spooking them because no one of good quality will want to play second fiddle to an ex of yours for long. You could end up being like some kind of creepy attic where the only ones willing to enter are the ghouls and goblins.</p>
-<p>Moreover, any remaining entanglements with your ex can keep you from moving on with your life in general. This can keep you caught cycling through denial, grief, regret, anger, resentment, and all those other emotions that accompany a breakup in the near term. As a result, you may never learn and heal properly from this previous relationship.</p>
-<p>Now, getting rid of anything that's been a significant part of your life can initially seem scary. You may be tempted to hold on to keepsakes and the memories so that all the time you spent with your ex doesn't seem to be a waste. But tell yourself that it wasn't a waste, because the true keepsakes from previous relationships are the experience, lessons, and wisdom gained.</p>
-<p>It may feel easier to gradually rid yourself of the cobwebs. That may work if you establish a clear end point and stay on schedule. The risk, otherwise, is procrastinating and stretching out the cobwebbing process to infinity and beyond.</p>
-<p>Therefore, a better alternative may be choosing a single purge day to sweep away everything. While doing so, avoid examining or reading through anything too much—unless it contains something like key crypto account information or the map to help Odysseus return home to Ithaca. Otherwise, you may end up reminiscing and becoming too attached to the items.</p>
-<p>If all of this is still too hard, then consider enlisting the aid of someone else, like a friend or a professional. Someone else may be more objective and, thus, more ruthless about tossing things. A friend can tell you stuff like, "Do you really need that banana slicer?"</p>
-<p>Once you clear all the cobwebs, you may be pleasantly surprised at how clear your mind and heart feel as a result. Yes, it can be dangerous to stay on the web, so to speak, and remain haunted by an ex. Because it's only after your headroom and heartroom are truly clear of cobwebs that you can clear the way for someone new to move in—someone who may be a better fit for you.</p>
-<p>Share this post
-    
-
-
-
-Facebook
-
-
-
-
-
-
-
-
-
-
-Bluesky
-
-
-
-
-
-Linkedin
-
-
-
-
-
-Email</p>
-<p>There was a problem adding your email address. Please try again.</p>
-<p>Bruce Y. Lee, M.D., M.B.A., is a writer, journalist, professor, systems modeler, computational and digital health expert, physician, avocado-eater, and entrepreneur, not always in that order.</p>
-<p>Get the help you need from a therapist near you–a FREE service from Psychology Today.</p>
-<p>Psychology Today © 2026 Sussex Publishers, LLC</p>
-<p>We’re all holding onto something we’re sure we can’t give up on, but research shows that letting go can boost our happiness a lot more than we might think.</p>
-<p>Self Tests are all about you. Are you outgoing or introverted? Are you a narcissist? Does perfectionism hold you back? Find out the answers to these questions and more with Psychology Today.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.psychologytoday.com/us/blog/a-funny-bone-to-pick/202610/cobwebbing-can-help-you-move-on-in-dating" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/swahili/articles/cmz65x7nzjvpo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Wafahamu wafanyabiashara wenye utata kama Wicknell Chivayo</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/swahili/articles/cmz65x7nzjvpo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_vietnamese/a5db/live/bba832e0-bf99-11f1-9684-3197ec97a2a5.png" class="news-img" alt="Thủ tướng Hưng và &#x27;áp lực rất lớn&#x27; khi GDP quý 4 phải tăng hơn 12,5%" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>04 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#3217. The rest of the market is leaving Big Tech behind after a historic comeback</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://www.marketwatch.com/story/the-rest-of-the-market-is-leaving-big-tech-behind-after-a-historic-comeback-324e9fb2?mod=mw_rss_topstories" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>The artificial-intelligence trade carried the U.S. stock market in September. But in October, it is being carried out on a stretcher.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.marketwatch.com/story/the-rest-of-the-market-is-leaving-big-tech-behind-after-a-historic-comeback-324e9fb2?mod=mw_rss_topstories" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/vietnamese/articles/c3y0erpv8wnlo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Thủ tướng Hưng và &#x27;áp lực rất lớn&#x27; khi GDP quý 4 phải tăng hơn 12,5%</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/vietnamese/articles/c3y0erpv8wnlo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_marathi/0866/live/f744c880-bf13-11f1-9947-0584c244b963.png" class="news-img" alt="शकुंतलाबाई नगरकर : &#x27;मला सगळे चौरंगी चिरा म्हणायचे&#x27;; लावणी घोळवणारी शेवटची अदाकारा" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>04 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#3572. 2,500-Year-Old Mesoamerican Observatory Discovered in Sierra Norte Mountains of Mexico</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.artnews.com/art-news/news/mesoamerican-observatory-discovered-sierra-norte-mountains-mexico-1234804059/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://www.artnews.com/wp-content/uploads/2026/10/INAH.jpg?w=1000" alt="2,500-Year-Old Mesoamerican Observatory Discovered in Sierra Norte Mountains of Mexico" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.artnews.com/wp-content/uploads/2026/10/INAH.jpg?w=1000" alt="2,500-Year-Old Mesoamerican Observatory Discovered in Sierra Norte Mountains of Mexico" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>A team of researchers at the National Institute of Anthropology and History (INAH) in Mexico recently announced the discovery of a 2,500-year-old structure that they believe functioned as a solar observatory.</p>
-<p>The structure is part of the pre-Hispanic Teteles de Ávila Castillo archaeological site in Sierra Norte de Puebla and has been under excavation by INAH since 2015. Alberto Diez Barroso Repizo, Teteles’s archaeological project director, told the Art Newspaper that Teteles “flourished during the Middle Preclassic period (900BC-600BC) but declined around AD100, possibly because nearby Cantona expanded.” Diez points to the discovery of green obsidian beads as an indication that Teteles, which is along a trade route, was connected to the much larger Mesoamerican city Teotihuacan, since that city controlled a quarry where the obsidian originated.
-
-	
-
-
-
-
-
-
-
-
-
-
-
-	
-		Related Articles
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-	
-		
-					Turkish Authorities Seize 2000-Year-Old Marble Head of Zeus		
-			
-
-
-
-
-
-
-
-	
-		
-					Mystery Skeleton in Roman Sarcophagus Beneath Westminster Abbey May Be a Medieval Abbot, Study Says</p>
-<p>The discovery indicates that Teteles’s architects and inhabitants had a sophisticated knowledge of astronomy: the observatory was designed to track the beginning of the Mesoamerican calendar in February and the harvest in October, according to a statement from INAH. One of the project’s researchers noted that the eastern base of the complex “constitutes a solar calendar,” based on observations of the trajectory of the sun aligning with the front of the structure during the beginning of equinoxes and solstices.</p>
-<p>Diez told TAN that INAH plans to open the site, and eventually a museum, to the public.</p>
-<p>Claudia Curiel de Icaza, Mexico’s Secretary of Culture, noted that the discovery expands the country’s understanding of its own history. “The architecture of Teteles de Ávila Castillo tells us about societies that developed astronomical knowledge and incorporated it into the organization of their ceremonial spaces,” she said.</p>
-<p>Get our latest stories in the feed of your favorite networks</p>
-<p>We want to hear from you! Send us a tip using our anonymous form.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.artnews.com/art-news/news/mesoamerican-observatory-discovered-sierra-norte-mountains-mexico-1234804059/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/marathi/articles/crz98w49e48no?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">शकुंतलाबाई नगरकर : &#x27;मला सगळे चौरंगी चिरा म्हणायचे&#x27;; लावणी घोळवणारी शेवटची अदाकारा</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/marathi/articles/crz98w49e48no?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_tamil/4c97/live/f6200de0-bf2f-11f1-bc2e-018d645d8d21.jpg" class="news-img" alt="பாகிஸ்தானில் கடத்தப்பட்ட விமானத்தில் 300 பேரை காப்பாற்றி உயிரை விட்ட இந்திய பெண்ணின் கதை" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>03 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#3581. A Painting Owned by Dutch Jewish Collector Once Hung in Hitler’s Home, New Research Finds</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Business</strong> &nbsp;|&nbsp; 
-        <a href="https://www.artnews.com/art-news/news/german-painting-hung-hitler-home-restitution-claim-1234804050/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://www.artnews.com/wp-content/uploads/2026/10/Untitled-1.jpg?w=1024" alt="A Painting Owned by Dutch Jewish Collector Once Hung in Hitler’s Home, New Research Finds" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.artnews.com/wp-content/uploads/2026/10/Untitled-1.jpg?w=1024" alt="A Painting Owned by Dutch Jewish Collector Once Hung in Hitler’s Home, New Research Finds" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>A Nazi-looted painting that once belonged to a Dutch Jewish family, and at one point hung in Adolf Hitler’s home, has been traced in new research, the Dutch newspaper Het Parool reports.</p>
-<p>The work in question is German painter Carl Gottlieb Peschel’s Joseph Sold by His Brothers (1831), which shows the biblical scene of Joseph being sold into slavery in Egypt.</p>
-<p>The painting belonged to Bob Nijkerk, whose family had made its fortune in the iron and scrap-metal business in the 19th century. Nijkerk, who died in 1987, used that wealth to build a collection of bibliophile editions, modern Dutch typography, and paintings. He received the Peschel as a gift from his brother-in-law in 1941. When the Nazis occupied Amsterdam in 1940, he was a managing director of the family company, which the Nazis seized in 1941.
-
-	
-
-
-
-
-
-
-
-
-
-
-
-	
-		Related Articles
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-	
-		
-					California Attorney General Argues for Return of Nazi-Looted Painting Held by Madrid Museum		
-			
-
-
-
-
-
-
-
-	
-		
-					Nazi-Looted Monet Painting Held by FBI Expected to Be Returned to Owner's Descendants</p>
-<p>Starting in 1942, the Nazis deported more than 100,000 Dutch Jews to killing centers. Nijkerk, his wife, and their three children were spared at first. Willem Sandberg,  a curator at Amsterdam’s Stedelijk Museum, where Nijkerk had loaned and donated artworks, intervened on their behalf and got them placed on an exception list of about 700 Jews. In 1940 the two men visited the museum’s art bunker together, and the collector likely stored important works there.</p>
-<p>The family was first taken to De Schaffelaar Castle, about 45 minutes outside Amsterdam. They were later deported to the Westerbork camp in the Netherlands and then to Theresienstadt in what is now the Czech Republic. “Ultimately, all five survived the war because they were brought to Switzerland by train in 1945 along with a select group of camp prisoners from Theresienstadt,” Het Parool reports.Nijkerk’s grandson Willem Nijkerk knew that his family had included bibliophiles but didn’t know how large his grandfather’s collection was. He learned of the family’s link to the painting from Diederik Oostdijk, a professor of English and American literature at the Vrije Universiteit in Amsterdam.</p>
-<p>“I mainly knew about the period during and after the war. Through Oostdijk’s research, I was given a glimpse into their prewar life. They lived in relatively grand luxury,” Willem told Het Parool.</p>
-<p>Oostdijk tells the Nijkerk family’s story in his new book, Overlevingskunst (The Art of Survival). According to its description, the book follows “three Jewish families [who] miraculously escaped the Holocaust thanks to their art collections.”</p>
-<p>Oostdijk’s research shows that the Peschel spent some time in Hitler’s Berlin home. It was then moved to Hitler’s storage facility in Munich, where prized works were held for a planned Führermuseum.</p>
-<p>It is still unclear whether Bob Nijkerk sold the painting in late 1941 or early 1942, or whether it was confiscated later, when German forces or their Dutch collaborators raided Jewish homes. After the war, Nijkerk recovered many of his books but “never uttered a word about Peschel’s painting,” Willem said. “I don’t think he had much of a connection to the painting himself. The painting does not evoke much emotion in me either.”</p>
-<p>Nijkerk’s seven descendants have not filed a formal restitution claim for the Peschel. They also have not claimed three other paintings that Oostdijk has linked to the Nijkerk collection: two 1633 portraits by Caspar Netscher and a 1673 painting by Gerbrand van den Eeckhout. Those three works are at the Rijksmuseum in Amsterdam. Joseph Sold by His Brothers is now in the Martin von Wagner Museum in Würzburg, Germany. Willem said that if the paintings are ever restituted, the family would likely sell them.</p>
-<p>“It is a bizarre thought that a painting belonging to my grandparents was in Hitler’s residence, one of the most horrific human beings who ever lived, and to think that he found this work so beautiful,” Willem told Het Parool. “I don’t necessarily want Peschel’s painting on my wall at home. I also find it an unpleasant thought that it lay in Hitler’s home.”</p>
-<p>Get our latest stories in the feed of your favorite networks</p>
-<p>We want to hear from you! Send us a tip using our anonymous form.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.artnews.com/art-news/news/german-painting-hung-hitler-home-restitution-claim-1234804050/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/tamil/articles/cqy8l44d55v3o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">பாகிஸ்தானில் கடத்தப்பட்ட விமானத்தில் 300 பேரை காப்பாற்றி உயிரை விட்ட இந்திய பெண்ணின் கதை</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/tamil/articles/cqy8l44d55v3o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_burmese/5c2d/live/59412400-b8c7-11f1-ad1f-538855f30ba1.jpg" class="news-img" alt="ရခိုင်ပြည်မှာမနေချင်လို့ ခိုးထွက်ကြသူတွေ" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>03 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#191. Bibi&#x27;s moment of truth: Israel votes in first general election since October 7</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.france24.com/en/tv-shows/the-debate/20261027-bibi-s-moment-of-truth-israel-votes-in-first-general-election-since-october-7" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>The turnout tells the tale. Israelis casting ballots in their largest numbers in decades in the first general election since the October Seventh attacks of 2023. A referendum on the bloodiest day in the nation’s history? Definitely that. And more: What kind of Israel do citizens want?</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.france24.com/en/tv-shows/the-debate/20261027-bibi-s-moment-of-truth-israel-votes-in-first-general-election-since-october-7" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/burmese/articles/ck780gpdvg67o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">ရခိုင်ပြည်မှာမနေချင်လို့ ခိုးထွက်ကြသူတွေ</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/burmese/articles/ck780gpdvg67o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_vietnamese/4d3a/live/58d263b0-bf09-11f1-babe-4199b0e7ccea.png" class="news-img" alt="Ủy ban Kiểm tra TƯ làm việc với Phó Chủ tịch Tuyên Quang Vương Ngọc Hà" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>03 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#1168. 7 Best Glassware Sets to Elevate Your Tablescape (2026)</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.architecturaldigest.com/story/best-glassware" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://media.architecturaldigest.com/photos/68517e4d56ad34d05f80e25b/16:9/w_1280,c_limit/AD_TableTop_Final%201%20(1).jpg" alt="7 Best Glassware Sets to Elevate Your Tablescape (2026)" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://media.architecturaldigest.com/photos/68517e4d56ad34d05f80e25b/16:9/w_1280,c_limit/AD_TableTop_Final%201%20(1).jpg" alt="7 Best Glassware Sets to Elevate Your Tablescape (2026)" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>You don’t need a perfectly mixed cocktail or an expensive bottle of wine to justify drinking out of the good glasses. Sometimes, a cold glass of water is occasion enough. And if you’re going to reach for the same one several times a day, it might as well be one you enjoy looking at. Picture it now: curved and patterned drinking glasses that can make an everyday meal feel a bit more festive.</p>
-<p>Choosing the right glassware is a surprisingly personal affair, though. Some people swear by a barely-there rim; others prefer the reassuring heft of a substantial tumbler. Then there’s the way a glass sits in your hand. These details might seem inconsequential until you find a glass you love drinking from—and suddenly every other one in your arsenal becomes a little less appealing. To make your sips more style-forward, we’ve rounded up a variety of designer water glasses, special-occasion stems, and other favorites you'll want to clear a little cabinet space for.</p>
-<p>The generously sized bowls of these LSA International wine glasses leave plenty of room for a proper pour (and an enthusiastic swirl without worrying about spilling over the rim). They’re also made from dishwasher-safe crystalline glass, so you can skip the handwashing once the party wraps up.</p>
-<p>If you want to introduce color to your glassware collection but can’t settle on just one shade, this set makes it easy to have a little bit of everything. Estelle Colored Glass’s six Champagne coupes come in an assortment of vibrant hues, so no one has to lose track of their drink at your next dinner party.</p>
-<p>Perfectly imperfect is part of the vintage charm of these handblown glasses from il Buco Vita. Made from recycled glass without the use of molds, each one has subtle irregularities in shape that make it entirely its own. Even the color is left to chance, with undertones that shift between green, blue, and gray.</p>
-<p>These featherlight Glasvin wine glasses live up to their name. Their tulip-shaped bowls help aerate the wine and bring out its aromas, and reviewers praise their surprisingly sturdy construction despite their delicate appearance. They’re dishwasher-safe, too, making them an easy addition to your regular rotation.</p>
-<p>The Elisa tumblers prove you can bring in pattern without competing with the rest of the tablescape. The delicate, almost translucent dots and stripes add just enough flourish to dress up any occasion, whether you’re hosting brunch or just setting the table for a weeknight meal.</p>
-<p>Swap your everyday glasses for something that feels like a little work of art. Inspired by the organic shapes of wildflowers, Table Mates alum Sophie Lou Jacobsen gives the ubiquitous water glass a romantic flair with her Verre design, with gently flared, fanning rims resembling a flower in bloom. Made from durable borosilicate glass, they’re stackable and dishwasher-safe, so they’re just as practical as they are whimsical.</p>
-<p>The martini glass has an unmistakable silhouette, but Noon and Moon gives it a playful update. The sculptural, spiral stem adds an unexpected detail to the otherwise simple design, making it a statement piece on your bar cart.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.architecturaldigest.com/story/best-glassware" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/vietnamese/articles/c699z07re0x4o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Ủy ban Kiểm tra TƯ làm việc với Phó Chủ tịch Tuyên Quang Vương Ngọc Hà</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/vietnamese/articles/c699z07re0x4o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_somali/31dc/live/015bf1d0-be75-11f1-bc2e-018d645d8d21.jpg" class="news-img" alt="Eritrea iyo Itoobiya: Xiriirkooda diblomaasiyadeed iyo marxaladihii uu soo maray" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>02 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#2707. The Best Sports Watches for Every Athlete (2026)</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://www.outsideonline.com/outdoor-gear/tools/best-sports-watches/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://cdn.outsideonline.com/wp-content/uploads/2026/10/watch-feature-scaled.jpg" alt="The Best Sports Watches for Every Athlete (2026)" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://cdn.outsideonline.com/wp-content/uploads/2026/10/watch-feature-scaled.jpg" alt="The Best Sports Watches for Every Athlete (2026)" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>If you buy through our links, we may earn an affiliate commission. This supports our mission to get more people active and outside.Learn about Outside Online's affiliate link policy</p>
-<p>October 2026: After testing sports watches on workouts and adventures throughout the summer, our testers named a Garmin as the best sports watch again, this time the new fenix 9 Pro that comes with solar charging and a full titanium build, plus inReach connectivity. We were also impressed with the new heart rate tracking and readiness software on the Apple Watch Ultra 4, which we named Best for Weekend Warriors. Amazfit still makes the best value for your money with the Cheetah 2 Ultra, the Suunto Run 2 delivers a lot in a small form factor, and we loved the accuracy of the Coros Pace 4 Pro. New this year is the Reckon, a hunting-focused watch from a Montana-based company called Bridger.</p>
-<p>Today’s best sports watches are a lot like cars. There are so many high-quality models, choosing one really comes down to price range and feature preferences. For athletic watches, key features include battery life, screen brightness, size, activity tracking, satellite connectivity, durability, weight, analytics, mapping, and more. To help you sift through the options, we assembled a group of nitpicky watch nerds who scrutinized every detail of the best sports watches during more than 14,000 miles of testing. Whether you want running watches for road and trail or a multisport GPS smartwatch that also handles hiking, skiing, and swimming, the picks below cover every budget.</p>
-<p>**Enduro 3 upper range (320 hours) requires solar charging.</p>
-<p>***fenix 9 Pro figure is with solar charging.</p>
-<p>****Brand claims 14-20 days, but does not specify in which modes</p>
-<p>Weight: 3.6 oz with strap
-Face Diameter: 51 mm</p>
-<p>Pros and Cons 
-+ Off-grid satellite connectivity
-+ Full titanium case
-+ Solar charging
-– Pricey
-– Feels big on your wrist</p>
-<p>The Garmin fenix 8 Pro won Best Sports Watch in our last update because it had inReach satellite connectivity plus a stout multi-day battery, on top of industry-leading workout tracking and analysis. Its upgrade, the 9 Pro, takes over that top spot because it has those same features plus solar battery charging and a nearly indestructible titanium case.</p>
-<p>For comparison, the battery on the 8 Pro lasts up to 27 days with normal use and provides up to 78 hours of GPS tracking. Using solar, the 9 Pro provides up to 57 days of normal use and up to 211 hours when using GPS. Those kinds of numbers create a unique kind of confidence for backcountry users who don’t want to worry about the battery on weeklong trips, even while constantly tracking metrics, sending satellite messages, and reserving enough juice to send an SOS if needed.</p>
-<p>Garmin says the watch needs three hours per-day outside in bright midday sunlight to achieve the full solar staying power. Not many people will take their watch off and let it charge for three hours per day, but we found that even 30 minutes to an hour in the sun provided a battery bump that kept the watch going for a multi-day adventure with a comfortable buffer.</p>
-<p>The fenix 8 Pro had a titanium bezel and backing, but a polymer case—and it still stood up to all kinds of abuse over the full year we wore it. Given that durability, the full titanium case on the 9 Pro almost seems like overkill, but the all-metal build will help the watch last for years even if it’s regularly dunked, bashed, smashed, or run over.</p>
-<p>The only downside is that, with the titanium case, the watch is much shinier than previous versions and shouts “I’m wearing a big sports watch.” We hope Garmin launches a black titanium version soon, but despite the attention-grabbing case, we’re happy to use the watch every day thanks to its class-leading features.</p>
-<p>Weight: 1.8 oz without strap
-Face Diameter: 37 mm</p>
-<p>Pros and Cons 
-+ Superior battery life
-+ Beautiful screen
-+ Smart heart rate monitoring
-– Music interface is primitive</p>
-<p>We’re calling this the Goldilocks watch of the year because it balances a solid set of features, including a very healthy battery, new titanium bezel, and big, sharp screen, with a price tag under $500. This is a go-to watch for serious athletes who want dependability but don’t want to break the bank.</p>
-<p>Our lead tester said the Pace 4 Pro’s heart rate accuracy stood out, allowing her to monitor the intensity of her running workouts with confidence, and even assess how many intervals she should perform. As a big swimmer, she also appreciated that, while some watches struggle to accurately measure strokes, the Pace 4 Pro was perfect.</p>
-<p>The new 1.47-inch (37mm) screen is just as bright and beautiful as the Apple Watch Ultra 4’s screen, which made it easy for us to read workout metrics even in the noon-day sun. All that brightness pulls some juice, but we still got 45 hours of highly accurate GPS tracking even with the screen always on, and 60 hours with the screen set to wake when you raise your wrist.</p>
-<p>We do, however, wish that Coros would get its music act together. The only way to get music on the Pace 4 Pro is to connect it to your computer and download MP3s. Garmin, in comparison, pairs with Spotify to enable much more efficient downloads.</p>
-<p>The new titanium bezel didn’t add bulk to this svelte watch that is noticeably lighter than many of the other watches we tested, and felt great on our wrists. The thin 11.8 mm height kept the watch from snagging on shirts or backpack straps—a problem we hate with thicker watch builds.</p>
-<p>Weight: 1.83 oz without strap
-Face Diameter: 44.8 mm</p>
-<p>Pros and Cons 
-+ Indestructible
-+ LED flashlight
-+ Sleek build
-– Auto detection too sensitive</p>
-<p>Cheetah is a cheesy name for a watch, but we can see the resemblance. Like the animal, this watch is ultra sleek and built for going fast. There are no unnecessary buttons or do-dads, and it’s easy to customize preferences so you can head out the door and immediately start adventuring.</p>
-<p>The Cheetah gets our best value tag because it also has high-end features like a full titanium case, LED flashlight, and high-resolution screen. The titanium case made the watch feel feathery on our lead tester’s wrist, and the LED flashlight is bright enough to help you get down a trail at dusk or find the bathroom in the middle of the night—all of the Outside testers are big fans of this as opposed to a white screen flashlight. The 1.5-inch AMOLED screen delivered workout metrics as well as or better than any other watch in the test.</p>
-<p>Our lead tester, who often does four to five different activities in one day, said the watch accurately tracked everything she threw at it and, when paired with the app, smartly analyzed her workout stats and recovery metrics to deliver a useful readiness score similar to what Garmin and Apple provide.</p>
-<p>Designed primarily as a running watch, our tester found that the Cheetah did a great job estimating lactate threshold, which helped her realize she was hitting her threshold too often and ultimately overtraining.</p>
-<p>The only problem we found was that auto workout detection was too sensitive. After just a few steps in her house, the watch would automatically start tracking a walk workout and had to be shut off because she wasn’t actually working out.</p>
-<p>It’s not often we comment on looks, but we have to mention that the Cheetah stood out as the most attractive of the bunch. Its sleek profile made it feel like a high-end timepiece instead of a fitness tracker, and we were happy to wear it to work or out to dinner. We didn’t love the nylon band, but it’s easy to replace.</p>
-<p>​​Weight: 2.2 oz with elastic nylon strap
-Face Diameter: 51 mm</p>
-<p>Pros and Cons 
-+ Big and light
-+ Phenomenal battery life
-+ Feature rich
-+ Strap is the most comfortable we’ve tried
-– Pricey</p>
-<p>The Garmin fenix Pro 9 ousted the Enduro 3 for the Best Sports Watch Overall spot in this update, but the Enduro 3 is still our favorite workout watch for a number of reasons. Controversially, maybe, we love the non-AMOLED screen. We have nothing against the bright colors offered by this technology, but the Enduro screen has a much lower power draw, giving Enduro 3 a mind-boggling battery life.</p>
-<p>More specifically, the Enduro 3 allows for up to 36 days of smartwatch use (where you’re just using the watch for notifications and other non-workout features) and up to 120 hours of GPS use. Throw in some solar charging, and the watch will keep ticking for a reported 90 days of general smartwatch use and a staggering 320 hours (13+ days) of GPS tracking. One tester said he easily went over a month between charges (longer during the abundant summer sun) with 24/7 daily use and about an hour of activity tracking per day.</p>
-<p>Inside the software, the Enduro 3 will track nearly every sport or exercise imaginable—as diverse as wakesurfing and rugby. It also comes with plenty of space for downloaded maps, and provides turn-by-turn directions so backcountry skiers or trail runners will never get lost. That memory also has space for downloading several hundred songs, which have helped me stay motivated on long, grueling road runs. Plus, the elastic nylon strap is the most comfortable we’ve ever used on a sports wrist watch; not once did testers get a rash, and they raved that the adjustability created the perfect fit.</p>
-<p>The Enduro 3 only weighs .9 ounces less than the fenix Pro 8, but damn if we didn’t notice that it was the lightest 51-millimeter watch we’ve ever worn. This barely-there feel made a big difference, even if just mentally, when covering a lot of miles.</p>
-<p>All top-end Garmin watches now come with an ultra-bright, LED flashlight on the bezel. Having it instantly on hand, its brightness, and the ease of directing the beam were as helpful when climbing out of my tent to pee at night as they were when I had to navigate a dark section of trail without a headlamp.</p>
-<p>Garmin’s software interface is not as intuitive and convenient as Apple’s—and likely never will be—but it’s way better than what we’ve seen from other smart watch competitors. Tester Jonathan Beverly found the mobile app’s daily dashboard (which tracks both fitness progress and training readiness) to be intuitive, accurate, and valuable. “Whenever I ignored its recommendations to rest, I’d pay for it on subsequent days,” he said.</p>
-<p>Weight: 1.2 ounces without strap
-Face Diameter: 46 mm</p>
-<p>Pros and Cons 
-+ Feathery
-+ Affordable
-+ Plenty of battery
-– App/phone integration still needs work</p>
-<p>You know a runner is serious when they show up to the group run with the simplest gear possible. Brooks shoes, a shirt they got from the local race, and oftentimes a watch like the Run 2, which is designed to do its work efficiently, not be a show piece.</p>
-<p>At just 1.2 ounces and 11.7 millimeters thick, the Run 2 is the lightest and smallest watch we tested, and it disappeared on our wrists as soon as we started moving. But thanks to a 1.32-inch (46mm) display and bright screen, all our stats came through loud and clear even if we were working hard and our heart rate was close to maxed out.</p>
-<p>Our lead tester said that new hardware made the heart-rate tracking ultra-accurate and helped her dial in her interval training by accurately tracking surges. She said the recovery measurements were also accurately calculated, making them a trusted, useful tool for daily workout planning.</p>
-<p>Music still has to be downloaded by connecting the watch to your computer, but we were glad to see the Run 2 get offline maps that helped with route tracking when we were exploring new trails. Suunto says the battery will last up to 10 days in normal use and provide 24 hours of dual-band GPS tracking. Even with lots of training we only had to charge the watch once a week and would trust the battery to easily get us through a 50- or even 100-mile race.</p>
-<p>Room for improvement: Our tester said the watch and phone app sometimes refused to sync so she had to make the app forget the watch and re-pair it in order to upload data. Also, the included band was fine, but we suggest upgrading to the athletic loop textile strap because it’s more comfortable and easier to adjust.</p>
-<p>Because the watch is so thin and light, it fit particularly well on smaller wrists. But it also did fine on bigger wrists and didn’t look disproportionately small.</p>
-<p>Weight: 2.2 oz without strap
-Face Diameter: 49 mm</p>
-<p>Pros and Cons 
-+ Class-leading heart rate measurements
-+ New Readiness score
-+ Better battery
-– Won’t get you through 100 miles
-– Lousy flashlight</p>
-<p>Apple redesigned the hardware on the Ultra 4 and Apple Watch 12 to make them the most accurate heart rate wearables (read: non-chest strap devices) on the market. Apple’s claim of “most accurate” is backed up by a study the company conducted against a host of competing wrist- or arm-based wearables. The new accuracy not only helps us monitor workout intensity with increased confidence, it also allows the watch to deliver two new health metrics: Heart Rate Variability (HRV) and a Readiness score.</p>
-<p>Heart Rate Variability (HRV) tracks the slight changes in beat-to-beat timing of your pulse. A higher HRV indicates better health, good recovery, and overall fitness, while a lower HRV signals physical or mental stress, overtraining, or sickness. Readiness is a 1-10 score delivered by the watch each morning that analyzes vitals, activity, sleep data, heart rate, and HRV to tell you how prepared you are for the day. Other brands, most notably Garmin, have provided similar readiness scores for a long time, but Apple’s 1-10 rating and easy-to-interpret readiness language stood out to our tester for its simplicity.</p>
-<p>Because Apple prioritizes features like notification delivery, music, and AI as well as the pleasure and functionality of a big beautiful screen, the battery life on the Ultra 4 doesn’t compare to what you can get on a Garmin, Suunto, Coros, or Amazfit. But we saw improvement in this year’s models’ battery life, particularly in the Ultra 4, which led us to choose it over the Apple Watch 12. You can now get up to 50 hours of normal use or 18 hours of full-power workout tracking. A feature called Max Extended Workout will let you track outdoor runs, walks, and hikes for up to 45 hours by only taking GPS readings, and taking those less often.</p>
-<p>Paired with new rapid charging that adds 18 hours of battery time in 15 minutes, our tester felt like the Ultra 4 was the first Apple Watch where the battery wasn’t a liability. With just an hour or so of charging each morning, he could track exercise as much as he wanted during the day and track sleep all night, enabling accurate readiness scores.</p>
-<p>Pros and Cons 
-+ Best-in-class mapping
-+ onX integration
-+ LED flashlight
-– Software is still being tweaked</p>
-<p>Hats off to Bridger for having the courage to launch a new sports watch in 2026, going up against brands as dominant as Garmin and Apple. The new company’s first watch, the Reckon, immediately found a spot on our list because it does one thing better than all the other watches we tested: mapping. Aimed specifically at hunters, the Reckon has a huge, nearly two-inch-tall rectangular AMOLED screen design to display and navigate high-quality, easy-to-read offline topo maps with buttery-smooth scrolling.</p>
-<p>Founder Cody Rich told us the rectangular design was intentional because it’s much easier to follow a map on a rectangular screen than on a round one. Our testing confirmed this.</p>
-<p>Because most hunters live and die by onX, the best mapping app on the market, Bridger made it easy to port onX waypoints onto the watch. Hunters will still use the onX map on their phones, but the watch lets them check their location quickly and easily. And, since the watch battery lasts up to 20 days, it’s the perfect backup. If your phone dies two hours from the pin where your truck is parked, for example, that pin will be on the watch and you can navigate your way home safely.</p>
-<p>The Reckon also has plenty of fitness tracking options so you can use it for daily workouts. The built-in LED flashlight is as bright as what you get on other high-end watches. We found the watch easy to use and mostly bug-free. The $1,100 price tag is a lot, but the mapping feature will be worth that price for people who really love to explore off-grid locations.</p>
-<p>When buying a sports watch you need to decide who you really are. That sounds like some kind of spiritual question you’d ponder at a retreat, but it’s absolutely the best way to sort out what you need. Can you admit to yourself that you’re a weekend warrior because you have a job and family? Or are you totally in and going to the top as an athlete? Maybe you disappear into the backcountry for a week whenever you get the chance.</p>
-<p>It’s necessary to categorize yourself because this will help you pick the sport watch that meets your goals. If your workouts are squeezed into lunch-hour work breaks, you don’t need a athletic watch that lasts for weeks on end without charging. If you’re dedicated to really improving in your chosen sport, a higher-end watch with complex training options can be a real aid in achieving your goal. If you dabble in a variety of sports, you’ll need a sports wrist watch with a robust workout menu. And if you’re an adventurer who regularly returns from trips with torn apparel and broken equipment, you need to prioritize a bullet-proof build.</p>
-<p>Next, make sure you play with the sport watch you think you want—at a local retailer, if possible, or borrow one from a friend—before making a purchase. Spend time pressing buttons, and see how much effort it takes to find features and customize the watch to your preferences. All the top-end sports watches have menus that are fairly well organized, but each one is different. Little tweaks in how a watch allows you to access a workout or track data can be big motivators—or frustrations—when you’re using the thing all day every day. Note: The menus used across a specific watch brand’s line tend to be similar, so even if you don’t find the exact model you want at your local retailer, you can still get a sense of how a brand organizes its software by playing with a different sports wrist watch.</p>
-<p>For $400 to $600 you can get a great sports watch with a long-lasting battery that’s built from high-quality materials and accurately tracks all the workouts you can imagine. The only reason to spend more is if you want specialized features like a larger screen, extra-powerful battery, or satellite communication capabilities.</p>
-<p>Most watches we reviewed this year have a battery that can power at least 10 days with normal use. That’s convenient because you can get through a full week’s worth of notifications and workouts and not have to worry about charging. These watches also provide somewhere between 24 to 48 hours of GPS use (if not more) so the average person can run a 100-mile race and not worry. Apple is the exception, with a battery that lasts just two days. We forgive them because the Ultra 4 is so good for daily notifications, music, and communication, and the power-hungry screen is big and bright.</p>
-<p>We think an LED flashlight is a useful upgrade because it provides significantly more light than flashlights that are just whited-out watch screens. We regularly use the LED light to navigate darkening trails in the evening, find the bathroom in the middle of the night, and locate things buried in dark places like the closet or the shed.</p>
-<p>Runners tend to prefer smaller watches that disappear on their wrists and we agree that a smaller watch is best for putting in a lot of miles. The Apple Watch Ultra 4 and Bridger Reckon both have extra large watch faces because they specialize in delivering information and need a lot of real estate. A watch like the Garmin fenix Pro 9 comes in several sizes so you can buy the one that fits your wrist.</p>
-<p>Over the years we’ve discovered that the best sports watch testers are adventurers who are absolutely obsessed with being outside, but come at their chosen sport without much of an ego. They love sport for sport and aren’t trying to prove anything. This balance is important because mild-mannered testers are great at digging into the features of a watch and providing in-depth feedback, but also know how to keep an everyday user in mind. There’s no mansplaining, or sportsplaining, in our tester group.</p>
-<p>In terms of breadth, the watches we tested for this round traveled the country and saw the tops of peaks, spent hot days in the desert, and were with us during the day as our testers did everything from training troops and teaching kids to counting fish and coaching sports.</p>
-<p>Category manager Jakob Schiller was a gear editor at Outside and is now a columnist. The father of four kids and two dogs, he’s a bit pinned down but still manages to run, ski, or bike every day and loves a good weekend-long adventure in the woods chasing elk, peak tops, or fresh turns.</p>
-<p>Jesse Armijo is a PE coach and also founded the Albuquerque, New Mexico-based Dukes Track Club, an all-ages organization that coaches kids and organizes a variety of races. He’s the most unassuming runner you’ll ever meet and is more than happy to sit in the group but can put everyone in the ground if he turns on the burners.</p>
-<p>Meghan Healy does data management for the publishing industry and is also one of New Mexico’s most high-energy athletes. She runs races, is passionate about martial arts, rides horses, cycles around town with her kids, helps coach soccer, and is the true definition of someone who benefits from a trusted, function-rich sports watch.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.outsideonline.com/outdoor-gear/tools/best-sports-watches/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/somali/articles/cmrlyrn8jgpno?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Eritrea iyo Itoobiya: Xiriirkooda diblomaasiyadeed iyo marxaladihii uu soo maray</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/somali/articles/cmrlyrn8jgpno?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_korean/25fd/live/4b4dfad0-be0d-11f1-92ea-016450691ea1.jpg" class="news-img" alt="이재명 대통령, &#x27;우크라 사과 없으면 추가 조치할 것&#x27;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>02 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#4408. Anthropic, Suno Sued for Unlawfully Using Songs by Madonna, Johnny Cash, Joni Mitchell</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://www.cnet.com/tech/services-and-software/anthropic-suno-sued-using-songs-madonna-johnny-cash-joni-mitchell/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Companies are accused of training their AI models using copyrighted music and lyrics.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.cnet.com/tech/services-and-software/anthropic-suno-sued-using-songs-madonna-johnny-cash-joni-mitchell/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/korean/articles/cqx2z2emln27o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">이재명 대통령, &#x27;우크라 사과 없으면 추가 조치할 것&#x27;</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/korean/articles/cqx2z2emln27o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_korean/43bd/live/405d3670-be14-11f1-a64c-550be9e3c66b.jpg" class="news-img" alt="&#x27;지워도 또 올라온다&#x27;…성착취물 사이트 약 30% 줄인 한국, 이번엔 다를까" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>02 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#141. Discord is making its public communities more searchable, and people have concerns</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://techcrunch.com/2026/10/27/discord-is-making-its-public-communities-more-searchable-and-people-have-concerns/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>In December, messages from Discord's public discoverable servers will begin appearing in search engine results.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://techcrunch.com/2026/10/27/discord-is-making-its-public-communities-more-searchable-and-people-have-concerns/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/korean/articles/c920v0vly7jdo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">&#x27;지워도 또 올라온다&#x27;…성착취물 사이트 약 30% 줄인 한국, 이번엔 다를까</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/korean/articles/c920v0vly7jdo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_vietnamese/9ae1/live/33080b60-bd4e-11f1-a64c-550be9e3c66b.png" class="news-img" alt="Trung Quốc mở cơ sở quân sự ở Lào: Lý do đáng để Việt Nam lo ngại?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>02 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#4370. Discord will let public server messages be discoverable in Google Search</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://mashable.com/tech/discord-public-server-web-pages-messages-discoverable-in-google-search" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://helios-i.mashable.com/imagery/articles/02wKFmzjDKf44mGwWulic2z/hero-image.fill.size_1200x675.v1793133285.jpg" alt="Discord will let public server messages be discoverable in Google Search" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://helios-i.mashable.com/imagery/articles/02wKFmzjDKf44mGwWulic2z/hero-image.fill.size_1200x675.v1793133285.jpg" alt="Discord will let public server messages be discoverable in Google Search" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Finding good Discord servers relevant to your interests can be tough unless you sift through Discord's own database or get an invite to one.</p>
-<p>The popular messaging and chat service is looking to solve that problem with an obvious yet big change to the platform. Discord will now make public servers discoverable through Google Search.</p>
-<p>On Tuesday, Discord announced that starting Nov. 16, 2026, all Discoverable Servers will receive a Server Web Page. These public Server Web Pages will include summaries of discussions happening in that public server. In addition, starting in mid-December, some messages within these servers will be made publicly accessible on the Server Web Page. There will be no need for visitors to join the server or even have a Discord account in order to see these messages.</p>
-<p>On Discord, users can join public servers or private servers, which require an invite. Public servers can also be Discoverable Servers, meaning they are listed in Discord's searchable database of 63,000 Discoverable Servers, which anyone can join.</p>
-<p>However, Discover servers, even Discoverable Servers, are not listed in Google Search, as servers don't have a public web page for Google to index. While public servers are open to anyone, users must join with their Discord account to see messages and discussions.</p>
-<p>There are many reasons for Discord to make this change. In its announcement, the company explained how it will help some of its main user types — indie game developers, fandoms, and content creators — grow their communities and more easily spread their work.</p>
-<p>Other community platforms like Reddit have long benefited from search engine traffic as discussions on the platform tend to rank well for various user search queries on Google. Discord could also benefit from this.</p>
-<p>However, Discord seems to be aware that some users on the platform have long valued its privacy stance. The company announced that both server owners and users on a server can opt out of making their content searchable by search engines.</p>
-<p>Discord server admins can opt out of specific channels starting today, before anything goes live on Nov. 16, 2026. Admins can go to Server Settings > Web Presence on their public server and choose which channels to make searchable. Admins can opt out of every one of their server's channels. If an admin does not opt out, however, all public channels will be added to the Server Web Page when it goes live next month. Admins can also choose to turn off channel summaries on their Server Web Page.</p>
-<p>In addition, users can opt out of having their messages displayed on the Server Web Page. Discord users can simply go to User Settings, then Data and Privacy, and then change their Channel Messages settings. Users cannot opt out of having their messages used in Channel Summaries on Server Web Pages. However, usernames and avatars won't be shown next to messages on these public Server Web Pages.</p>
-<p>Private servers and DMs will remain completely private on Discord. Users do not need to change any settings for these features.</p>
-<p>Matt Binder joined Mashable's tech vertical in 2018, where he covers social media, tech policy, cybersecurity, online scams, cryptocurrency, AI, creator news, weird tech, and other related tech beats.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://mashable.com/tech/discord-public-server-web-pages-messages-discoverable-in-google-search" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/vietnamese/articles/cqn0j04jg2l8o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Trung Quốc mở cơ sở quân sự ở Lào: Lý do đáng để Việt Nam lo ngại?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/vietnamese/articles/cqn0j04jg2l8o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_tigrinya/51a1/live/56b73410-bdc5-11f1-964e-45603b94c961.jpg" class="news-img" alt="ኤርትራ ምስ ኢትዮጵያ ዝጸንሓ ዲፕሎማስያዊ ዝምድና ምሉእ ብምሉእ ከምዝበተኸት ኣፍሊጣ" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>01 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#1124. The Exact Nail Polish Shade to Recreate Meghan Markle’s Rosy Manicure</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://www.cosmopolitan.com/style-beauty/beauty/a74264788/meghan-markle-bubble-bath-nails/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/530164a5-72cb-4e17-8af4-dd6be1bad335.jpeg?crop=1xw:0.35xh;0xw,0.028xh&amp;resize=1200:*" alt="The Exact Nail Polish Shade to Recreate Meghan Markle’s Rosy Manicure" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://hips.hearstapps.com/hmg-prod/images/530164a5-72cb-4e17-8af4-dd6be1bad335.jpeg?crop=1xw:0.35xh;0xw,0.028xh&resize=1200:*" alt="The Exact Nail Polish Shade to Recreate Meghan Markle’s Rosy Manicure" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>We may earn commission from links on this page, but we only recommend products we love. Promise.</p>
-<p>Royal nail etiquette has long operated on the principle that the less your manicure has to say, the better. No neon polishes, no tiny motifs, and certainly no bedazzled fingertips (in another life, chrome). Just short, clean nails that wouldn't know a scandal if it chipped them. See: Kate Middleton’s pared-back Japanese manicure. But Meghan Markle has ever so slightly meddled with the royal rulebook, giving the classic neutral look a slightly rosy twist.</p>
-<p>Meghan, Duchess of Sussex, traveled to Nottingham earlier this month, the same city where they made their first appearance after announcing their engagement in 2017. And while many were focused on the significance of the pair's first royal walkabout since their return to the UK, my eyes were firmly fixated on Meghan's mani (can’t help it, I’m a beauty writer).</p>
-<p>Her nails are still short, neat, and impeccably elegant, but she's added a soft pink flush that gives the classic neutral a little more life, also known as bubble bath nails.</p>
-<p>Want to recreate the royal look without the royal budget? Good news! You don't need an appointment or a manicurist on speed dial, just OPI's cult-favorite Bubble Bath nail polish, which is an almost identical match to Meghan's delicate pinky nude. It's sheer, subtle, and ever-so-forgiving, making it ideal for anyone who wants expensive-looking nails without having to commit to a full-on color moment and minimizes the look of the grow-out phase.</p>
-<p>Now that we’ve got the royal manicure, all we need is a crown, a palace, and someone to do the cooking...</p>
-<p>Lia Mappoura (she/her) is the Beauty Writer at Cosmopolitan UK, with over four years of experience reporting across the brand's print, social, video and digital platforms. Lia covers everything from emerging trend analysis to viral celebrity hair and makeup moments, making her an expert at spotting the season’s next big beauty look (before it takes over social media feeds).</p>
-<p>In 2025, she was named The Rising Media Star at the Love Perfume Awards with The Perfume Shop, recognised for her outstanding digital fragrance content and for building genuine authority within the space. She is passionate about challenging outdated beauty stereotypes, championing inclusive representation in beauty, and educating readers on the trends, products and conversations shaping the industry today. Follow her on Instagram or find her on LinkedIn.</p>
-<p>Spooky-Chic Nail Colors For Any Type of Costume</p>
-<p>Don’t Have a Costume? Try a Halloween Manicure</p>
-<p>Festive and Elevated Pumpkin Nail Ideas to Try</p>
-<p>Chartreuse Is Fall’s Most Unexpected Nail Color</p>
-<p>The OPI Polish Behind Kendall’s Spiced Cherry Mani</p>
-<p>Hailey Bieber Just Made ‘Caviar’ Nails a Trend</p>
-<p>Minimalist Fall Nail Ideas to Elevate Your Mani</p>
-<p>Iced Latte Nails Are My New Fall Pick-Me-Up</p>
-<p>The Exact $12 Polish Behind Selena’s Red Wine Mani</p>
-<p>8 Coffee Nail Ideas for Your Next Fall Manicure</p>
-<p>We may earn commission from links on this page, but we only recommend products we back.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.cosmopolitan.com/style-beauty/beauty/a74264788/meghan-markle-bubble-bath-nails/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/tigrinya/articles/cw4grg51kzlko?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">ኤርትራ ምስ ኢትዮጵያ ዝጸንሓ ዲፕሎማስያዊ ዝምድና ምሉእ ብምሉእ ከምዝበተኸት ኣፍሊጣ</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/tigrinya/articles/cw4grg51kzlko?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_afaanoromoo/1bca/live/f4693510-bd8d-11f1-bc2e-018d645d8d21.jpg" class="news-img" alt="Fiigicha badhaasa hanga birrii miiliyoona 1 argamsiisu dabalatee taateewwan Irreechaa ijoo" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>01 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#931. The Best of Inez and Vinoodh—This Year’s CFDA Lifetime Achievement Honorees—in Vogue</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Lifestyle</strong> &nbsp;|&nbsp; 
-        <a href="https://www.vogue.com/slideshow/the-best-of-inez-and-vinoodh-in-vogue-2026-cfda-lifetime-achievement-honorees" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://assets.vogue.com/photos/6ae0d6767272e55e33175b3b/16:9/w_1280,c_limit/0915-VO-WELL01-01%20Large.jpeg" alt="The Best of Inez and Vinoodh—This Year’s CFDA Lifetime Achievement Honorees—in Vogue" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://assets.vogue.com/photos/6ae0d6767272e55e33175b3b/16:9/w_1280,c_limit/0915-VO-WELL01-01%20Large.jpeg" alt="The Best of Inez and Vinoodh—This Year’s CFDA Lifetime Achievement Honorees—in Vogue" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>There are few fashion photographers who can look back over a four-decade career like Inez van Lamsweerde and Vinoodh Matadin. On November 2 at the CFDA Awards, the organization will honor the pair with the Geoffrey Beene Lifetime Achievement Award. The prize commemorates their deep impact and contribution to the visual language of the industry.</p>
-<p>Both Dutch natives, the two first met while studying at the Amsterdam Fashion Academy before connecting as fashion collaborators in 1986. Over the course of a generation, the wife-and-husband power duo have crafted an experimental, high-energy, and star-powered signature look that spans a long lasting relationship with Björk, advertising work for labels such as Chanel, Miu Miu, and Yohji Yamamoto, and many major magazine editorials, including in the international pages of Vogue.</p>
-<p>The duo started contributing to American Vogue in 1995. In a 1996 body-hugging spread titled “Futuristic Fit,” Van Lamsweerde and Matadin were described as up-and-comers utilizing brand-new technology at the forefront of their hyperrealistic creations—they were early adopters of Photoshop’s precursor, Quantel Paintbox. “We wanted to capture a kind of frozen high energy to create a surrealistic effect,” Lamsweerde told Vogue at the time.</p>
-<p>As you’ll see in this selection of portraiture and fashion work, their pictures have a joyfully explosive quality. Their palette feels Technicolor, and the sitters seem to take on superpowers, filled with a sense of spirit and motion. Also often a sense of humor; see for example Karlie Kloss with a single caterpillar-like eyebrow. And talk about million dollar smiles—no one gets subjects to say cheese (or kaas, as the case may be) like Inez and Vinoodh.</p>
-<p>Photographed by Inez and Vinoodh, Vogue, February 2015</p>
-<p>Photographed by Inez and Vinoodh, Vogue, September 2015</p>
-<p>Photographed by Inez and Vinoodh, Vogue, March 2016</p>
-<p>Photographed by Inez and Vinoodh, Vogue, April 2015</p>
-<p>Photographed by Inez and Vinoodh, Vogue, November 2016</p>
-<p>Photographed by Inez and Vinoodh, Vogue, July 2014</p>
-<p>Photographed by Inez and Vinoodh, Vogue, November 2014</p>
-<p>Photographed by Inez and Vinoodh, Vogue 2019</p>
-<p>Photographed by Inez and Vinoodh, Vogue, March 2015</p>
-<p>Photographed by Inez and Vinoodh, Vogue, November 2014</p>
-<p>Photographed by Inez and Vinoodh, Vogue, March 2016</p>
-<p>Photographed by Inez and Vinoodh, Vogue, April 2015</p>
-<p>Photographed by Inez and Vinoodh, Vogue, April 2017</p>
-<p>Photographed by Inez and Vinoodh, Vogue, October 2016</p>
-<p>Photographed by Inez and Vinoodh, Vogue, August 2015</p>
-<p>Photographed by Inez and Vinoodh, Vogue, March 2015</p>
-<p>Photographed by Inez and Vinoodh, Vogue, April 2017</p>
-<p>Photographed by Inez and Vinoodh, Vogue, April 2017</p>
-<p>Photographed by Inez and Vinoodh, Vogue, March 2016</p>
-<p>Photographed by Inez and Vinoodh, Vogue, March 2016</p>
-<p>Photographed by Inez and Vinoodh, Vogue, April 2017</p>
-<p>Photographed by Inez and Vinoodh, Vogue, April 2017</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.vogue.com/slideshow/the-best-of-inez-and-vinoodh-in-vogue-2026-cfda-lifetime-achievement-honorees" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/afaanoromoo/articles/cw4grgmnmrp0o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Fiigicha badhaasa hanga birrii miiliyoona 1 argamsiisu dabalatee taateewwan Irreechaa ijoo</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/afaanoromoo/articles/cw4grgmnmrp0o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_swahili/1cf4/live/3d1db9c0-bd8e-11f1-9a76-4118bb2c2e43.jpg" class="news-img" alt="Sir Wicknell alipataje utajiri wake?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>01 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#1132. Sofía Vergara Was Straight-Up Asked About Those Dan Reynolds Dating Rumors—Here’s How She Responded</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Entertainment</strong> &nbsp;|&nbsp; 
-        <a href="https://www.cosmopolitan.com/entertainment/celebs/a74264581/sofia-vergara-dan-reynolds-dating-rumors-response/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/909df5e7-c719-40fe-877c-0f170f788bc8.png?crop=1xw:0.5xh;center,top&amp;resize=1200:*" alt="Sofía Vergara Was Straight-Up Asked About Those Dan Reynolds Dating Rumors—Here’s How She Responded" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://hips.hearstapps.com/hmg-prod/images/909df5e7-c719-40fe-877c-0f170f788bc8.png?crop=1xw:0.5xh;center,top&resize=1200:*" alt="Sofía Vergara Was Straight-Up Asked About Those Dan Reynolds Dating Rumors—Here’s How She Responded" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>She kept her answer short, sweet, and very Sofía.</p>
-<p>Sofía Vergara has (sort of) entered the chat on those Dan Reynolds dating rumors.</p>
-<p>Days after she was spotted at a low-key dinner with the newly single Imagine Dragons frontman at Cipriani in Beverly Hills, the Modern Family actor was directly asked about him by TMZ. Of course, her answer was short, sweet, and very Sofía.</p>
-<p>According to a video obtained by the outlet, Sofía fixed her hair and remained tight-lipped when asked whether she’s a big fan of Dan’s band or has a favorite song.</p>
-<p>Her subtle response comes after they were spotted “getting flirty” and holding hands at Cipriani in Beverly Hills on Sunday, October 25.</p>
-<p>The “It’s Time” hitmaker split from Minka Kelly after four years together, and a People source confirmed it “happened recently.” Details surrounding their split are slim, but Dan was also spotted with DJ and model Chantel Jeffries at Miley Cyrus’ Hollywood Bowl show on Sunday, October 18, days after his breakup news dropped.</p>
-<p>Their relationship status remains a mystery, as neither he nor Sofía has publicly confirmed whether they’re an item. Sofía is reportedly still dating businessman Douglas Chabbott, too—though they haven’t been photographed together since they celebrated her birthday on a yacht in July.</p>
-<p>Welp. Just know we’ll keep an eye out for more Dan and Sofía sightings as they come!</p>
-<p>Trisha Responds to Ethan Klein Cheating Drama</p>
-<p>Kim Lacked “Confidence” to Leave Kris Humphries</p>
-<p>Taylor and Travis’ Wedding Renderings Leaked</p>
-<p>G Flip Speaks Out on Chrishell Stause Split</p>
-<p>Drew and Kristen Removed Their Makeup on TV</p>
-<p>Taylor Wore the Cutest Dress in Nashville</p>
-<p>Is Tay Giving a Surprise Performance in Nashville?</p>
-<p>Q: Are Dan Reynolds and Sofía Vergara Dating?</p>
-<p>Ahem, Wondering If Candice and Gisele Are Friends?</p>
-<p>We may earn commission from links on this page, but we only recommend products we back.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.cosmopolitan.com/entertainment/celebs/a74264581/sofia-vergara-dan-reynolds-dating-rumors-response/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/swahili/articles/c64grgmp93ygo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Sir Wicknell alipataje utajiri wake?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/swahili/articles/c64grgmp93ygo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_swahili/dfd0/live/c1dc2560-bcc7-11f1-bc2e-018d645d8d21.jpg" class="news-img" alt="Teknolojia 5 zinazombadilisha binadamu kuwa nusu mashine" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>01 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#3926. Why Pregnancy Loss After Infertility Is More Than One Loss</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Health</strong> &nbsp;|&nbsp; 
-        <a href="https://www.psychologytoday.com/us/blog/reproductive-trauma-and-infertility/202610/why-pregnancy-loss-after-infertility-is-more-than" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2026-10/back_into_the_tunnel_again.jpeg.jpg?itok=RJpSzfU-" alt="Why Pregnancy Loss After Infertility Is More Than One Loss" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2026-10/back_into_the_tunnel_again.jpeg.jpg?itok=RJpSzfU-" alt="Why Pregnancy Loss After Infertility Is More Than One Loss" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>We’re all holding onto something we’re sure we can’t give up on, but research shows that letting go can boost our happiness a lot more than we might think.</p>
-<p>Self Tests are all about you. Are you outgoing or introverted? Are you a narcissist? Does perfectionism hold you back? Find out the answers to these questions and more with Psychology Today.</p>
-<p>Posted October 27, 2026
-
-|
-
-
-Reviewed by Kaja Perina</p>
-<p>When you get a positive test after years of trying to get pregnant, the joy is usually accompanied by some fear. After so long, your efforts finally worked—and now there’s something that could be taken away.</p>
-<p>If that pregnancy, in turn, ends in a loss, there’s a distinct type of grief along with the disappointment and sadness, as well as a new kind of fear that compounds on top of the initial fear. This compounded fear comes from knowing now how painful it is, both physically and emotionally, to lose a pregnancy. This loss is layered because you are now grieving more than one loss.</p>
-<p>If you've been struggling with infertility, getting pregnant is a relief. It finally worked, and you know your body can actually get pregnant. Losing that pregnancy can feel like having no say over what happens, with no guarantee that next time will be different.</p>
-<p>Beyond proof your body can get pregnant, it can feel like the hard part is over. It may be the first time in a long time that you've let yourself plan.</p>
-<p>If you've been in treatment, there’s often a moment of graduating from the fertility clinic to regular pregnancy care. After a loss, you go back to the clinic, the waiting room and the protocols, and it can feel like starting over from zero.</p>
-<p>You may have followed every instruction this time, and it still ended, which can make the loss of control feel even greater.</p>
-<p>When we think of grief, it is basically a response to loss. A loss can be tangible, emotional, or even imagined.</p>
-<p>A pregnancy loss after infertility is complex because it involves losses at all these levels.</p>
-<p>There's the loss of that reproductive story we imagined. Clients usually describe this timeline loss as a disruption in the order of things, at least the order many of us expect.</p>
-<p>Then we have losses along the way: the loss of control, identity, belonging, hope, innocence, and the loss of planning.</p>
-<p>Infertility and pregnancy loss also involve grieving a future. What makes this grief different is that it’s for something that never happened, something you wanted but never had.</p>
-<p>When pregnancy finally happens, especially after fertility treatments, we get to see the light at the end of the tunnel. Unfortunately, 1 in 4 pregnancies end in a loss, which can make that moment very brief (Koert et al., 2023).</p>
-<p>A loss can also take away the joy of celebrating when a pregnancy happens again. In session, this is often described as losing the innocence of getting pregnant before knowing that it can be lost.</p>
-<p>After one pregnancy loss, the brain learns that loss is very much possible. From then on, it holds both possibilities: a pregnancy that could continue and one that ends in loss. Since this loss can be significant and traumatic, it is now focused on the negative possibilities mostly to keep you safe from future suffering.</p>
-<p>When the next pregnancy happens, there's no more of that carefree joy of planning the nursery, choosing baby names, and picking out cribs and newborn onesies. You are now experiencing the mature side of pregnancy after loss, and with the maturity comes the bracing for negative results. Couples who became pregnant again after a loss have described this as never being “pregnant in the same way again” (Koert et al., 2023). Clinicians call this anticipatory grief, when part of you starts grieving a loss before it happens.</p>
-<p>Pregnancy after loss brings its own fears, especially after infertility and fertility treatments. Part of what makes it so hard is trying to hold on to hope that this time could end well. I wrote more about this in an earlier post, “The Trauma of Repeated Hope in Infertility.”</p>
-<p>Having gone through fertility treatments brings on even more losses, such as loss of a cycle, the money spent, and sometimes the last embryo.</p>
-<p>There’s also the time. Each cycle takes weeks of appointments and waiting, and after a loss there’s often another wait before you can try again, while you’re aware of every month that passes.</p>
-<p>In a recent study, women going through fertility treatment described the process as an “extended present,” where time moves back and forth between hope and uncertainty (Karaca Biçakçı et al., 2026). They also talked about their bodies becoming the focus of medical attention, and about the pressure they felt from the people around them. The researchers described infertility as a “biographical disruption,” something that changes how we see ourselves and where we fit in with others.</p>
-<p>This study looked at women in treatment, and I see the same thing happen after a loss. When a pregnancy ends after fertility treatment, it can pull you right back into that extended present, just when the end finally seemed in sight. And this time, hope can feel harder to reach.</p>
-<p>Once you’ve lost a pregnancy after infertility, loss is no longer something that only happens to other people.</p>
-<p>It’s understandable to want control over what happens next, especially after everything you’ve done to get here. A lot of the pain comes from the struggle itself, from trying to make sure it never happens again when so much of it was never in your hands.</p>
-<p>In therapy, a big part of the work after a loss is letting go of that struggle to be in control. Of course, this is hard to do when so much of trying to conceive has already been about losing control.</p>
-<p>When the struggle starts to ease, it often becomes a little easier to hope again, even with the fear still there.</p>
-<p>Karaca Biçakçı, N., Çalmaz, A, & Altay, B. (2026). Temporal meaning-making of women’s emotional experiences during the infertility treatment process: A qualitative study. International Journal of Qualitative Studies on Health and Well-being. https://doi.org/10.1080/17482631.2026.2672214</p>
-<p>Koert, E., Hartwig, T. S., Hviid Malling, G. M., Schmidt, L., & Nielsen, H. S. (2023). ‘You’re never pregnant in the same way again’: Prior early pregnancy loss influences need for health care and support in subsequent pregnancy. Human Reproduction Open, 2023(3), hoad032. https://doi.org/10.1093/hropen/hoad032</p>
-<p>Share this post
-    
-
-
-
-Facebook
-
-
-
-
-
-
-
-
-
-
-Bluesky
-
-
-
-
-
-Linkedin
-
-
-
-
-
-Email</p>
-<p>There was a problem adding your email address. Please try again.</p>
-<p>Delia Petrescu, M.A., RP, is a registered psychotherapist specializing in fertility, reproductive trauma, grief, anxiety, and relationship counseling.</p>
-<p>Get the help you need from a therapist near you–a FREE service from Psychology Today.</p>
-<p>Psychology Today © 2026 Sussex Publishers, LLC</p>
-<p>We’re all holding onto something we’re sure we can’t give up on, but research shows that letting go can boost our happiness a lot more than we might think.</p>
-<p>Self Tests are all about you. Are you outgoing or introverted? Are you a narcissist? Does perfectionism hold you back? Find out the answers to these questions and more with Psychology Today.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.psychologytoday.com/us/blog/reproductive-trauma-and-infertility/202610/why-pregnancy-loss-after-infertility-is-more-than" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/swahili/articles/cm3wjgjvx73go?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Teknolojia 5 zinazombadilisha binadamu kuwa nusu mashine</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/swahili/articles/cm3wjgjvx73go?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_uzbek/500b/live/da23d780-bc9f-11f1-bd53-81692d9847e1.jpg" class="news-img" alt="Ўшда йўл учун уйлар бузилмоқда: Одамларга товон пули ва бошпана бериладими? Видео" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>01 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article><div class="pagination"><a href="index.html">1</a><a href="page2.html">2</a><a href="page3.html">3</a><a href="page4.html">4</a><a href="page5.html">5</a><a href="page6.html">6</a><a href="page7.html">7</a><a href="page8.html">8</a><a href="page9.html">9</a><a href="page10.html">10</a><a href="page11.html">11</a><a href="page12.html">12</a><a href="page13.html">13</a><a href="page14.html">14</a><a href="page15.html">15</a><a href="page16.html">16</a><a href="page17.html">17</a><a href="page18.html">18</a><a href="page19.html">19</a><a href="page20.html">20</a><a href="page21.html">21</a><a href="page22.html">22</a><a href="page23.html">23</a><a href="page24.html">24</a><a href="page25.html">25</a><a href="page26.html">26</a><a href="page27.html">27</a><a href="page28.html">28</a><a href="page29.html">29</a><a href="page30.html">30</a><a href="page31.html">31</a><a href="page32.html">32</a><a href="page33.html">33</a><a href="page34.html">34</a><a href="page35.html" class="active">35</a><a href="page36.html">36</a><a href="page37.html">37</a><a href="page38.html">38</a><a href="page39.html">39</a><a href="page40.html">40</a><a href="page41.html">41</a><a href="page42.html">42</a><a href="page43.html">43</a><a href="page44.html">44</a><a href="page45.html">45</a><a href="page46.html">46</a><a href="page47.html">47</a><a href="page48.html">48</a><a href="page49.html">49</a><a href="page50.html">50</a><a href="page51.html">51</a><a href="page52.html">52</a><a href="page53.html">53</a><a href="page54.html">54</a><a href="page55.html">55</a><a href="page56.html">56</a><a href="page57.html">57</a><a href="page58.html">58</a><a href="page59.html">59</a><a href="page60.html">60</a><a href="page61.html">61</a><a href="page62.html">62</a><a href="page63.html">63</a><a href="page64.html">64</a><a href="page65.html">65</a><a href="page66.html">66</a><a href="page67.html">67</a><a href="page68.html">68</a><a href="page69.html">69</a><a href="page70.html">70</a><a href="page71.html">71</a><a href="page72.html">72</a><a href="page73.html">73</a><a href="page74.html">74</a><a href="page75.html">75</a><a href="page76.html">76</a><a href="page77.html">77</a><a href="page78.html">78</a><a href="page79.html">79</a><a href="page80.html">80</a><a href="page81.html">81</a><a href="page82.html">82</a><a href="page83.html">83</a><a href="page84.html">84</a><a href="page85.html">85</a><a href="page86.html">86</a><a href="page87.html">87</a><a href="page88.html">88</a><a href="page89.html">89</a><a href="page90.html">90</a><a href="page91.html">91</a><a href="page92.html">92</a><a href="page93.html">93</a><a href="page94.html">94</a><a href="page95.html">95</a><a href="page96.html">96</a><a href="page97.html">97</a><a href="page98.html">98</a><a href="page99.html">99</a><a href="page100.html">100</a><a href="page101.html">101</a><a href="page102.html">102</a><a href="page103.html">103</a><a href="page104.html">104</a><a href="page105.html">105</a><a href="page106.html">106</a><a href="page107.html">107</a><a href="page108.html">108</a><a href="page109.html">109</a><a href="page110.html">110</a><a href="page111.html">111</a><a href="page112.html">112</a><a href="page113.html">113</a><a href="page114.html">114</a><a href="page115.html">115</a><a href="page116.html">116</a><a href="page117.html">117</a><a href="page118.html">118</a><a href="page119.html">119</a><a href="page120.html">120</a><a href="page121.html">121</a><a href="page122.html">122</a><a href="page123.html">123</a><a href="page124.html">124</a><a href="page125.html">125</a><a href="page126.html">126</a><a href="page127.html">127</a><a href="page128.html">128</a><a href="page129.html">129</a><a href="page130.html">130</a><a href="page131.html">131</a><a href="page132.html">132</a><a href="page133.html">133</a><a href="page134.html">134</a><a href="page135.html">135</a><a href="page136.html">136</a><a href="page137.html">137</a><a href="page138.html">138</a><a href="page139.html">139</a><a href="page140.html">140</a><a href="page141.html">141</a><a href="page142.html">142</a><a href="page143.html">143</a><a href="page144.html">144</a><a href="page145.html">145</a><a href="page146.html">146</a><a href="page147.html">147</a><a href="page148.html">148</a><a href="page149.html">149</a><a href="page150.html">150</a><a href="page151.html">151</a><a href="page152.html">152</a><a href="page153.html">153</a><a href="page154.html">154</a><a href="page155.html">155</a><a href="page156.html">156</a><a href="page157.html">157</a><a href="page158.html">158</a><a href="page159.html">159</a><a href="page160.html">160</a><a href="page161.html">161</a><a href="page162.html">162</a><a href="page163.html">163</a><a href="page164.html">164</a><a href="page165.html">165</a><a href="page166.html">166</a><a href="page167.html">167</a><a href="page168.html">168</a><a href="page169.html">169</a><a href="page170.html">170</a><a href="page171.html">171</a><a href="page172.html">172</a><a href="page173.html">173</a><a href="page174.html">174</a><a href="page175.html">175</a><a href="page176.html">176</a><a href="page177.html">177</a><a href="page178.html">178</a><a href="page179.html">179</a><a href="page180.html">180</a><a href="page181.html">181</a><a href="page182.html">182</a><a href="page183.html">183</a><a href="page184.html">184</a><a href="page185.html">185</a><a href="page186.html">186</a><a href="page187.html">187</a><a href="page188.html">188</a><a href="page189.html">189</a><a href="page190.html">190</a><a href="page191.html">191</a><a href="page192.html">192</a><a href="page193.html">193</a><a href="page194.html">194</a><a href="page195.html">195</a><a href="page196.html">196</a><a href="page197.html">197</a><a href="page198.html">198</a><a href="page199.html">199</a><a href="page200.html">200</a><a href="page201.html">201</a><a href="page202.html">202</a><a href="page203.html">203</a><a href="page204.html">204</a><a href="page205.html">205</a><a href="page206.html">206</a><a href="page207.html">207</a><a href="page208.html">208</a><a href="page209.html">209</a><a href="page210.html">210</a><a href="page211.html">211</a><a href="page212.html">212</a><a href="page213.html">213</a><a href="page214.html">214</a><a href="page215.html">215</a><a href="page216.html">216</a><a href="page217.html">217</a><a href="page218.html">218</a><a href="page219.html">219</a><a href="page220.html">220</a><a href="page221.html">221</a><a href="page222.html">222</a><a href="page223.html">223</a><a href="page224.html">224</a><a href="page225.html">225</a><a href="page226.html">226</a><a href="page227.html">227</a><a href="page228.html">228</a><a href="page229.html">229</a><a href="page230.html">230</a><a href="page231.html">231</a><a href="page232.html">232</a><a href="page233.html">233</a><a href="page234.html">234</a><a href="page235.html">235</a><a href="page236.html">236</a><a href="page237.html">237</a><a href="page238.html">238</a><a href="page239.html">239</a><a href="page240.html">240</a><a href="page241.html">241</a><a href="page242.html">242</a><a href="page243.html">243</a></div><footer>&copy; 2026 News Portal Indonesia. All rights reserved.</footer>
+            <h2 class="news-title"><a href="https://www.bbc.com/uzbek/articles/cj7502ydk19yo/cyr?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Ўшда йўл учун уйлар бузилмоқда: Одамларга товон пули ва бошпана бериладими? Видео</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/uzbek/articles/cj7502ydk19yo/cyr?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_uzbek/83af/live/a2587eb0-bce4-11f1-a64c-550be9e3c66b.jpg" class="news-img" alt="Исроилга учаётган Flydubai учоғидаги пичоқлаш ҳодисаси ҳақида нима маълум?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>01 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.bbc.com/uzbek/articles/cwp93921p951o/cyr?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Исроилга учаётган Flydubai учоғидаги пичоқлаш ҳодисаси ҳақида нима маълум?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/uzbek/articles/cwp93921p951o/cyr?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article></div><div class="pagination"><a href="index.html">1</a><a href="page2.html">2</a><a href="page3.html">3</a><a href="page4.html">4</a><a href="page5.html">5</a><a href="page6.html">6</a><a href="page7.html">7</a><a href="page8.html">8</a><a href="page9.html">9</a><a href="page10.html">10</a><a href="page11.html">11</a><a href="page12.html">12</a><a href="page13.html">13</a><a href="page14.html">14</a><a href="page15.html">15</a><a href="page16.html">16</a><a href="page17.html">17</a><a href="page18.html">18</a><a href="page19.html">19</a><a href="page20.html">20</a><a href="page21.html">21</a><a href="page22.html">22</a><a href="page23.html">23</a><a href="page24.html">24</a><a href="page25.html">25</a><a href="page26.html">26</a><a href="page27.html">27</a><a href="page28.html">28</a><a href="page29.html">29</a><a href="page30.html">30</a><a href="page31.html">31</a><a href="page32.html">32</a><a href="page33.html">33</a><a href="page34.html">34</a><a href="page35.html" class="active">35</a><a href="page36.html">36</a><a href="page37.html">37</a><a href="page38.html">38</a><a href="page39.html">39</a><a href="page40.html">40</a><a href="page41.html">41</a></div><footer>&copy; 2026 News Portal. All rights reserved.</footer>
 </div></body></html>

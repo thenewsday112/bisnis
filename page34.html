@@ -4,83 +4,64 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<title>News Portal Indonesia - Page 34</title>
-<meta name="description" content="Page 34">
-<link rel="canonical" href="https://railfansday.github.io/newsweb/page34.html">
+<title>Page 34</title>
+<meta name="description" content="Latest news page 34">
+<link rel="canonical" href="https://thenewsday112.github.io/newsmenuday/page34.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-body{font-family:'Segoe UI',system-ui,sans-serif;background:#f4f6f8;margin:0;padding:20px;color:#333;line-height:1.6}
-.container{max-width:1000px;margin:0 auto}
-header{background:#1e293b;color:#fff;padding:20px;border-radius:12px;margin-bottom:20px;text-align:center;box-shadow:0 4px 6px rgba(0,0,0,.1)}
-header h1{margin:0;font-size:26px;letter-spacing:1px}
-nav{background:#fff;padding:10px;border-radius:12px;margin-bottom:24px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center;box-shadow:0 2px 4px rgba(0,0,0,.05)}
-nav a{padding:8px 16px;border-radius:8px;color:#475569;text-decoration:none;font-weight:600;transition:all .2s;font-size:14px}
-nav a:hover,nav a.active{background:#2563eb;color:#fff}
-.article-card{background:#fff;padding:24px;margin-bottom:24px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);border-left:4px solid #2563eb}
-.article-card h2{margin:0 0 12px;font-size:22px;color:#1e293b}
-.article-meta{font-size:13px;color:#64748b;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid #e2e8f0}
-.article-meta a{color:#2563eb;text-decoration:none;font-weight:bold}
-.article-body{font-size:16px;line-height:1.8;color:#334155}
-.article-body img{max-width:100%;height:auto;border-radius:8px;margin:16px 0}
-.pagination{text-align:center;margin:40px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
-.pagination a{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;color:#334155;font-weight:bold;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.05);transition:all .2s}
-.pagination a:hover{background:#f1f5f9}
-.pagination a.active{background:#2563eb;color:#fff}
-footer{text-align:center;color:#64748b;font-size:14px;padding:30px 0;border-top:1px solid #e2e8f0;margin-top:20px}
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+}
+* { box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: var(--bg-color); margin: 0; padding: 0; color: var(--text-main); line-height: 1.6; }
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+header.site-header { background: var(--card-bg); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.header-inner { max-width: 1100px; margin: 0 auto; padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; }
+.logo { font-size: 24px; font-weight: 800; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+nav.category-nav { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; scrollbar-width: none; }
+nav.category-nav::-webkit-scrollbar { display: none; }
+nav.category-nav a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 14px; padding: 8px 16px; border-radius: 20px; white-space: nowrap; transition: all 0.2s; background: var(--bg-color); }
+nav.category-nav a:hover, nav.category-nav a.active { background: var(--primary); color: white; }
+.news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; margin-top: 20px; }
+.news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; border: 1px solid var(--border-color); }
+.news-card:hover { transform: translateY(-4px); box-shadow: 0 12px 20px -5px rgba(0,0,0,0.1); }
+.news-img { width: 100%; height: 180px; object-fit: cover; background: #e2e8f0; display: block; }
+.news-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+.news-meta { display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 600; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.badge { background: #eff6ff; color: var(--primary); padding: 4px 10px; border-radius: 20px; }
+.news-title { margin: 0 0 12px 0; font-size: 18px; font-weight: 800; line-height: 1.4; }
+.news-title a { color: var(--text-main); text-decoration: none; }
+.news-title a:hover { color: var(--primary); }
+.news-excerpt { color: var(--text-muted); font-size: 14px; margin-bottom: 16px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.read-more { margin-top: auto; font-size: 14px; font-weight: 600; color: var(--primary); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
+.read-more:hover { color: var(--primary-dark); }
+.pagination { display: flex; justify-content: center; gap: 8px; margin: 40px 0; flex-wrap: wrap; }
+.pagination a { display: inline-flex; align-items: center; justify-content: center; min-width: 40px; height: 40px; padding: 0 10px; border-radius: 8px; background: var(--card-bg); color: var(--text-main); text-decoration: none; font-weight: 600; border: 1px solid var(--border-color); transition: all 0.2s; }
+.pagination a:hover, .pagination a.active { background: var(--primary); color: white; border-color: var(--primary); }
+.ad-container { background: var(--card-bg); padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 20px; border: 1px solid var(--border-color); }
+footer { text-align: center; padding: 40px 20px; color: var(--text-muted); border-top: 1px solid var(--border-color); margin-top: 40px; background: var(--card-bg); }
+@media (max-width: 768px) { .header-inner { flex-direction: column; align-items: flex-start; gap: 15px; } nav.category-nav { width: 100%; } }
 </style>
 </head>
 <body>
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">📰 News Portal</a>
+    </div>
+    <div class="header-inner" style="padding-top:0;">
+        <nav class="category-nav"><a href="index.html" class="active">All News</a><a href="technology.html" class="">Technology</a><a href="business.html" class="">Business</a><a href="sports.html" class="">Sports</a><a href="entertainment.html" class="">Entertainment</a><a href="health.html" class="">Health</a><a href="science.html" class="">Science</a><a href="other.html" class="">Other</a></nav>
+    </div>
+</header>
 <div class="container">
-<header><h1>News Portal Indonesia</h1></header>
-<nav><a href="index.html" class="active">🏠 All News</a><a href="technology.html">📰 Technology</a><a href="business.html">📰 Business</a><a href="sports.html">📰 Sports</a><a href="entertainment.html">📰 Entertainment</a><a href="health.html">📰 Health</a><a href="science.html">📰 Science</a><a href="politics.html">📰 Politics</a><a href="world.html">📰 World</a><a href="travel.html">📰 Travel</a><a href="food.html">📰 Food</a><a href="automotive.html">📰 Automotive</a><a href="education.html">📰 Education</a><a href="lifestyle.html">📰 Lifestyle</a><a href="other.html">📰 Other</a></nav>
-<h1 style="color:#1e293b;border-left:5px solid #2563eb;padding-left:15px;margin-bottom:30px;">News Portal Indonesia - Page 34</h1>
-<article class="article-card">
-    <h2>#637. Supporting children with dyslexia starts with preparing their teachers</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://phys.org/news/2026-10-children-dyslexia-teachers.html" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>A child pauses at a word, tries it, then looks to the teacher for help. Telling the word to the child can get the sentence moving. Working out what to teach so the child can read similar words independently takes a different kind of expertise.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://phys.org/news/2026-10-children-dyslexia-teachers.html" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
-            </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;"><h1 style="font-size:28px; font-weight:800; margin:0;">Page 34</h1></div><div class="ad-container">
 <div style="text-align:center;margin:20px 0;">
     <script type="text/javascript">
         atOptions = {
@@ -93,1394 +74,245 @@ footer{text-align:center;color:#64748b;font-size:14px;padding:30px 0;border-top:
     </script>
     <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
 </div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#45. &quot;No human at the helm&quot;: Delaware plan would let AI agents run entire businesses</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://arstechnica.com/tech-policy/2026/10/no-human-at-the-helm-delaware-plan-would-let-ai-agents-run-entire-businesses/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Owners of AI-run firms would evade liability for "reckless" AI, US Rep. Comer says.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://arstechnica.com/tech-policy/2026/10/no-human-at-the-helm-delaware-plan-would-let-ai-agents-run-entire-businesses/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+</div><div class="news-grid">
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_burmese/0ef3/live/db7720b0-bd8a-11f1-babe-4199b0e7ccea.jpg" class="news-img" alt="ရန်ကုန်က HIV ကူးစက်မှု၊ လူငယ်တွေစိုးရိမ်ချက်နဲ့ ပြည့်တန်ဆာနှိမ်နင်းရေး" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>07 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#648. AI and satellite data could give Florida earlier warnings of toxic red tides</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://phys.org/news/2026-10-ai-satellite-florida-earlier-toxic.html" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Red tide, a harmful algal bloom that produces toxins, is known for causing respiratory irritation in humans and killing fish in coastal waters. Recent research shows that the conversation is also shifting to include a more subtle neurological threat.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://phys.org/news/2026-10-ai-satellite-florida-earlier-toxic.html" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/burmese/articles/cgrvxr41z8xo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">ရန်ကုန်က HIV ကူးစက်မှု၊ လူငယ်တွေစိုးရိမ်ချက်နဲ့ ပြည့်တန်ဆာနှိမ်နင်းရေး</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/burmese/articles/cgrvxr41z8xo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_tamil/95d3/live/c49a3e10-c224-11f1-bc2e-018d645d8d21.jpg" class="news-img" alt="இந்தியாவில் ஜென் ஸி அணுகுமுறையால் மாறும் சூழல் அரசியல் மாற்றத்திற்கு வித்திடுமா?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>07 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#57. In Israel’s Election, It’s Nationalism vs. Founding Ideals</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>World</strong> &nbsp;|&nbsp; 
-        <a href="https://www.nytimes.com/2026/10/27/world/middleeast/israel-election-identity.html" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>As Israel votes, ever more strident hard-right views compete with hopes for a diverse land. The outcome could shape the country’s identity for years.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.nytimes.com/2026/10/27/world/middleeast/israel-election-identity.html" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/tamil/articles/c8ly0v4kp4q6o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">இந்தியாவில் ஜென் ஸி அணுகுமுறையால் மாறும் சூழல் அரசியல் மாற்றத்திற்கு வித்திடுமா?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/tamil/articles/c8ly0v4kp4q6o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_afaanoromoo/dbad/live/b5e794e0-c219-11f1-bc2e-018d645d8d21.jpg" class="news-img" alt="Meesii gaggeessuu irratti miira turee fi waan jedhame" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>07 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#58. GM is embracing hybrids now</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://techcrunch.com/2026/10/27/gm-is-embracing-hybrids-now/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>GM eschewed hybrids in favor of battery-electric vehicles. Now it's gearing up to offer hybrid versions of its SUVs.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://techcrunch.com/2026/10/27/gm-is-embracing-hybrids-now/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/afaanoromoo/articles/cmlyl25vw98lo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Meesii gaggeessuu irratti miira turee fi waan jedhame</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/afaanoromoo/articles/cmlyl25vw98lo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_swahili/0fd9/live/5c01bb50-c222-11f1-a64c-550be9e3c66b.jpg" class="news-img" alt="&#x27;Mwaka mmoja bila Polepole umekuwa mgumu sana&#x27;- Familia" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>07 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#394. 4+ Massive Electrical Blasts Spark New Concerns Over LAX People Mover</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://simpleflying.com/4-electrical-blasts-concerns-lax-people-mover/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>New footage of an explosion in September is raising concerns over the infrastructure at LAX.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://simpleflying.com/4-electrical-blasts-concerns-lax-people-mover/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/swahili/articles/cqly0jk83zego?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">&#x27;Mwaka mmoja bila Polepole umekuwa mgumu sana&#x27;- Familia</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/swahili/articles/cqly0jk83zego?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_japanese/8aca/live/c2a99740-c198-11f1-bc2e-018d645d8d21.jpg" class="news-img" alt="ロシアのペスト研究所職員が死亡、ロシアとアメリカのやりとりは" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>07 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#73. Trump says US voter fraud is &#x27;rampant&#x27; - evidence suggests it is extremely rare</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.bbc.co.uk/news/articles/ckeq3vezxlx1o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>As the US president casts doubt on the security of the midterm elections, BBC Verify examines his claims.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.bbc.co.uk/news/articles/ckeq3vezxlx1o?at_medium=RSS&at_campaign=rss" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/japanese/articles/cm0rlgywzxyvo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">ロシアのペスト研究所職員が死亡、ロシアとアメリカのやりとりは</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/japanese/articles/cm0rlgywzxyvo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_tigrinya/e17d/live/110e9d00-c23d-11f1-bc2e-018d645d8d21.png" class="news-img" alt="ኢትዮጵያ፡ ፕረዚደንት ሓሰን ዝፈጠሮ ቅሬታ - ድሒሩ ካብ ዝተኣልየ ሓተታ" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>07 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#742. McDonald’s Is Reportedly Bringing Back Pokémon Happy Meals With 15 Tiny Collectibles</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Food</strong> &nbsp;|&nbsp; 
-        <a href="https://www.delish.com/food-news/a74263842/mcdonalds-pokemon-happy-meal-toys-cards-2026/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/fe4b1010-9d3e-404b-b892-25dc171c0aeb.jpg?crop=0.854666666667xw:1xh;center,top&amp;resize=1200:*" alt="McDonald’s Is Reportedly Bringing Back Pokémon Happy Meals With 15 Tiny Collectibles" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://hips.hearstapps.com/hmg-prod/images/fe4b1010-9d3e-404b-b892-25dc171c0aeb.jpg?crop=0.854666666667xw:1xh;center,top&resize=1200:*" alt="McDonald’s Is Reportedly Bringing Back Pokémon Happy Meals With 15 Tiny Collectibles" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Pokémon fans might want to make room for new collectibles because McDonald’s is reportedly preparing a major Happy Meal collaboration.</p>
-<p>To celebrate Pokémon’s 30th anniversary, the fast food chain is expected to bring back Pokémon-themed Happy Meals this November, complete with collectible toys, trading cards, and special packaging. While McDonald’s hasn’t officially announced the promotion, newly leaked images give fans a clearer idea of what could be coming.</p>
-<p>Promotional materials circulating online appear to reveal 15 different Pokémon-themed toys, each designed to look like a miniature Happy Meal box featuring a familiar Pokémon.</p>
-<p>The reported lineup includes Pikachu, Eevee, Umbreon, Bulbasaur, Charmander, Squirtle, Weedle, Torchic, Sobble, Espurr, Munchlax, Minccino, Sprigatito, Piplup, and Rowlet.</p>
-<p>The leaked materials also suggest that each toy will come with two Pokémon trading cards. The full card collection hasn’t been revealed yet, though Pokémon news site PokéBeach reports there will be 15 cards to collect.</p>
-<p>Images also show special Pokémon-themed apple slice packaging featuring Pikachu, Squirtle, Bulbasaur, Charmander, and Eevee. So even the fruit is apparently getting involved.</p>
-<p>As for when everything will be available, that’s where things get a little complicated.</p>
-<p>The newly leaked promotional sheet lists November 10 through December 14, 2026, as the campaign’s U.S. dates. PokéBeach also reports that it confirmed that window with multiple McDonald’s locations, although McDonald’s itself has yet to announce the promotion.</p>
-<p>With the franchise celebrating its 30th anniversary, the combination of miniature Pokémon Happy Meal boxes, trading cards, and themed packaging could make this year’s reported release especially appealing to collectors.</p>
-<p>Of course, we still don’t know much, including the full trading card lineup and whether all the leaked designs will appear exactly as shown.</p>
-<p>For now, I’m just hoping those little Happy Meal boxes are real. And if they are, I have a feeling plenty of adults will suddenly find themselves ordering Happy Meals again.</p>
-<p>Butter Recalled In 10 States Due To Yeast & Mold</p>
-<p>New Hemp Rules Could Push THC Drinks Off Shelves</p>
-<p>The McRib Is Returning To McDonald’s Again</p>
-<p>Walmart Is Being Sued For Overcharging Customers</p>
-<p>Nerds Just Made A Gummy Cluster-Inspired Ice Pop</p>
-<p>Taco Bell Extends Pepsi Partnership Through 2036</p>
-<p>Jimmy John’s Is Bringing Back Its Picklewich</p>
-<p>Trader Joe’s Has 28 More Stores Coming Soon</p>
-<p>Espolòn Fare Share Offers 50% Back On Rides</p>
-<p>Cheese Recalled Nationwide After E. Coli Outbreak</p>
-<p>We may earn commission from links on this page, but we only recommend products we back.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.delish.com/food-news/a74263842/mcdonalds-pokemon-happy-meal-toys-cards-2026/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/tigrinya/articles/crq5n26zxqnqo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">ኢትዮጵያ፡ ፕረዚደንት ሓሰን ዝፈጠሮ ቅሬታ - ድሒሩ ካብ ዝተኣልየ ሓተታ</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/tigrinya/articles/crq5n26zxqnqo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_japanese/f413/live/3e649d70-c1c7-11f1-a64c-550be9e3c66b.jpg" class="news-img" alt="仏全土で警察が学校めぐるデモと衝突、催涙ガスや放水銃も使用" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>07 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#129. Bank of America kindly asks that you don’t share your banking password with your AI assistant</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>The banking giant reminds customers that "you're responsible for activity" resulting from your AI agents' access.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/japanese/articles/crx23d1kwy0jo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">仏全土で警察が学校めぐるデモと衝突、催涙ガスや放水銃も使用</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/japanese/articles/crx23d1kwy0jo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_amharic/a1fd/live/e274c980-a156-11f1-a291-b542ee92de7c.jpg" class="news-img" alt="በዩቲዩብ ላይ የጤና ምክሮችን የሚሰጡ በኤአይ የተፈበረኩ ዶክተሮች ለምን አረጋውያንን ዒላማ አደረጉ?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>07 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#563. Light pollution is reaching deep into the sea, putting marine life at risk</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Business</strong> &nbsp;|&nbsp; 
-        <a href="https://www.earth.com/environment/light-pollution-is-reaching-deep-into-the-sea-putting-marine-life-at-risk/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://www.earth.com/img/16x9/1920/media-2026/2026/10/27172824/coastal-light-pollution.jpg" alt="Light pollution is reaching deep into the sea, putting marine life at risk" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.earth.com/img/16x9/1920/media-2026/2026/10/27172824/coastal-light-pollution.jpg" alt="Light pollution is reaching deep into the sea, putting marine life at risk" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Artificial light from coastal towns and offshore installations is penetrating Europe's seas, raising concerns about its effects on marine ecosystems.</p>
-<p>Light pollution is often discussed as a problem for people trying to see the Milky Way. But artificial light also reaches beneath the ocean’s surface, where it can disrupt marine life.</p>
-<p>The glow of a seaside town doesn’t stop at the water’s surface. It penetrates the sea, and in clear water, it can reach deeper than a three-story building is tall.</p>
-<p>A new risk map reveals which of Europe’s seas face the greatest exposure to artificial light and where marine life may be most vulnerable.</p>
-<p>The Adriatic, the Baltic, and the western Mediterranean come out worst, while the open waters around Iceland, the Barents Sea, and the islands of Macaronesia come out cleanest.</p>
-<p>The map is built from satellite data and a brightness threshold, not from surveys of harmed animals.</p>
-<p>Thomas Davies, a marine conservation researcher at the University of Plymouth, led the work with Tim Smyth of Plymouth Marine Laboratory and colleagues in Britain and Italy.</p>
-<p>The goal was to develop a way to measure underwater light pollution risk, something European regulators have lacked until now.</p>
-<p>In an interview with Earth.com, Davies explained that the most striking finding was how differently the risk was distributed across Europe’s seas.</p>
-<p>“What is interesting is that most European Seas at high or moderate risk are small and bounded by developed coastlines around their periphery, the Adriatic for example,” he said.</p>
-<p>“In those regions the maximum exposure risk is concentrated near the coast.”</p>
-<p>The team needed a level of light at which marine animals begin responding. They used measurements from a copepod, one of the most light-sensitive marine animals studied.</p>
-<p>These tiny crustaceans swim toward the surface at night as part of the largest daily migration of living organisms on Earth.</p>
-<p>A tenth of a microwatt of white light per square meter is enough to move those copepods, and they can respond to moonlight more than 164 feet (50 meters) down.</p>
-<p>The team used that tiny amount of light as its threshold, choosing a cautious approach to assessing risk.</p>
-<p>Only about two dozen such measurements exist, and all involve open-water animals or larvae rather than seabed dwellers.</p>
-<p>From there, a global atlas of undersea light gave the depth at which artificial light fades below that line.</p>
-<p>Where artificial light fails to reach the threshold at the surface, the area is classified as having no exposure risk under the study’s criteria.</p>
-<p>If artificial light reaches 3 feet (1 meter) below the surface, the risk is considered low. At depths of up to 33 feet (10 meters), the risk is moderate, and beyond that, it is high.</p>
-<p>The atlas was sliced into 15 European sea regions and into bands by distance from shore.</p>
-<p>Within 6 miles (10 kilometers) of the Adriatic coast, 56% of the water was classified as high risk, while another 43% was considered moderate risk.</p>
-<p>The western Mediterranean faced even greater exposure near the coast, with 73% of its coastal waters classified as high risk.</p>
-<p>The Baltic’s coastal band was mostly medium. Light pollution generally decreases with distance from shore, leaving most open waters at little or no risk.</p>
-<p>Beyond 62 miles (100 kilometers) from shore, nearly all European seas were classified as having no risk from artificial light exposure. Only one region was an exception.</p>
-<p>In the Greater North Sea, a fifth of the far-offshore water rated medium and 5% high, because oil and gas platforms light the middle of the sea.</p>
-<p>Davies told Earth.com that this changes who is affected.</p>
-<p>“In the North Sea, the maximum exposure risk is concentrated around these offshore installations in the middle of the sea,” he said.</p>
-<p>“This means the marine species and ecosystems most impacted will be very different.”</p>
-<p>The team ran a second map for life on the seafloor, using the light that actually lands on the bottom.</p>
-<p>Water soaks up light on the way down, so the seabed is less exposed everywhere, and almost every sea region rated nil beyond 6 miles out.</p>
-<p>The exception was close to shore. Within the first 0.6 miles (1 kilometer) of the Bay of Biscay and the Iberian coast, 49% of the seabed rated medium and 12% high.</p>
-<p>The team put that down to dense coastal development. The Adriatic, Baltic, North Sea, and central Mediterranean followed, with low risk reaching 3 miles (5 kilometers) out.</p>
-<p>The one-kilometer grid misses a lot. Ports and harbors produce more artificial light than the atlas can accurately capture, so the researchers emphasized the need for direct measurements in the brightest coastal areas.</p>
-<p>The European Union’s marine strategy law of 2008 asks member states to keep “introduction of energy” at levels that do no harm. In practice that has meant underwater noise.</p>
-<p>No country has set a target, threshold or test for light, and the law is now under review.</p>
-<p>The paper adapts the approach used for underwater noise, demonstrating how exposure thresholds could help regulators assess artificial light pollution.</p>
-<p>The authors stop short of saying what counts as good. That, they wrote, needs political agreement and consultation.</p>
-<p>When Earth.com asked what he hopes the EU will do next, Davies pointed to the ongoing review as an opportunity for action.</p>
-<p>“This paper demonstrates that the knowledge and tools are available to develop useful criteria,” he said.</p>
-<p>“We believe we have clear evidence of risk and harm that urgently needs to be translated into meaningful action.”</p>
-<p>Davies recommended that coastal communities follow the five lighting principles established by DarkSky International.</p>
-<p>These include removing unnecessary lights, shielding fixtures to direct light where it’s needed, reducing brightness, using lights only when necessary, and choosing warmer bulbs that emit less blue light.</p>
-<p>Blue light poses a particular concern because it penetrates seawater more deeply than many other wavelengths.</p>
-<p>Most white LEDs emit substantial blue light, and their growing popularity could increase underwater light pollution.</p>
-<p>According to the researchers, LED lamps grew from 2% of the world’s lighting market in 2012 to 48% in 2019.</p>
-<p>The authors also suggest dark zones around islands, where tourists could see a sea without a lit shore.</p>
-<p>Although the map identifies areas of potential exposure, it cannot determine how much harm artificial light is actually causing marine life.</p>
-<p>The threshold is based on measurements from a single copepod species, and little is known about how sensitive seabed animals are to artificial light.</p>
-<p>The atlas also relies on data from just one month, June 2019.</p>
-<p>The team expects both the thresholds and the rankings to change as researchers gather more data on other species.</p>
-<p>The map is online for any manager who wants to look at their own coastline.</p>
-<p>The full study was published in the journal Ocean & Coastal Management.</p>
-<p>Check us out on EarthSnap, a free app brought to you by Eric Ralls and Earth.com.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.earth.com/environment/light-pollution-is-reaching-deep-into-the-sea-putting-marine-life-at-risk/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/amharic/articles/c93vg7z37zdo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">በዩቲዩብ ላይ የጤና ምክሮችን የሚሰጡ በኤአይ የተፈበረኩ ዶክተሮች ለምን አረጋውያንን ዒላማ አደረጉ?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/amharic/articles/c93vg7z37zdo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_sinhala/bee8/live/9f1fa570-c103-11f1-a64c-550be9e3c66b.jpg" class="news-img" alt="රුසියාවේ වසංගත රෝග පිළිබඳ රසායනාගාරයක තාක්ෂණවේදිනියකගේ මරණයෙන් පසු &#x27;ඇමෙරිකාව දැඩි අවධානයෙන්&#x27;" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">SCIENCE</span>
+                <span>07 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#186. Israel: First exit polls show no clear winner, Arab parties make gains</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.france24.com/en/video/20261027-israel-first-exit-polls-show-no-clear-winner-arab-parties-make-gains" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Exit polls on Tuesday showed that the opposition bloc led by Israeli opposition candidate Gadi Eisenkot gained a narrow edge over Prime Minister Benjamin Netanyahu's Likud bloc in the Knesset. 
- 
-Likud, however, was projected to be the largest single party in the Israeli parliament.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.france24.com/en/video/20261027-israel-first-exit-polls-show-no-clear-winner-arab-parties-make-gains" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/sinhala/articles/cmn0614k51r9o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">රුසියාවේ වසංගත රෝග පිළිබඳ රසායනාගාරයක තාක්ෂණවේදිනියකගේ මරණයෙන් පසු &#x27;ඇමෙරිකාව දැඩි අවධානයෙන්&#x27;</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/sinhala/articles/cmn0614k51r9o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_sinhala/f246/live/dac42540-c178-11f1-bed0-05ebd781c53c.jpg" class="news-img" alt="ශ්‍රී ලංකා ආර්ථිකය වැදගත් කඩඉමක් පසුකරයි: මීළඟ පිබිදීමට ලෝක බැංකුව කර ඇති යෝජනා මොනවා ද?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>07 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#3200. CoreWeave and other AI stocks rise as Anthropic restores the market’s faith in sustained spending</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://www.marketwatch.com/story/coreweave-and-other-ai-stocks-rise-as-anthropic-restores-the-markets-faith-in-sustained-spending-c71d7186?mod=mw_rss_topstories" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Now that investors have been able to dive further into Anthropic’s IPO filing, they’re seeing the same sorts of trends that helped buoy AI stocks for much of this year.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.marketwatch.com/story/coreweave-and-other-ai-stocks-rise-as-anthropic-restores-the-markets-faith-in-sustained-spending-c71d7186?mod=mw_rss_topstories" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/sinhala/articles/cmkgk74997y6o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">ශ්‍රී ලංකා ආර්ථිකය වැදගත් කඩඉමක් පසුකරයි: මීළඟ පිබිදීමට ලෝක බැංකුව කර ඇති යෝජනා මොනවා ද?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/sinhala/articles/cmkgk74997y6o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_uzbek/6686/live/c3bceef0-c18b-11f1-83c7-97e75190a976.jpg" class="news-img" alt="Қозоғистонда жосусликда айбланган ўзбек профессор «судга тортилган»" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>06 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#3679. The Artsiest Halloween Party in Town</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Business</strong> &nbsp;|&nbsp; 
-        <a href="https://hyperallergic.com/the-artsiest-halloween-party-in-town/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://storage.ghost.io/c/51/f8/51f871d8-b6be-4a73-b958-0ca4fff0110a/content/images/size/w1200/2026/10/Screenshot-2026-10-27-at-6.17.29---PM-2-1.jpg" alt="The Artsiest Halloween Party in Town" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://storage.ghost.io/c/51/f8/51f871d8-b6be-4a73-b958-0ca4fff0110a/content/images/size/w1200/2026/10/Screenshot-2026-10-27-at-6.17.29---PM-2-1.jpg" alt="The Artsiest Halloween Party in Town" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Hyperallergic’s spirited soirée, a bone to pick with “Costume Art” at The Met, and what’s a woman artist’s “prime” in the art world?</p>
-<p>Wow…October came and went, didn’t it? Halloween and Día de Muertos are about to turn the corner, but they’re primers for the real fright night — November 3. Maybe we can sugarcoat our civic duty with a trip to the museum as a little treat. Mayor Mamdani cast his vote at The Met, which is one of a handful of cultural institutions serving as polling sites for the midterm elections.</p>
-<p>🦇 Back to Halloween 🦇 I’ll be seeing quite a few of you tomorrow evening at Hyperallergic’s Halloween party! There’s going to be an arts-forward costume contest, an open bar, and some general debauchery, so don’t miss out. You can find party tickets to secure your entry below! For those who can’t attend, we’ll be sharing photos from the costume contest to assuage your FOMO.</p>
-<p>Though he hasn’t RSVP’d to our spooky soirée, rapper Kid Cudi is putting on a costume as he’s set to star in JEAN, a forthcoming biopic on late iconic artist Jean-Michel Basquiat and his rise to fame during the ‘80s in New York City. Production is set to begin next year, but that’s all we really know for now. Also on the topic of costumes, contributor Natalie Haddad found that The Met’s Costume Art exhibition missed the mark both in theory and in practice.</p>
-<p>Keeping things topical — Powerhouse Arts has partnered with artisans from the Mexico-based Mestiz Studio to bring an enormous ofrenda to the Flatiron’s North Plaza in Manhattan this week in observance of Día de Muertos. What a unique opportunity to remember and honor our ancestors and loved ones as we push forward and vote for the well-being of our future generations.</p>
-<p>This week is also your last chance to catch The Prime of Your Life at Marc Straus Gallery in Tribeca before it closes on Saturday. Featuring 18 women artists ages 75 and up, the exhibition is both a manifestation and a contemplation of Marilyn Minter’s adage that the “art world loves young bad boys and old ladies.” Curator and contributor Leah Triplett Harrington digs into the exhibition in a review, questioning the identification of a woman artist’s “prime,” especially “when their work is most likely to be valorized by the market and museums only in their older age.”</p>
-<p>Happy Halloween, everyone! And remember to floss :)</p>
-<p>​Join us on October 28 in Brooklyn, NY for an evening of spooky cocktails, devilish delights, an art-themed costume contest, and more.</p>
-<p>The Prime of Your Life at Marc Straus Gallery</p>
-<p>"With only their age assembling them, the works in this exhibition offer less of a generational statement and more a critical question of 21st-century feminist art history: What does “prime” mean for a woman artist, when their work is most likely to be valorized by the market and museums only in their older age?"</p>
-<p>"If Chaïm Soutine hangs up carcasses to dry, Ilana Savdie dissects them with surgical precision...The two artists guide us through the chambers of our own minds and bodies here, as fragmented and estranged as the world around us, and offer glimpses of the freedom we might find in succumbing to their contradictions."Read the full review</p>
-<p>Conduits of the Unseen: Women Artists Imagine Other Worlds at Andrew Edlin Gallery</p>
-<p>"Amid the growing popularity of occult-themed exhibitions, this [exhibition] stands out by asking what esoteric art can make possible, foregrounding its power to challenge entrenched social hierarchies.</p>
-<p>...Conduits of the Unseen restores mediumistic work’s social responsibility, emphasizing its aim to serve something beyond the self."</p>
-<p>Costume Art at The Metropolitan Museum of Art</p>
-<p>"For an exhibition with such a simple title, [this exhibition] is awfully confusing. It’s also fairly problematic, but let’s start with the confusing parts."</p>
-<p>"There is a specific feeling, easy to recognize emotionally but hard to elucidate in words, about trying to power through the numbness of depression to simply live your everyday life. I’m writing these words amidst such a period.</p>
-<p>Artist, filmmaker, and critic Fred Camper sought to capture that feeling with Suicide Note, which he describes as 'born out of an intense personal despair, and a desire to depict a failure of the self.'"</p>
-<p>The Perfect Moment: God, Sex, Art, and the Birth of America’s Culture Wars (2026) by Isaac Butler</p>
-<p>"Butler has done the research. I recommend this book without reservation because it is a thorough, accurate account of a fraught time in American history, when artists were motivated to take action to ensure that their freedom of expression is preserved — just like the present moment.'"</p>
-<p>Apply Now for Fully Funded Interdisciplinary MFA Program</p>
-<p>Upcoming deadline for MFA program applications at University at Buffalo</p>
-<p>Where critical thinking meets contemporary practice across key art world capitals.</p>
-<p>The exhibition shares two new sections of the public art mural on view for the first time, featuring moments from an era of collective action that still resonates today.</p>
-<p>Upcoming deadline for MFA program applications at University at Buffalo</p>
-<p>MassArt’s Graduate Assistantships support students’ interests and professional development beyond graduation.</p>
-<p>Get the best of Hyperallergic sent straight to your inbox.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://hyperallergic.com/the-artsiest-halloween-party-in-town/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/uzbek/articles/cwyvr7nngm26o/cyr?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Қозоғистонда жосусликда айбланган ўзбек профессор «судга тортилган»</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/uzbek/articles/cwyvr7nngm26o/cyr?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_uzbek/42a6/live/0495f6a0-c174-11f1-babe-4199b0e7ccea.jpg" class="news-img" alt="Ўзбекистон ва минтақа: Россия нимага тоқат қилмаслигини айтди. Видео" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>06 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#136. Who’s really in charge at Anthropic after the IPO?</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Business</strong> &nbsp;|&nbsp; 
-        <a href="https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Here's a clear explanation of Anthropic's incredibly complex governance structure.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/uzbek/articles/ckgeljgp41e7o/cyr?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Ўзбекистон ва минтақа: Россия нимага тоқат қилмаслигини айтди. Видео</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/uzbek/articles/ckgeljgp41e7o/cyr?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_vietnamese/647a/live/8cd00320-c16b-11f1-a003-8be783290413.jpg" class="news-img" alt="Trung Quốc đã điều các máy bay quân sự đến cơ sở tại Lào?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>06 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#327. The First Miss Marple Mystery in 50 Years Is An Alpine Thriller</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Travel</strong> &nbsp;|&nbsp; 
-        <a href="https://www.cntraveler.com/story/the-first-miss-marple-mystery-in-50-years-is-an-alpine-thriller" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Author Lucy Foley on taking Miss Marple on her first vacation in 50 years with Murder at the Grand Alpine Hotel.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.cntraveler.com/story/the-first-miss-marple-mystery-in-50-years-is-an-alpine-thriller" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/vietnamese/articles/cm5yngx4ggrwo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Trung Quốc đã điều các máy bay quân sự đến cơ sở tại Lào?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/vietnamese/articles/cm5yngx4ggrwo?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_sinhala/4161/live/60753060-c185-11f1-83c7-97e75190a976.png" class="news-img" alt="සිර දඬුවම් ලැබූ ඥානසාර හිමිගේ සිවුර ඉවත් කළේ ඇයි? විවිධ රැඳවියන්ට හිමි ඇඳුම් මොනවා ද?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>06 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#1083. Should We Really Date in Constant Fear of Getting Ghosted?</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.cosmopolitan.com/relationships/a74160072/ghosting-dating-fear/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/d8a9a613-cf6d-46b8-be6b-3bd5b2cc43ac.jpg?crop=1xw:0.75xh;0xw,0.25xh&amp;resize=1200:*" alt="Should We Really Date in Constant Fear of Getting Ghosted?" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://hips.hearstapps.com/hmg-prod/images/d8a9a613-cf6d-46b8-be6b-3bd5b2cc43ac.jpg?crop=1xw:0.75xh;0xw,0.25xh&resize=1200:*" alt="Should We Really Date in Constant Fear of Getting Ghosted?" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Ghosting, unfortunately, is nothing new. The term has been around since the early 2000s, and even before then, people were being randomly cut off by romantic interests before there was a word for it. And yet, of course, no matter how commonplace it’s become, it still stings the same.</p>
-<p>So in today’s particularly awful dating landscape, people are trying to prepare themselves ahead of time. Actually, they’re going into dating expecting to be ghosted.</p>
-<p>In a viral TikTok video, user @kiwiproductions.tx says that this is how she moves in her relationships. “Nowadays you have to pretend that every time you see the person you’re talking to, it’s potentially the last time you’re ever going to see them,” she says in the video. “It’s happened to me too many times to count.”</p>
-<p>As a response, people in the comments are sharing their own ghosting stories—and warnings to be aware of this happening to others. “You have to be prepared to be ghosted at any moment, even if you’re fully in a relationship,” one user wrote. “That’s why I no longer get excited when I meet someone,” another commented.</p>
-<p>“This can often be a protective mechanism, especially for people who have experienced rejection or hurt in past relationships,” psychotherapist Mandy Lam tells Cosmopolitan. “It makes sense why someone might feel this way, particularly if they've been in situations where things seemed to be going well, only for the other person to suddenly disappear. For some people, this can also be a trauma response, especially if they've experienced significant relational hurt in the past.”</p>
-<p>And while I feel for everyone who has been ghosted at one point (or more) in their life, perhaps we’ve gone from being cautiously guarded to a flat out cynical.</p>
-<p>Part of dating is knowing that you’re putting yourself out there, allowing yourself to be vulnerable, and yes, taking the risk of being hurt. And although it feels like mentally preparing yourself for that hurt is a way to protect yourself, you actually may be doing more damage than you think. Lam explains that confirmation bias might happen in these situations.</p>
-<p>Confirmation bias is the unconscious tendency to search for information that aligns with your pre-existing beliefs or expectations while ignoring anything contradictory.</p>
-<p>“When we go into dating already expecting that things won't work out, we may be more likely to look for information that reinforces that belief,” she says. For example, if someone takes longer to respond to a text, we might automatically assume it’s because they’re losing interesting—because we convinced ourselves that was bound to happen before we even started texting them in the first place.</p>
-<p>Plus, when you make it your mantra that any date you go on will likely be the last time you see that person, it affects the way you show up on dates—which then can influence how the other person reacts and responds.</p>
-<p>If you walk into your next date already expecting to be rejected, it may make you hold back from sharing as much as you’d usually do or even try to appear more nonchalant. While you may think you’re just protecting yourself, your date is seeing a closed-off, detached person who really isn’t interested in them. Wouldn’t that make you uninterested in another date?</p>
-<p>“In some ways, this can become a self-fulfilling prophecy, where our fear of rejection influences how we behave, which can then contribute to the very outcome we were afraid of,” Lam says.</p>
-<p>I’m not saying that approaching dating with caution is a bad thing—quite the opposite. “Being guarded in dating, especially in the early stages, can be a healthy form of self-protection,” Lam says. “After all, you're still getting to know someone and figuring out whether they're someone you can trust and feel safe opening up to.”</p>
-<p>This might mean making a conscious effort to take things slowly and setting boundaries around physical and emotional intimacy. This can actually be great for intentionally dating, as it allows you to develop the relationship at a pace that feels comfortable and appropriate.</p>
-<p>But living in a state of constant distrust with someone you want to build a connection with isn’t going to benefit you or the potential relationship you want to create. Now, that’s a hard line to tow. “I think there's a difference between acknowledging that dating comes with uncertainty and going into every date expecting to be ghosted,” Lam says.</p>
-<p>And guess what? Whether you lower your guard or put up 50 more walls, you still might get ghosted. You can’t control what another person does. But does that mean you should live your romantic life constantly preparing for the worst? I don’t think so. Self-preservation is one thing, but that just doesn’t sound like a fun experience at all. And shouldn’t dating, at the very least, be fun?</p>
-<p>“It's understandable to want to protect ourselves, especially when we've been hurt before, but I also think it's important to recognize when those protective mechanisms might be getting in the way of allowing ourselves to connect with someone,” Lam says.</p>
-<p>Ghosting absolutely sucks. But not everyone is going to ghost you. So maybe it’s time to try a new technique: give everyone the benefit of the doubt, because I’m sure you’d want them to do that for you.</p>
-<p>Messy People Are Cheating In Their Notes Apps</p>
-<p>This New Dating App Is Swearing Off Swiping</p>
-<p>Does Your Wedding Plus-One Pass the Test?</p>
-<p>We Should Care About Financial Infidelity</p>
-<p>Dating Apps Are Different for People of Color</p>
-<p>The Men Are Struggling With Money in Relationships</p>
-<p>If You’re Dating a ChatBot, You’re Not Dating</p>
-<p>If a Friend Tells You Your Boyfriend Sucks, Listen</p>
-<p>We may earn commission from links on this page, but we only recommend products we back.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.cosmopolitan.com/relationships/a74160072/ghosting-dating-fear/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/sinhala/articles/ckly4vr95660o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">සිර දඬුවම් ලැබූ ඥානසාර හිමිගේ සිවුර ඉවත් කළේ ඇයි? විවිධ රැඳවියන්ට හිමි ඇඳුම් මොනවා ද?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/sinhala/articles/ckly4vr95660o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_uzbek/cd99/live/4b6cfd00-c159-11f1-bc2e-018d645d8d21.jpg" class="news-img" alt="Россияда ўлат чиққанми – АҚШ &#x27;диққат билан&#x27; кузатиб турибди, Иркутскда Ўзбекистон, Марказий осиёлик мигрантлар ҳам кўп" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">SCIENCE</span>
+                <span>06 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#4584. I’ve used enough touchscreen laptops for years, and I hope Apple gets one thing right</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Other</strong> &nbsp;|&nbsp; 
-        <a href="https://www.digitaltrends.com/computing/ive-used-enough-touchscreen-laptops-for-years-and-i-hope-apple-gets-one-thing-right/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        
-        
-            
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>After years of using touchscreen Windows laptops like the Dell XPS 14 and Asus Zenbook Duo, I'm eager to see Apple's take, provided it keeps the MacBook experience intact.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.digitaltrends.com/computing/ive-used-enough-touchscreen-laptops-for-years-and-i-hope-apple-gets-one-thing-right/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/uzbek/articles/cq2d6l49rkdlo/cyr?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Россияда ўлат чиққанми – АҚШ &#x27;диққат билан&#x27; кузатиб турибди, Иркутскда Ўзбекистон, Марказий осиёлик мигрантлар ҳам кўп</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/uzbek/articles/cq2d6l49rkdlo/cyr?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_sinhala/dbb9/live/b72ba280-bcc7-11f1-bc2e-018d645d8d21.jpg" class="news-img" alt="මිථ්‍යාවෙන් ඔබ්බට: යටිපතුලට ‍රතු ලූනු තැබීමෙන් සෙම්ප්‍රතිශ්‍යාව සුව කළ හැකි ද?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>06 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#3560. what can looking at earth from space teach us about how we live on it?</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://www.designboom.com/art/earth-space-inploration-richelle-ellis-lawrence-azerrad-art-science-overview-effect-delmonico-books-interview/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://www.designboom.com/twitterimages/uploads/2026/10/earth-space-inploration-richelle-ellis-lawrence-azerrad-art-science-overview-effect-delmonico-books-interview-designboom-1200.jpg" alt="what can looking at earth from space teach us about how we live on it?" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.designboom.com/twitterimages/uploads/2026/10/earth-space-inploration-richelle-ellis-lawrence-azerrad-art-science-overview-effect-delmonico-books-interview-designboom-1200.jpg" alt="what can looking at earth from space teach us about how we live on it?" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>bringing together more than 50 artists, astronauts, scientists, and cultural thinkers, 'inploration: art exploring space to understand earth' by richelle ellis and lawrence azerrad explores how art can turn the perspective of space exploration into a deeper understanding of our planet.</p>
-<p>‘We are not observers of this world. We are participants in it. We always were.’ In an interview with designboom, artist Richelle Ellis and creative director Lawrence Azerrad discuss the thinking behind Inploration: Art Exploring Space to Understand Earth, a book published by DelMonico Books. Bringing together more than 50 artists, scientists, astronauts, ecologists, and cultural thinkers, the publication examines how exploring space can change our understanding of Earth, and how art can turn a sense of planetary wonder into a more active form of environmental responsibility.</p>
-<p>The book takes its starting point from Earthrise, the photograph captured by Apollo 8 astronaut Bill Anders on Christmas Eve 1968. Not included on the shot list of the mission, the image was captured spontaneously, revealing Earth as a blue and white sphere suspended against the darkness of space, without visible borders. Its impact extended beyond the space program, offering a new perspective on the planet as a shared and vulnerable home. Nearly six decades later, Ellis and Azerrad return to that image asking how the Overview Effect can resonate with people who may never leave Earth. In a culture saturated with photographs, videos, and digital feeds, the challenge is not simply to reproduce the sense of wonder that Earthrise inspired, but to connect that perspective to the ways people live, make decisions, and care for the world around them.</p>
-<p>For Richelle Ellis, the relationship between space and Earth extends beyond the astronaut’s view. Her artistic practice moves between deep space, the deep ocean, remote terrestrial environments, and analog space missions, including projects that send artworks beyond Earth. These different settings share a central question: what happens to our understanding of home when we leave the environments we know? The farther we travel from familiar surroundings, Ellis argues, the more apparent our dependence on Earth becomes. Space makes borders seem arbitrary, while the deep ocean reveals worlds that remain largely invisible despite their importance to planetary health. Both environments challenge the assumption that what cannot be seen or directly experienced is somehow separate from everyday life.</p>
-<p>Art can bring distant or unfamiliar environments closer, helping people connect with ideas that might otherwise remain abstract. In Inploration, this is where art and science meet. The book brings together people from both fields to explore how we understand the world, what remains unknown, and how looking at things differently can change our perspective. While their methods may differ, artists and scientists share a willingness to ask questions, look more closely, and explore the unfamiliar. Among the contributors is Amber Straughn, deputy project scientist for the James Webb Space Telescope, whose work helps communicate the significance of images made by the observatory. As she puts it, ‘Astronomy can lead us to think about bigger things rather than just the facts’. The telescope’s images allow viewers to reconsider time, scale, and humanity’s place in the universe. As Straughn explains, ‘we’re literally seeing them as they were further back in time.’ The publication also responds to changing ways of seeing. Its cover and back cover were updated at press time to include images from the Artemis II mission, many taken by crew members using their iPhones. Placed alongside the Hasselblad film photography associated with the Apollo era, these contemporary images point to how space exploration is documented and shared across generations. The tools change, but the challenge remains: how can an image of somewhere remote alter our understanding of where we are?</p>
-<p>Azerrad brings another perspective to the project through his work as a creative director and his involvement in the 40th-anniversary edition of the Voyager Golden Record. Launched aboard NASA’s Voyager spacecraft, the record was designed as a message to potential extraterrestrial life, assembling images, sounds, music, and information intended to communicate something about humanity. Its audience may be unknown, but its message also turns back toward Earth. The act of selecting what to send into the cosmos requires a decision about what matters enough to represent us. The Golden Record is as much an exercise in collective self-understanding as it is an attempt at interstellar communication. Azerrad approaches Inploration in a similar way, as an attempt to prompt new ways of seeing Earth. His creative process begins with listening and asking questions, allowing different perspectives to sit alongside one another.</p>
-<p>The work of artist Cai Guo-Qiang offers another perspective on humanity’s relationship with time and the planet. His pyrotechnic works exist only in the moment of their creation, demanding the viewer’s attention before disappearing. Reflecting on his practice, Ellis and Azerrad share that it reminds them that ‘our only true relationship with the planet exists in the finite moment we are in. The past and the future are really just ideas.’ The observation connects Cai’s ephemeral works to the book’s broader argument: planetary awareness begins with paying attention to the world as we experience it now.</p>
-<p>The section on Indigenous knowledge and cultural cosmologies expands the book’s exploration of how different ways of understanding the universe shape our relationship with Earth. Rather than treating the cosmos solely as something to observe and measure, these perspectives connect knowledge to relationships among people, land, other living beings, and future generations. The difference is not simply between scientific and spiritual understandings, but between the ways knowledge informs our responsibilities to the world. Where some Western approaches have treated nature as a resource to study and extract, many Indigenous cosmologies emphasize reciprocity, care, and the obligations that come with being part of a living world.</p>
-<p>Artist Cannupa Hanska Luger expresses the relationship between cultural knowledge and scientific understanding directly. ‘The stories are the cosmology. The cosmology is the science,’ he notes. Here, storytelling is not an alternative to knowledge but a way of transmitting an understanding of how the world works and how people should live within it. Other contributors bring the discussion back to the scale of everyday responsibility. Artist Tavares Strachan asks us to reconsider the geography of care: does responsibility extend to someone twenty miles away, or only to the person next door? Artist Rebeca Méndez poses a more fundamental question: ‘What does the Earth need from us?’ These questions complicate the familiar image of Earth as a single, unified home. Seeing the planet as a whole can produce a sense of collective belonging, but that feeling must extend beyond the photograph. It requires attention to the unequal ways environmental harm is experienced, to the knowledge held by communities whose relationships with land have endured across generations, and to the consequences of decisions made in the present. Physicist and systems thinker Fritjof Capra also highlights the importance of slowing down enough to recognize relationships that are otherwise easy to miss.</p>
-<p>Inploration: Art Exploring Space to Understand Earth also asks how we move from understanding environmental crises to feeling able to respond to them. Climate change, biodiversity loss, and the complexity of planetary systems can be difficult to grasp on a personal level. Faced with a constant stream of alarming information, it is easy to feel overwhelmed rather than empowered to act. Art and design offer another way to engage with these challenges by translating complex ideas into images, sounds, and experiences. As musician and artist Beatie Wolfe observes, data alone cannot always convey the emotional weight of an issue. Art can help people connect with information that might otherwise feel distant. Astronomer Janna Levin captures this role succinctly: ‘The point is to move people with the knowledge.’</p>
-<p>For artist Lita Albuquerque, understanding our place in the universe begins with locating herself within it. She describes her cosmic address, tracing her position from a specific date and time through the Solar System to the Laniakea Supercluster. ‘I don’t feel overwhelmed,’ she says, adding, ‘I feel connected.’ Her perspective suggests that looking beyond Earth can reveal the connections that make life possible. Design offers another way to consider our relationship with the future. Designer Forest Young notes that ‘any brief is an exercise in futuring,’ describing the act of creating as an exercise in imagining what comes next. He follows this with a question: ‘What is the thing we’re steering away from?’ His approach asks us to consider the choices shaping the future now. Activist Van Jones makes a similar point: ‘The future is not something we enter. The future is something we create together.’ The book carries this thinking beyond its contributors through a series of self-directed exercises that invite readers to reflect on their own relationship with the planet. A related program is planned for MASS MoCA in November 2027, alongside a companion LP to be released through Magnolia Record Store.</p>
-<p>For Richelle Ellis and Lawrence Azerrad, the Overview Effect is not limited to astronauts looking back at Earth from space. It can start with looking up at the night sky or noticing details of the world we often take for granted. As they suggest throughout Inploration, we do not need to leave the planet to see it differently. The harder part is carrying that perspective into how we live. How do we account for the generations that come after us? Who do we include when we talk about humanity, and what do we owe the planet we share? The Earthrise photograph changed how millions of people saw Earth, even though most would never experience that view for themselves. With Inploration, Ellis and Azerrad hope art can prompt that same sense of recognition today, by paying closer attention to the world we already call home.</p>
-<p>name: Inploration: Art Exploring Space to Understand Earth authors: Richelle Ellis | @richellellisart and Lawrence Azerrad | @lad_design publisher: DelMonico Books | @delmonico_books foreword: Frank White</p>
-<p>This interview is part of designboom’s POSTHUMAN UTOPIAS chapter, exploring what happens when humans are no longer the measure of all things. These stories rethink our relationship with the planet through interspecies architecture, living materials, regenerative landscapes and emerging technologies – learn more here! The chapter is presented in partnership with INDX|GLOBAL – a global cultural platform placing Indian architecture, design, and creative intelligence in conversation with the world.</p>
-<p>Each designboom editorial series explores one theme in depth through projects, interviews, features and news across architecture, design, art and technology. Discover more chapters here, and get in touch if you’d like to submit a story through our submissions portal or contact form.</p>
-<p>your own online design shop — no sales commission collected</p>
-<p>guided byutopian optimism, we design a future worth believing in.</p>
-<p>designboom © 1999-2026 - part of DAAily platforms AG</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.designboom.com/art/earth-space-inploration-richelle-ellis-lawrence-azerrad-art-science-overview-effect-delmonico-books-interview/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/sinhala/articles/cmly056zwd7go?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">මිථ්‍යාවෙන් ඔබ්බට: යටිපතුලට ‍රතු ලූනු තැබීමෙන් සෙම්ප්‍රතිශ්‍යාව සුව කළ හැකි ද?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/sinhala/articles/cmly056zwd7go?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_uzbek/9d7b/live/a38df780-c0c0-11f1-bc2e-018d645d8d21.jpg" class="news-img" alt="&quot;Қиш оғир келади&quot;. Европа иситиш мавсумига тайёр эмас, яна Россия газига қайтадими?" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>05 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#923. Artist Jane Benson Has Some Strong Ideas About ‘Frankenstein’</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Business</strong> &nbsp;|&nbsp; 
-        <a href="https://www.vogue.com/article/jane-benson-her-her-sargents-daughters" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://assets.vogue.com/photos/6adec0593e726841bc2d16b2/16:9/w_1280,c_limit/Portrait%20by%20Natasha%20Peterson.jpeg" alt="Artist Jane Benson Has Some Strong Ideas About ‘Frankenstein’" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://assets.vogue.com/photos/6adec0593e726841bc2d16b2/16:9/w_1280,c_limit/Portrait%20by%20Natasha%20Peterson.jpeg" alt="Artist Jane Benson Has Some Strong Ideas About ‘Frankenstein’" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>Popular culture would have you believe that Frankenstein, Mary Shelley’s seminal 1818 novel, is a horror story of male hubris, about a mad scientist contending with the dangers of his own creation. And it is, at least in part. But within Shelley’s critique of patriarchal power, there is another voice that is often overlooked: her own. About a third of the way into the book, the narration switches to the perspective of the so-called monster as he tells Victor Frankenstein what has happened to him during the nearly two years he and his creator have been apart.</p>
-<p>The six chapters written in the creature’s voice contain some of the most achingly beautiful prose in the whole novel. He details how he learned to understand language and emotion. How he marveled at the warmth of the sun, the blooming of flowers, the sweetness of fruit. How he grew to love the family he tenderly observed from his hiding place, and how devastating their rejection was. He explains how he came to know anger, loneliness, loss, rage—and the vengeful acts they inspired.</p>
-<p>“Reading those chapters, I find it really hard to think of this as a man’s voice,” the British-born, New York–based conceptual artist Jane Benson tells me during a recent visit to her Chelsea studio. “This sounds like a woman’s voice crying for justice, and to be heard. It’s bathed in feelings of isolation and grief and desertion and betrayal—all things that in everyday life, that was the woman’s lot.” She came to think of the creature’s voice as not only Mary Shelley’s, but also a general evocation of the struggles women face in a misogynistic world.</p>
-<p>Benson is not the first to find feminist undertones in Shelley’s Gothic classic—scholars like Barbara Johnson, Ellen Moers, and Sandra Gilbert and Susan Gubar have written about themes of motherhood and female authorship that they found embedded within Frankenstein. (When Shelley first published the book, anonymously, many readers assumed it was written by her husband, Percy Shelley.) But as an artist, Benson wondered how she might visually represent this idea of the monster’s voice as a woman’s. What would that look like? What would it sound like?</p>
-<p>She tracked down a limited-edition facsimile of Shelley’s original Frankenstein manuscript, released to mark the book’s 200th anniversary, and began her delightfully obsessive deep dive into the text. The resulting artworks make up “her her,” Benson’s new gallery exhibition that opens at Sargent’s Daughters in Tribeca on October 30. (More of the series will go on view at Art Basel Miami in December.) The show contains more than two dozen works, mostly text-based drawings that use the author’s own handwriting as their main material—a decision that allows the focus to stay on the devastating phrases an 18-year-old Shelley used to illustrate the creature’s tragic arc.</p>
-<p>“I haven’t altered anything,” Benson says of the drawings. “These are just blow-ups of her pages.… These sentences, that’s exactly how they appear on the page.”</p>
-<p>But these are not mere re-creations of the manuscript. Instead, Benson has come up with myriad ways of excavating the text, something that has become a signature in her politically engaged art practice over the past three decades. (Benson, who is dyslexic, finds that this process gives her a way into a text that focuses not so much on the linear process of reading as on the ideas the text contains.) Some works in “her her” are as tall as six feet, and many of them are layered on iridescent yellow film with reflective borders. They seem to vibrate off the wall, as if Mary Shelley herself were knocking around the frame, begging us to listen.</p>
-<p>Take the piece her her (2026), which lends its name to the exhibition and features a tight zoom on those two crossed-out words. In highlighting such an instance within the manuscript, Benson “aims to reiterate and emphasize the negation of women throughout history.”</p>
-<p>For her “solfège” pieces, Benson has excised all words but the seven syllables of solfège (do, re, mi, fa, sol, la, ti), with the resulting score performed by mezzo-soprano Hai-Ting Chinn, a frequent collaborator of Benson’s. (In a bit of cheeky fun, the recordings will be played on a loop throughout the gallery.) As she cut out all the non-solfège words and letters, Benson found herself surrounded by “a sea of sentences.” Out of these cast-offs, she made little lyric poems befitting her themes. Like this one, missing its initial do: ubtless, / on I wept, without / my limbs / I sat.</p>
-<p>And for the visually striking “counter works,” as she calls them, Benson filled in the enclosed space of letters like g and d and o (called “counters” in typography) to create a rhythmic pattern of ovals and dots—a kind of literary animal print. In most of the sentences, only the letters’ filled-in counter space remains, with the rest erased. But some choice Shelley sentences—I waited with forced patience until the moon had sunk, for one example—are left intact. “Those are the ones that drove me to being so struck by this being a woman’s voice,” Benson explains.</p>
-<p>There are even more Easter eggs—like the varying shades of yellow, which come from tone notes that match up to the solfège scores—but at a certain point this body of work becomes less about how she’s doing it and more about the dedication to the idea. “I was just compelled to keep going and make the work so that these words can be seen.”</p>
-<p>Benson first read Frankenstein alongside other classics at school (she was born in Thornbury, a town in Gloucestershire, in 1973, and grew up in the tiny village of Gawsworth in northwest England). Like many people who first encountered the book at a young age, and like countless others who have seen its various adaptations for the screen, she was swept up in the flattened narrative of a violent creature and the regrets of its maker. “You have the sort of similar arguments, like, Who’s the monster?” she says.</p>
-<p>Then, a few years ago—before Guillermo del Toro’s Frankenstein and looser interpretations like Yorgos Lanthimos’s Poor Things and Maggie Gyllenhaal’s The Bride! dragged the story back into the zeitgeist, and after she became a mother—Benson reread the book, and those 40 or so pages from the creature’s perspective triggered a whole new set of subversive ideas for her. “Is a monster the person in society that nobody understands, and that’s why we’re afraid of it?” she wondered. “I’m like, That’s a woman. No one understood Mary Shelley; people were afraid of her.”</p>
-<p>Frankenstein is often overshadowed by the lore of its author (the daughter of two famed English intellectuals, women’s rights advocate Mary Wollstonecraft and philosopher William Godwin); her relationships to men (at 16 she ran away to France with the poet Percy Shelley, a pupil of her father’s who was already married); and the fantastical circumstances under which she wrote the book (holed up during the stormy summer of 1816 in a Swiss villa rented by Lord Byron, who one night challenged Mary, Percy, Mary’s stepsister, and his personal physician to a ghost-story contest).</p>
-<p>But perhaps more consequential to the writing of Frankenstein was the grief that Mary Shelley carried. “It’s hard to separate any of it from what she was going through at that time,” Benson says. Shelley never knew her mother, who died 11 days after Shelley was born. Seventeen years later, Shelley lost her first baby at less than two weeks old. She wrote in her diary, “Dream that my little baby came to life again; that it had only been cold, and that we rubbed it before the fire, and it lived.” She began writing Frankenstein the following year. (Shelley would lose two more young children, including the baby she nursed while writing Frankenstein, all before her 22nd birthday. Only her fourth child, Percy Florence Shelley, born in 1819, would live to adulthood.)</p>
-<p>At Sargent’s Daughters, three tender graphite drawings of elm trees hang on the back gallery wall. Benson made them as an homage to both Shelley’s grief and her own, over the recent passing of her father. The margins of Shelley’s manuscript were full of doodles of what look like English elms, which covered the lush landscape in the part of England where Benson was raised. Benson loved these trees, and was devastated when many were lost to Dutch elm disease. “My first heartbreak,” she says. Her father photographed them back in the 1970s, and after his death Benson looked everywhere for the photos, to no avail.</p>
-<p>Seeing them there in Shelley’s manuscript felt like this personal connection between author and artist, a reassuring echo across time and space. Keep going, the trees seem to say. Keep looking.</p>
-<p>“Jane Benson: her her” is on view at Sargent’s Daughters in New York City from October 30 to December 5, 2026.</p>
-<p>Who Shows Up—and Who Vanishes—When Your Kid Is in Trouble?</p>
-<p>25 of the Coziest, Most Autumnal Movies to Watch This Fall</p>
-<p>9 Adorable Photos of a (Very) Young Michael B. Jordan</p>
-<p>Listen to The Run-Through with Vogue, a weekly podcast featuring the most exciting stories and hot takes from the worlds of culture, politics, sports and–of course–fashion</p>
-<p>The Vogue Runway app has expanded! Update to the latest version to see all Vogue content, as well as new features like our Runway Genius quiz, Group Chats, and posts from Vogue contributors.</p>
-<p>Become a Vogue Business Member—the ultimate resource for fashion and beauty industry professionals.</p>
-<p>Never miss a story: Add Vogue.com to your preferred sources in Google.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.vogue.com/article/jane-benson-her-her-sargents-daughters" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/uzbek/articles/c5398ly7eedko/cyr?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">&quot;Қиш оғир келади&quot;. Европа иситиш мавсумига тайёр эмас, яна Россия газига қайтадими?</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/uzbek/articles/c5398ly7eedko/cyr?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_tigrinya/68b9/live/43736000-c099-11f1-a64c-550be9e3c66b.png" class="news-img" alt="ኤርትራ ነቲ ኢትዮጵያ &#x27;ዓጸፋ ክምልሰሉ&#x27;የ&#x27; ዝበለቶ ምትእትታው &#x27;ሕጋዊ ምስምስ&#x27; ኢላቶ" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>05 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article>
-<article class="article-card">
-    <h2>#408. Unlike Most Combo Robot Cleaning Devices, the Shark Navigator Mops Just as Well as It Vacuums—Maybe Better</h2>
-    <div class="article-meta">
-        📅 Oct 27, 2026 &nbsp;|&nbsp; Category: <strong>Technology</strong> &nbsp;|&nbsp; 
-        <a href="https://www.popularmechanics.com/home/a74192899/shark-navigator-robot-vacuum-mop-review/" target="_blank" rel="nofollow">Read Source &rarr;</a>
-    </div>
-    <div class="article-body">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/258173e4-58ab-462c-8158-1b34fbb09955.png?crop=0.666666666667xw:1xh;center,top&amp;resize=1200:*" alt="Unlike Most Combo Robot Cleaning Devices, the Shark Navigator Mops Just as Well as It Vacuums—Maybe Better" loading="lazy">
-        
-            <div style="text-align:center; margin-bottom:20px;"><img src="https://hips.hearstapps.com/hmg-prod/images/258173e4-58ab-462c-8158-1b34fbb09955.png?crop=0.666666666667xw:1xh;center,top&resize=1200:*" alt="Unlike Most Combo Robot Cleaning Devices, the Shark Navigator Mops Just as Well as It Vacuums—Maybe Better" style="max-width:100%; height:auto; border-radius:8px;" loading="lazy"></div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
-                <p>The 2-in-1 robot vacuum and mop also features a tank that empties itself into a larger storage bin whenever it’s full.</p>
-<p>Gear-obsessed editors choose every product we review. We may earn commission if you buy from a link. Why Trust Us?</p>
-<p>I live in a home that’s almost evenly split between hard floors and rugs. The bathroom is tile, and the majority of the kitchen and living room is hardwood, but large area rugs in my bedroom and by the living room couches cover huge swaths of floor space. Cleaning every surface has traditionally required two devices and about an hour of labor. The near-perfect split of surfaces always kept me from committing to a robot cleaning device.</p>
-<p>Then the Shark Navigator entered the chat.</p>
-<p>This is a two-in-one robot cleaner that functions equally well as both a mop and a vacuum. At Popular Mechanics, we haven’t always been huge fans of combo robot cleaning devices, usually because the mop functionality leaves something to be desired. But the Navigator easily vacuumed dirt from my carpets, and after filling the tank and adding a mop pad, it transitioned into an impressive wet mop for my hard floors.</p>
-<p>Beyond cleaning power, I also liked the Shark Navigator’s hands-free automatic emptying base. Whenever the tank is full, it will immediately go back to its charging station and empty itself out into the larger storage bin. That meant I didn’t have to empty debris into the trash more than once every two months or so.</p>
-<p>There are only a few pieces that need to be installed on the Navigator, and doing so takes little to no time at all. That said, I had a bit of trouble when it came to connecting it to my smartphone. After downloading the app, it took a few tries to get it connected.</p>
-<p>It’s worth noting that you must connect the robot vacuum to your home WiFi in order to operate it via your smartphone. That’s not uncommon with an appliance like this considering even my air purifier requires an app and WiFi to access the full range of features. However, it can be a bit annoying—especially if your WiFi goes out. There is a manual mode you can use by pressing the buttons on the robot in order to operate it, though it isn’t possible to enact all of the possible commands this way.</p>
-<p>At the end of the day, the most important factor for any robot vacuum is how it cleans. On this front, the Shark Navigator is impressive. As a mop, the cleaning process is straightforward and thorough. With the help of its 360-degree LiDAR navigation, it basically doesn’t miss a spot. Even near the lip of a door that extends slightly beyond the wall, the robot would adjust itself to get as close to the wall as possible. I was able to see the moisture from the mop within millimeters of the wall.</p>
-<p>One of my favorite features was the spot cleaning. Essentially, you can set the Navigator to continuously clean the same 5-by-5 square of floor over and over again. This worked well for cleaning up spills and light stains that needed some extra love to clean up.</p>
-<p>On the vacuuming side, I was impressed by the roller brush’s power. It was able to genuinely disrupt some set-in dirt from the carpet. While the suction power numbers aren’t available to the public, I was pleased with how well it worked. Even transitioning from hard flooring to carpet, the cleaning power stayed consistent.</p>
-<p>The Shark Navigator comes with a charging base that also functions as an auto-emptying storage bin. For those that like to clean daily (or the supremely lazy, like myself), this is a huge difference-maker over a robot vacuum without one. Because of the storage on the base, you only have to actually empty it into the trash about once every two months.</p>
-<p>So, not only can I cede all cleaning responsibilities, I have now reduced even the bare minimum care to just once every couple of months.</p>
-<p>As far as robot vacuums and mops go, the Shark Navigator gets the job done well. The LiDAR navigates well and ensures that it reaches tight corners and hugs walls, the mopping and vacuuming are powerful, and the self-emptying base reduces the labor I have to do by an even larger amount. Especially for homes with a healthy mix of hard flooring and carpet, this is well worth your time and attention.</p>
-<p>Shop the Shark Navigator Robot Vacuum and Mop</p>
-<p>Tom Price is a reviews editor for Popular Mechanics while also contributing to Runner's World, Best Products, and Bicycling. Here at Popular Mechanics, Tom loves testing out home appliances, smart tech, gear for city life and outdoor adventures, small gadgets like watches and multitools, and anything else you can find piled up at his hoarder's nest of a desk.</p>
-<p>Prior to working here, Tom attended NYU, graduating with a degree in English and a minor in creative writing. He also wrote for Best Reviews, The Daily Beast, and other publications covering tech, fitness gear, gadgets, and lifestyle products. Furthermore, he covered startup news, pop culture, and even professional wrestling. To follow more of his work, check back here for new stories.</p>
-<p>The 8 Best Cordless Stick Vacuums We Recommend</p>
-<p>Best All-in-One Washer-Dryer Combo for Your Home</p>
-<p>Shark CarpetXpert Upright Carpet Cleaner Review</p>
-<p>Tested: The Best Electric Pressure Washers of 2026</p>
-<p>Bissell PowerClean FurFinder Vacuum, Reviewed</p>
-<p>We may earn commission from links on this page, but we only recommend products we back.</p>
-                <p style="margin-top: 25px;">
-                    <a href="https://www.popularmechanics.com/home/a74192899/shark-navigator-robot-vacuum-mop-review/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
-                        &rarr; Baca artikel asli
-                    </a>
-                </p>
+            <h2 class="news-title"><a href="https://www.bbc.com/tigrinya/articles/cqm2685pm8l7o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">ኤርትራ ነቲ ኢትዮጵያ &#x27;ዓጸፋ ክምልሰሉ&#x27;የ&#x27; ዝበለቶ ምትእትታው &#x27;ሕጋዊ ምስምስ&#x27; ኢላቶ</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/tigrinya/articles/cqm2685pm8l7o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_swahili/07a6/live/b84c0b80-c089-11f1-bc2e-018d645d8d21.jpg" class="news-img" alt="Mataifa saba yanayolipa mshahara mkubwa zaidi Afrika" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>05 Oct 2026</span>
             </div>
-            
-<div style="text-align:center; margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-            
-        
-<div style="text-align:center;margin:20px 0;">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
-</div>
-
-    </div>
-</article><div class="pagination"><a href="index.html">1</a><a href="page2.html">2</a><a href="page3.html">3</a><a href="page4.html">4</a><a href="page5.html">5</a><a href="page6.html">6</a><a href="page7.html">7</a><a href="page8.html">8</a><a href="page9.html">9</a><a href="page10.html">10</a><a href="page11.html">11</a><a href="page12.html">12</a><a href="page13.html">13</a><a href="page14.html">14</a><a href="page15.html">15</a><a href="page16.html">16</a><a href="page17.html">17</a><a href="page18.html">18</a><a href="page19.html">19</a><a href="page20.html">20</a><a href="page21.html">21</a><a href="page22.html">22</a><a href="page23.html">23</a><a href="page24.html">24</a><a href="page25.html">25</a><a href="page26.html">26</a><a href="page27.html">27</a><a href="page28.html">28</a><a href="page29.html">29</a><a href="page30.html">30</a><a href="page31.html">31</a><a href="page32.html">32</a><a href="page33.html">33</a><a href="page34.html" class="active">34</a><a href="page35.html">35</a><a href="page36.html">36</a><a href="page37.html">37</a><a href="page38.html">38</a><a href="page39.html">39</a><a href="page40.html">40</a><a href="page41.html">41</a><a href="page42.html">42</a><a href="page43.html">43</a><a href="page44.html">44</a><a href="page45.html">45</a><a href="page46.html">46</a><a href="page47.html">47</a><a href="page48.html">48</a><a href="page49.html">49</a><a href="page50.html">50</a><a href="page51.html">51</a><a href="page52.html">52</a><a href="page53.html">53</a><a href="page54.html">54</a><a href="page55.html">55</a><a href="page56.html">56</a><a href="page57.html">57</a><a href="page58.html">58</a><a href="page59.html">59</a><a href="page60.html">60</a><a href="page61.html">61</a><a href="page62.html">62</a><a href="page63.html">63</a><a href="page64.html">64</a><a href="page65.html">65</a><a href="page66.html">66</a><a href="page67.html">67</a><a href="page68.html">68</a><a href="page69.html">69</a><a href="page70.html">70</a><a href="page71.html">71</a><a href="page72.html">72</a><a href="page73.html">73</a><a href="page74.html">74</a><a href="page75.html">75</a><a href="page76.html">76</a><a href="page77.html">77</a><a href="page78.html">78</a><a href="page79.html">79</a><a href="page80.html">80</a><a href="page81.html">81</a><a href="page82.html">82</a><a href="page83.html">83</a><a href="page84.html">84</a><a href="page85.html">85</a><a href="page86.html">86</a><a href="page87.html">87</a><a href="page88.html">88</a><a href="page89.html">89</a><a href="page90.html">90</a><a href="page91.html">91</a><a href="page92.html">92</a><a href="page93.html">93</a><a href="page94.html">94</a><a href="page95.html">95</a><a href="page96.html">96</a><a href="page97.html">97</a><a href="page98.html">98</a><a href="page99.html">99</a><a href="page100.html">100</a><a href="page101.html">101</a><a href="page102.html">102</a><a href="page103.html">103</a><a href="page104.html">104</a><a href="page105.html">105</a><a href="page106.html">106</a><a href="page107.html">107</a><a href="page108.html">108</a><a href="page109.html">109</a><a href="page110.html">110</a><a href="page111.html">111</a><a href="page112.html">112</a><a href="page113.html">113</a><a href="page114.html">114</a><a href="page115.html">115</a><a href="page116.html">116</a><a href="page117.html">117</a><a href="page118.html">118</a><a href="page119.html">119</a><a href="page120.html">120</a><a href="page121.html">121</a><a href="page122.html">122</a><a href="page123.html">123</a><a href="page124.html">124</a><a href="page125.html">125</a><a href="page126.html">126</a><a href="page127.html">127</a><a href="page128.html">128</a><a href="page129.html">129</a><a href="page130.html">130</a><a href="page131.html">131</a><a href="page132.html">132</a><a href="page133.html">133</a><a href="page134.html">134</a><a href="page135.html">135</a><a href="page136.html">136</a><a href="page137.html">137</a><a href="page138.html">138</a><a href="page139.html">139</a><a href="page140.html">140</a><a href="page141.html">141</a><a href="page142.html">142</a><a href="page143.html">143</a><a href="page144.html">144</a><a href="page145.html">145</a><a href="page146.html">146</a><a href="page147.html">147</a><a href="page148.html">148</a><a href="page149.html">149</a><a href="page150.html">150</a><a href="page151.html">151</a><a href="page152.html">152</a><a href="page153.html">153</a><a href="page154.html">154</a><a href="page155.html">155</a><a href="page156.html">156</a><a href="page157.html">157</a><a href="page158.html">158</a><a href="page159.html">159</a><a href="page160.html">160</a><a href="page161.html">161</a><a href="page162.html">162</a><a href="page163.html">163</a><a href="page164.html">164</a><a href="page165.html">165</a><a href="page166.html">166</a><a href="page167.html">167</a><a href="page168.html">168</a><a href="page169.html">169</a><a href="page170.html">170</a><a href="page171.html">171</a><a href="page172.html">172</a><a href="page173.html">173</a><a href="page174.html">174</a><a href="page175.html">175</a><a href="page176.html">176</a><a href="page177.html">177</a><a href="page178.html">178</a><a href="page179.html">179</a><a href="page180.html">180</a><a href="page181.html">181</a><a href="page182.html">182</a><a href="page183.html">183</a><a href="page184.html">184</a><a href="page185.html">185</a><a href="page186.html">186</a><a href="page187.html">187</a><a href="page188.html">188</a><a href="page189.html">189</a><a href="page190.html">190</a><a href="page191.html">191</a><a href="page192.html">192</a><a href="page193.html">193</a><a href="page194.html">194</a><a href="page195.html">195</a><a href="page196.html">196</a><a href="page197.html">197</a><a href="page198.html">198</a><a href="page199.html">199</a><a href="page200.html">200</a><a href="page201.html">201</a><a href="page202.html">202</a><a href="page203.html">203</a><a href="page204.html">204</a><a href="page205.html">205</a><a href="page206.html">206</a><a href="page207.html">207</a><a href="page208.html">208</a><a href="page209.html">209</a><a href="page210.html">210</a><a href="page211.html">211</a><a href="page212.html">212</a><a href="page213.html">213</a><a href="page214.html">214</a><a href="page215.html">215</a><a href="page216.html">216</a><a href="page217.html">217</a><a href="page218.html">218</a><a href="page219.html">219</a><a href="page220.html">220</a><a href="page221.html">221</a><a href="page222.html">222</a><a href="page223.html">223</a><a href="page224.html">224</a><a href="page225.html">225</a><a href="page226.html">226</a><a href="page227.html">227</a><a href="page228.html">228</a><a href="page229.html">229</a><a href="page230.html">230</a><a href="page231.html">231</a><a href="page232.html">232</a><a href="page233.html">233</a><a href="page234.html">234</a><a href="page235.html">235</a><a href="page236.html">236</a><a href="page237.html">237</a><a href="page238.html">238</a><a href="page239.html">239</a><a href="page240.html">240</a><a href="page241.html">241</a><a href="page242.html">242</a><a href="page243.html">243</a></div><footer>&copy; 2026 News Portal Indonesia. All rights reserved.</footer>
+            <h2 class="news-title"><a href="https://www.bbc.com/swahili/articles/ck4g1qeg7xw4o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Mataifa saba yanayolipa mshahara mkubwa zaidi Afrika</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/swahili/articles/ck4g1qeg7xw4o?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article>
+    <article class="news-card">
+        <img src="https://ichef.bbci.co.uk/news/1200/branded_somali/78bd/live/2255e570-c074-11f1-a9b2-a90adf09ddc1.jpg" class="news-img" alt="Baaq ka soo baxay shirka El Alamein ku dhex maray madaxda Soomaaliya, Masar, Suudaan iyo Eritrea" loading="lazy" onerror="this.style.display='none'">
+        <div class="news-content">
+            <div class="news-meta">
+                <span class="badge">OTHER</span>
+                <span>05 Oct 2026</span>
+            </div>
+            <h2 class="news-title"><a href="https://www.bbc.com/somali/articles/c5kglmv84v4no?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="nofollow">Baaq ka soo baxay shirka El Alamein ku dhex maray madaxda Soomaaliya, Masar, Suudaan iyo Eritrea</a></h2>
+            <p class="news-excerpt">atOptions = {             &#x27;key&#x27; : &#x27;f9e40eb3b3cd05f1038aac7b36b33ad2&#x27;,             &#x27;format&#x27; : &#x27;iframe&#x27;,             &#x27;height&#x27; : 90,             &#x27;width&#x27; ...</p>
+            <a href="https://www.bbc.com/somali/articles/c5kglmv84v4no?at_medium=RSS&amp;at_campaign=rss" class="read-more" target="_blank" rel="nofollow">Read Source &rarr;</a>
+        </div>
+    </article></div><div class="pagination"><a href="index.html">1</a><a href="page2.html">2</a><a href="page3.html">3</a><a href="page4.html">4</a><a href="page5.html">5</a><a href="page6.html">6</a><a href="page7.html">7</a><a href="page8.html">8</a><a href="page9.html">9</a><a href="page10.html">10</a><a href="page11.html">11</a><a href="page12.html">12</a><a href="page13.html">13</a><a href="page14.html">14</a><a href="page15.html">15</a><a href="page16.html">16</a><a href="page17.html">17</a><a href="page18.html">18</a><a href="page19.html">19</a><a href="page20.html">20</a><a href="page21.html">21</a><a href="page22.html">22</a><a href="page23.html">23</a><a href="page24.html">24</a><a href="page25.html">25</a><a href="page26.html">26</a><a href="page27.html">27</a><a href="page28.html">28</a><a href="page29.html">29</a><a href="page30.html">30</a><a href="page31.html">31</a><a href="page32.html">32</a><a href="page33.html">33</a><a href="page34.html" class="active">34</a><a href="page35.html">35</a><a href="page36.html">36</a><a href="page37.html">37</a><a href="page38.html">38</a><a href="page39.html">39</a><a href="page40.html">40</a><a href="page41.html">41</a></div><footer>&copy; 2026 News Portal. All rights reserved.</footer>
 </div></body></html>
