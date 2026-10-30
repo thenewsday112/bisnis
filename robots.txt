@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thenewsday112.github.io/newshariini/sitemap.xml
+Sitemap: https://thenewsday112.github.io/bisnis/sitemap.xml
